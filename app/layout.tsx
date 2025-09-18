@@ -1,0 +1,121 @@
+import type { Metadata } from 'next'
+import { Inter, Playfair_Display } from 'next/font/google'
+import './globals.css'
+import StructuredData from '@/components/StructuredData'
+
+const inter = Inter({ 
+  subsets: ['latin'], 
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-inter',
+  display: 'swap'
+})
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'], 
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-playfair',
+  display: 'swap'
+})
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Uluwatu Surf School - Professional Surf Instruction in Bali',
+    template: '%s | Uluwatu Surf School'
+  },
+  description: 'Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. Group lessons from IDR 400k, semi-private IDR 500k, private + video analysis IDR 700k. ISA certified instructor with 15+ years local knowledge.',
+  keywords: ['surf school', 'uluwatu', 'bali surf lessons', 'professional surf instruction', 'reef break surfing', 'video analysis', 'surf coaching', 'bali surfing', 'uluwatu lessons', 'surf school bali', 'pecatu surf', 'ISA certified instructor', 'bukit peninsula surf'],
+  authors: [{ name: 'Uluwatu Surf School' }],
+  creator: 'Uluwatu Surf School',
+  publisher: 'Uluwatu Surf School',
+  category: 'Sports & Recreation',
+  classification: 'Surf School',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://uluwatusurfschool.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Uluwatu Surf School - Professional Surf Instruction in Bali',
+    description: 'Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. ISA certified instructor with 15+ years experience.',
+    url: 'https://uluwatusurfschool.com',
+    siteName: 'Uluwatu Surf School',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Uluwatu Surf School - Professional Surf Instruction in Bali with reef break expertise',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Uluwatu Surf School - Professional Surf Instruction in Bali',
+    description: 'Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. ISA certified instructor.',
+    images: ['/images/logo.png'],
+    creator: '@uluwatusurfschool',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'google-site-verification-code',
+  },
+  other: {
+    'geo.region': 'ID-BA',
+    'geo.placename': 'Uluwatu, Bali',
+    'geo.position': '-8.8299;115.0849',
+    'ICBM': '-8.8299, 115.0849',
+    'DC.title': 'Uluwatu Surf School - Professional Surf Instruction',
+    'DC.creator': 'Uluwatu Surf School',
+    'DC.subject': 'Surf instruction, surf lessons, reef break surfing, Uluwatu, Bali',
+    'DC.description': 'Professional surf instruction in Uluwatu, Bali with local expertise and modern coaching technology',
+    'DC.language': 'en',
+    'DC.coverage': 'Uluwatu, Bali, Indonesia',
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+        <meta name="theme-color" content="#1E293B" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Uluwatu Surf" />
+      </head>
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+        <StructuredData />
+        {children}
+      </body>
+    </html>
+  )
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "shoe me locally"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": " \u23bf \u00a0Error: Command timed out after 2m 0.0s\n\n     > uluwatu-surf-school@0.1.0 dev\n     > next dev --turbo\n\n       \u25b2 Next.js 14.2.13 (turbo)\n       - Local:        http://localhost:3000\n\n      \u2713 Starting...\n      \u2713 Ready in 1029ms\n\n"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "npm error code ENOENT\nnpm error syscall open\nnpm error path /Users/hadi.rickit/dev/uluwatuSurfSchool/package.json\nnpm error errno -2\nnpm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/Users/hadi.rickit/dev/uluwatuSurfSchool/package.json'\nnpm error enoent This is related to npm not being able to find a file.\nnpm error enoent\nnpm error A complete log of this run can be found in: /Users/hadi.rickit/.npm/_logs/2025-09-17T06_07_53_548Z-debug-0.log"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "troubleshoot"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "deploy on staging.uluwatusurfschool.com"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "vercel"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "i do,  use vercel cli"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "do it using cli"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "do it with vecel cli"
+  },
+  {
+    "session_id": "b0a14606-ed08-4938-94f1-aacc86538500",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/b0a14606-ed08-4938-94f1-aacc86538500.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "use web dev agent to \n\nintegrate this copy\n\n\nWelcome to Uluwatu Surf School Bali.\nWe are based in Uluwatu/ Bukit Area.\n\nWe offer three tiers of pricing and class options :\n\n** Please note all prices are per person/ per session. **\n\nOption 1 (Lesson only)\nPrivate 700k IDR\nSemi Private 500k IDR\n\nOption 2 (Lesson + Surf Video and Analysis)\nPrivate 800k IDR\nSemi Private 600k IDR\n\nOptions 3 Guiding \n500k IDR/person/session\n\nNotes:\nGuiding session including optional surf video and review charge extra 200k\n\n*** Guiding prices do not include board rental.\n\nWe provide all Surf Equipment.\nOur session is 1.30 minutes in the water and  20-30 minutes for Land Coaching (Beginner Class). At the beginning of every session, we will explain the break.\nAlso, surfing location and time depends on tide, swell and weather conditions, and we will always find the right surf spot for each individual person\u2019s level.\n\nThank you and have a great day.\n\nLet\u2019s have fun and improve your surf skills with us \ud83e\udd19\ud83c\udffb\ud83e\udd19\ud83c\udffb\ud83e\udd19\ud83c\udffb"
+  },
+  {
+    "session_id": "f80f7a62-3957-4e05-8d3f-07ad1476b0d5",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/f80f7a62-3957-4e05-8d3f-07ad1476b0d5.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "prepare SEO and meta tags. perform full audit @agent-ui-designer-agent "
+  },
+  {
+    "session_id": "f80f7a62-3957-4e05-8d3f-07ad1476b0d5",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/f80f7a62-3957-4e05-8d3f-07ad1476b0d5.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "missing required error components, refreshing..."
+  },
+  {
+    "session_id": "f80f7a62-3957-4e05-8d3f-07ad1476b0d5",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/f80f7a62-3957-4e05-8d3f-07ad1476b0d5.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-design-reviewer-agent "
+  },
+  {
+    "session_id": "f80f7a62-3957-4e05-8d3f-07ad1476b0d5",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/f80f7a62-3957-4e05-8d3f-07ad1476b0d5.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1]\n\n\nintegrate this logo @agent-ui-ux-dev-team-coordinator "
+  },
+  {
+    "session_id": "f80f7a62-3957-4e05-8d3f-07ad1476b0d5",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/f80f7a62-3957-4e05-8d3f-07ad1476b0d5.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-ui-ux-dev-team-coordinator "
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-ui-ux-dev-team-coordinator "
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "\n  1. Add the Logo: Place your Uluwatu Surf School logo at /public/images/logo.png, it is at [Image #1]\n  2. Generate Favicons: Create favicon files from your logo\n  3. Fix Configuration Issues: Resolve the manifest and robots conflicts\n  4. Run Quality Checks: Execute the comprehensive testing suite\n  5. Performance Optimization: Ensure all animations meet performance budgets"
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "  \u23bf \u00a0API Error: Claude's response exceeded the 32000 output token maximum. To configure this behavior, set the CLAUDE_CODE_MAX_OUTPUT_TOKENS environment variable."
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "  \u23bf \u00a0API Error: Claude's response exceeded the 32000 output token maximum. To configure this behavior, set the CLAUDE_CODE_MAX_OUTPUT_TOKENS environment variable."
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1] you do it please"
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "remove Live Conditions\nWave:\n3-4ft\nWind:\n5kts offshore\nTide:\nMid rising\nWater:\n28\u00b0C\n\n"
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "push"
+  }
+]

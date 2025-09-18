@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Specific pages
+Allow: /lessons
+Allow: /about
+Allow: /contact
+Allow: /book
+
+# Block admin and development pages
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://uluwatusurfschool.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
