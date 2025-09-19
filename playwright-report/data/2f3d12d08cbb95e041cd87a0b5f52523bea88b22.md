@@ -1,0 +1,638 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - navigation "Main navigation" [ref=e4]:
+      - generic [ref=e6]:
+        - link "Sophie & You - Home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e8] [cursor=pointer]:
+            - img [ref=e9] [cursor=pointer]
+            - img [ref=e11] [cursor=pointer]
+          - generic [ref=e15] [cursor=pointer]:
+            - generic [ref=e16] [cursor=pointer]: Sophie & You
+            - generic [ref=e17] [cursor=pointer]: Journey of Freedom
+        - generic [ref=e18]:
+          - link "Navigate to journey overview" [ref=e19] [cursor=pointer]:
+            - /url: /
+            - button "Navigate to journey overview" [ref=e20]:
+              - img [ref=e21]
+              - generic [ref=e24]: Journey
+          - link "View photo gallery" [ref=e25] [cursor=pointer]:
+            - /url: /photos
+            - button "View photo gallery" [ref=e26]:
+              - img [ref=e27]
+              - generic [ref=e30]: Photos
+          - button "Navigate to Sophie's music playlist" [ref=e31]:
+            - img [ref=e32]
+            - generic [ref=e36]: Music
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - img [ref=e40]
+        - img [ref=e45]
+        - heading "Sophie" [level=1] [ref=e55]:
+          - text: Sophie
+          - img [ref=e56]
+        - img [ref=e59]
+        - paragraph [ref=e61]: The Beautiful Soul Who Deserves Everything
+        - paragraph [ref=e62]: A celebration of Sophie's journey through freedom, adventure & self-discovery
+        - generic [ref=e63]:
+          - button "Sophie's Journey" [ref=e64]:
+            - img [ref=e65]
+            - text: Sophie's Journey
+          - link "View Photos" [ref=e68] [cursor=pointer]:
+            - /url: /photos
+            - button "View Photos" [ref=e69]:
+              - img [ref=e70]
+              - text: View Photos
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: "8"
+            - generic [ref=e76]: Countries
+          - generic [ref=e77]:
+            - generic [ref=e78]: "13"
+            - generic [ref=e79]: Cities
+          - generic [ref=e80]:
+            - generic [ref=e81]: ∞
+            - generic [ref=e82]: Memories
+      - generic [ref=e84]:
+        - generic [ref=e85]: Explore Sophie's Journey
+        - img [ref=e86]
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - img [ref=e91]
+        - heading "Sophie's Story of Freedom" [level=2] [ref=e95]
+        - img [ref=e96]
+      - generic [ref=e98]:
+        - paragraph [ref=e99]:
+          - text: Sophie deserves the world and every adventure within it. Her journey through
+          - generic [ref=e100]: 8 countries
+          - text: and
+          - generic [ref=e101]: 13 cities
+          - text: shows a beautiful soul embracing
+          - generic [ref=e102]: freedom and discovery
+          - text: .
+        - paragraph [ref=e103]: Sophie's story is one of breaking free from the ordinary, embracing adventure, and creating her own path - a beautiful celebration of liberation, growth, and limitless possibilities.
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - img [ref=e107]
+          - heading "Freedom to Explore" [level=3] [ref=e111]
+          - paragraph [ref=e112]: Breaking boundaries and discovering new horizons together
+        - generic [ref=e113]:
+          - img [ref=e115]
+          - heading "Love Unbound" [level=3] [ref=e117]
+          - paragraph [ref=e118]: A relationship built on adventure and shared dreams
+        - generic [ref=e119]:
+          - img [ref=e121]
+          - heading "New Beginnings" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Building our future in Melbourne's vibrant embrace
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - img [ref=e130]
+          - heading "Journey Highlights" [level=2] [ref=e133]
+        - paragraph [ref=e134]:
+          - text: Capturing moments of pure
+          - generic [ref=e135]: freedom
+          - text: ","
+          - generic [ref=e136]: adventure
+          - text: ", and"
+          - generic [ref=e137]: discovery
+          - text: across our incredible journey
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - img [ref=e141]
+            - heading "Our Favorite Moments" [level=3] [ref=e144]
+            - img [ref=e145]
+          - paragraph [ref=e147]: Highlights from our journey together
+        - paragraph [ref=e149]: Loading photos from Cloudinary...
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e153]:
+          - img [ref=e154]
+          - heading "Our Journey of Liberation" [level=2] [ref=e157]
+        - paragraph [ref=e158]: Follow our path from the first spark in Bali to building our new life in Melbourne - a timeline of growth, adventure, and the freedom to be ourselves
+      - generic [ref=e160]:
+        - 'article "Timeline event: First Meeting in Bali in Bali, Indonesia, May 2023" [ref=e161]':
+          - button "Timeline marker for First Meeting in Bali" [ref=e162]:
+            - img [ref=e164]
+          - generic [ref=e167]:
+            - generic [ref=e169]:
+              - img [ref=e170]
+              - text: May 2023
+            - heading "First Meeting in Bali" [level=3] [ref=e175]
+            - generic [ref=e176]:
+              - img [ref=e177]
+              - generic [ref=e180]: Bali, Indonesia
+            - paragraph [ref=e181]: Our paths crossed in the beautiful island of Bali, where our journey together began.
+            - paragraph [ref=e183]: Where our journey of freedom began...
+          - img "First Meeting in Bali - Our paths crossed in the beautiful island of Bali, where our journey together began." [ref=e184]
+        - 'article "Timeline event: Gili Islands Adventure in Gili Islands, Indonesia, June 2023" [ref=e185]':
+          - button "Timeline marker for Gili Islands Adventure" [ref=e186]:
+            - img [ref=e188]
+          - generic [ref=e192]:
+            - generic [ref=e194]:
+              - img [ref=e195]
+              - text: June 2023
+            - heading "Gili Islands Adventure" [level=3] [ref=e200]
+            - generic [ref=e201]:
+              - img [ref=e202]
+              - generic [ref=e205]: Gili Islands, Indonesia
+            - paragraph [ref=e206]: Crystal clear waters and pristine beaches in the Gili Islands, Indonesia.
+            - paragraph [ref=e208]: Another step towards liberation and discovery.
+          - img "Gili Islands Adventure - Crystal clear waters and pristine beaches in the Gili Islands, Indonesia." [ref=e209]
+        - 'article "Timeline event: Phi Phi Islands, Thailand in Phi Phi Islands, Thailand, July 2023" [ref=e210]':
+          - button "Timeline marker for Phi Phi Islands, Thailand" [ref=e211]:
+            - img [ref=e213]
+          - generic [ref=e218]:
+            - generic [ref=e220]:
+              - img [ref=e221]
+              - text: July 2023
+            - heading "Phi Phi Islands, Thailand" [level=3] [ref=e226]
+            - generic [ref=e227]:
+              - img [ref=e228]
+              - generic [ref=e231]: Phi Phi Islands, Thailand
+            - paragraph [ref=e232]: Exploring the stunning limestone cliffs and turquoise waters of Phi Phi Islands.
+            - paragraph [ref=e234]: Another step towards liberation and discovery.
+          - img "Phi Phi Islands, Thailand - Exploring the stunning limestone cliffs and turquoise waters of Phi Phi Islands." [ref=e235]
+        - 'article "Timeline event: Bangkok Exploration in Bangkok, Thailand, July 2023" [ref=e236]':
+          - button "Timeline marker for Bangkok Exploration" [ref=e237]:
+            - img [ref=e239]
+          - generic [ref=e242]:
+            - generic [ref=e244]:
+              - img [ref=e245]
+              - text: July 2023
+            - heading "Bangkok Exploration" [level=3] [ref=e250]
+            - generic [ref=e251]:
+              - img [ref=e252]
+              - generic [ref=e255]: Bangkok, Thailand
+            - paragraph [ref=e256]: Immersing ourselves in the vibrant street life and culture of Thailand's capital.
+            - paragraph [ref=e258]: Another step towards liberation and discovery.
+          - img "Bangkok Exploration - Immersing ourselves in the vibrant street life and culture of Thailand's capital." [ref=e259]
+        - 'article "Timeline event: Siem Reap, Cambodia in Siem Reap, Cambodia, August 2023" [ref=e260]':
+          - button "Timeline marker for Siem Reap, Cambodia" [ref=e261]:
+            - img [ref=e263]
+          - generic [ref=e267]:
+            - generic [ref=e269]:
+              - img [ref=e270]
+              - text: August 2023
+            - heading "Siem Reap, Cambodia" [level=3] [ref=e275]
+            - generic [ref=e276]:
+              - img [ref=e277]
+              - generic [ref=e280]: Siem Reap, Cambodia
+            - paragraph [ref=e281]: Discovering the ancient temples of Angkor Wat and Cambodian heritage.
+            - paragraph [ref=e283]: Another step towards liberation and discovery.
+          - img "Siem Reap, Cambodia - Discovering the ancient temples of Angkor Wat and Cambodian heritage." [ref=e284]
+        - 'article "Timeline event: Ho Chi Minh City in Ho Chi Minh City, Vietnam, August 2023" [ref=e285]':
+          - button "Timeline marker for Ho Chi Minh City" [ref=e286]:
+            - img [ref=e288]
+          - generic [ref=e294]:
+            - generic [ref=e296]:
+              - img [ref=e297]
+              - text: August 2023
+            - heading "Ho Chi Minh City" [level=3] [ref=e302]
+            - generic [ref=e303]:
+              - img [ref=e304]
+              - generic [ref=e307]: Ho Chi Minh City, Vietnam
+            - paragraph [ref=e308]: Experiencing the bustling energy and rich history of Vietnam's largest city.
+            - paragraph [ref=e310]: Another step towards liberation and discovery.
+          - img "Ho Chi Minh City - Experiencing the bustling energy and rich history of Vietnam's largest city." [ref=e311]
+        - 'article "Timeline event: Hanoi Adventures in Hanoi, Vietnam, September 2023" [ref=e312]':
+          - button "Timeline marker for Hanoi Adventures" [ref=e313]:
+            - img [ref=e315]
+          - generic [ref=e318]:
+            - generic [ref=e320]:
+              - img [ref=e321]
+              - text: September 2023
+            - heading "Hanoi Adventures" [level=3] [ref=e326]
+            - generic [ref=e327]:
+              - img [ref=e328]
+              - generic [ref=e331]: Hanoi, Vietnam
+            - paragraph [ref=e332]: Wandering through the Old Quarter and enjoying authentic Vietnamese cuisine.
+            - paragraph [ref=e334]: Another step towards liberation and discovery.
+          - img "Hanoi Adventures - Wandering through the Old Quarter and enjoying authentic Vietnamese cuisine." [ref=e335]
+        - 'article "Timeline event: Ha Long Bay in Ha Long Bay, Vietnam, September 2023" [ref=e336]':
+          - button "Timeline marker for Ha Long Bay" [ref=e337]:
+            - img [ref=e339]
+          - generic [ref=e343]:
+            - generic [ref=e345]:
+              - img [ref=e346]
+              - text: September 2023
+            - heading "Ha Long Bay" [level=3] [ref=e351]
+            - generic [ref=e352]:
+              - img [ref=e353]
+              - generic [ref=e356]: Ha Long Bay, Vietnam
+            - paragraph [ref=e357]: Cruising through the mystical limestone karsts of this UNESCO World Heritage site.
+            - paragraph [ref=e359]: Another step towards liberation and discovery.
+          - img "Ha Long Bay - Cruising through the mystical limestone karsts of this UNESCO World Heritage site." [ref=e360]
+        - 'article "Timeline event: Tokyo Discoveries in Tokyo, Japan, October 2023" [ref=e361]':
+          - button "Timeline marker for Tokyo Discoveries" [ref=e362]:
+            - img [ref=e364]
+          - generic [ref=e369]:
+            - generic [ref=e371]:
+              - img [ref=e372]
+              - text: October 2023
+            - heading "Tokyo Discoveries" [level=3] [ref=e377]
+            - generic [ref=e378]:
+              - img [ref=e379]
+              - generic [ref=e382]: Tokyo, Japan
+            - paragraph [ref=e383]: From traditional temples to modern skyscrapers in Japan's incredible capital.
+            - paragraph [ref=e385]: Another step towards liberation and discovery.
+          - img "Tokyo Discoveries - From traditional temples to modern skyscrapers in Japan's incredible capital." [ref=e386]
+        - 'article "Timeline event: Kyoto Culture in Kyoto, Japan, October 2023" [ref=e387]':
+          - button "Timeline marker for Kyoto Culture" [ref=e388]:
+            - img [ref=e390]
+          - generic [ref=e393]:
+            - generic [ref=e395]:
+              - img [ref=e396]
+              - text: October 2023
+            - heading "Kyoto Culture" [level=3] [ref=e401]
+            - generic [ref=e402]:
+              - img [ref=e403]
+              - generic [ref=e406]: Kyoto, Japan
+            - paragraph [ref=e407]: Walking through bamboo forests and historic districts in Japan's ancient capital.
+            - paragraph [ref=e409]: Another step towards liberation and discovery.
+          - img "Kyoto Culture - Walking through bamboo forests and historic districts in Japan's ancient capital." [ref=e410]
+        - 'article "Timeline event: Seoul Adventures in Seoul, South Korea, November 2023" [ref=e411]':
+          - button "Timeline marker for Seoul Adventures" [ref=e412]:
+            - img [ref=e414]
+          - generic [ref=e418]:
+            - generic [ref=e420]:
+              - img [ref=e421]
+              - text: November 2023
+            - heading "Seoul Adventures" [level=3] [ref=e426]
+            - generic [ref=e427]:
+              - img [ref=e428]
+              - generic [ref=e431]: Seoul, South Korea
+            - paragraph [ref=e432]: Exploring Korean culture, from palaces to K-pop in South Korea's dynamic capital.
+            - paragraph [ref=e434]: Another step towards liberation and discovery.
+          - img "Seoul Adventures - Exploring Korean culture, from palaces to K-pop in South Korea's dynamic capital." [ref=e435]
+        - 'article "Timeline event: Hong Kong Heights in Hong Kong, November 2023" [ref=e436]':
+          - button "Timeline marker for Hong Kong Heights" [ref=e437]:
+            - img [ref=e439]
+          - generic [ref=e445]:
+            - generic [ref=e447]:
+              - img [ref=e448]
+              - text: November 2023
+            - heading "Hong Kong Heights" [level=3] [ref=e453]
+            - generic [ref=e454]:
+              - img [ref=e455]
+              - generic [ref=e458]: Hong Kong
+            - paragraph [ref=e459]: Taking in skyline views and dim sum experiences in this vibrant city.
+            - paragraph [ref=e461]: Another step towards liberation and discovery.
+          - img "Hong Kong Heights - Taking in skyline views and dim sum experiences in this vibrant city." [ref=e462]
+        - 'article "Timeline event: Melbourne Home in Melbourne, Australia, December 2023" [ref=e463]':
+          - button "Timeline marker for Melbourne Home" [ref=e464]:
+            - img [ref=e466]
+          - generic [ref=e469]:
+            - generic [ref=e471]:
+              - img [ref=e472]
+              - text: December 2023
+            - heading "Melbourne Home" [level=3] [ref=e477]
+            - generic [ref=e478]:
+              - img [ref=e479]
+              - generic [ref=e482]: Melbourne, Australia
+            - paragraph [ref=e483]: Starting our new chapter together in Australia's cultural capital.
+            - paragraph [ref=e485]: Home is where freedom feels most natural.
+          - img "Melbourne Home - Starting our new chapter together in Australia's cultural capital." [ref=e486]
+    - generic [ref=e488]:
+      - generic [ref=e489]:
+        - generic [ref=e490]:
+          - img [ref=e491]
+          - heading "Countries We Liberated Our Spirits In" [level=2] [ref=e495]
+        - paragraph [ref=e496]:
+          - generic [ref=e497]: 8 countries
+          - text: ","
+          - generic [ref=e498]: 13 cities
+          - text: ","
+          - generic [ref=e499]: countless adventures
+          - text: together - each destination adding a new chapter to our story of freedom and discovery
+      - generic [ref=e500]:
+        - generic [ref=e501]:
+          - generic [ref=e502]:
+            - generic [ref=e503]: 🇮🇩
+            - heading "Indonesia" [level=3] [ref=e504]
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - img [ref=e507]
+              - generic [ref=e510]: "Cities Visited:"
+            - generic [ref=e511]:
+              - generic [ref=e512]: Bali
+              - generic [ref=e513]: Gili Islands
+          - paragraph [ref=e514]: Where it all began - tropical paradise and crystal clear waters
+        - generic [ref=e515]:
+          - generic [ref=e516]:
+            - generic [ref=e517]: 🇹🇭
+            - heading "Thailand" [level=3] [ref=e518]
+          - generic [ref=e519]:
+            - generic [ref=e520]:
+              - img [ref=e521]
+              - generic [ref=e524]: "Cities Visited:"
+            - generic [ref=e525]:
+              - generic [ref=e526]: Bangkok
+              - generic [ref=e527]: Phi Phi Islands
+          - paragraph [ref=e528]: Street food adventures and island hopping
+        - generic [ref=e529]:
+          - generic [ref=e530]:
+            - generic [ref=e531]: 🇰🇭
+            - heading "Cambodia" [level=3] [ref=e532]
+          - generic [ref=e533]:
+            - generic [ref=e534]:
+              - img [ref=e535]
+              - generic [ref=e538]: "Cities Visited:"
+            - generic [ref=e540]: Siem Reap
+          - paragraph [ref=e541]: Ancient temples and rich cultural heritage
+        - generic [ref=e542]:
+          - generic [ref=e543]:
+            - generic [ref=e544]: 🇻🇳
+            - heading "Vietnam" [level=3] [ref=e545]
+          - generic [ref=e546]:
+            - generic [ref=e547]:
+              - img [ref=e548]
+              - generic [ref=e551]: "Cities Visited:"
+            - generic [ref=e552]:
+              - generic [ref=e553]: Ho Chi Minh City
+              - generic [ref=e554]: Hanoi
+              - generic [ref=e555]: Ha Long Bay
+          - paragraph [ref=e556]: Bustling cities, rich history, and natural wonders
+        - generic [ref=e557]:
+          - generic [ref=e558]:
+            - generic [ref=e559]: 🇯🇵
+            - heading "Japan" [level=3] [ref=e560]
+          - generic [ref=e561]:
+            - generic [ref=e562]:
+              - img [ref=e563]
+              - generic [ref=e566]: "Cities Visited:"
+            - generic [ref=e567]:
+              - generic [ref=e568]: Tokyo
+              - generic [ref=e569]: Kyoto
+          - paragraph [ref=e570]: Modern innovation meets traditional culture
+        - generic [ref=e571]:
+          - generic [ref=e572]:
+            - generic [ref=e573]: 🇰🇷
+            - heading "South Korea" [level=3] [ref=e574]
+          - generic [ref=e575]:
+            - generic [ref=e576]:
+              - img [ref=e577]
+              - generic [ref=e580]: "Cities Visited:"
+            - generic [ref=e582]: Seoul
+          - paragraph [ref=e583]: K-culture, palaces, and incredible food
+        - generic [ref=e584]:
+          - generic [ref=e585]:
+            - generic [ref=e586]: 🇭🇰
+            - heading "Hong Kong" [level=3] [ref=e587]
+          - generic [ref=e588]:
+            - generic [ref=e589]:
+              - img [ref=e590]
+              - generic [ref=e593]: "Cities Visited:"
+            - generic [ref=e595]: Hong Kong
+          - paragraph [ref=e596]: Skyline views and dim sum delights
+        - generic [ref=e597]:
+          - generic [ref=e598]:
+            - generic [ref=e599]: 🇦🇺
+            - heading "Australia" [level=3] [ref=e600]
+          - generic [ref=e601]:
+            - generic [ref=e602]:
+              - img [ref=e603]
+              - generic [ref=e606]: "Cities Visited:"
+            - generic [ref=e608]: Melbourne
+          - paragraph [ref=e609]: Our new home - coffee culture and vibrant arts scene
+    - generic [ref=e611]:
+      - generic [ref=e612]:
+        - generic [ref=e613]:
+          - img [ref=e614]
+          - heading "Our Freedom Trail" [level=2] [ref=e616]
+          - img [ref=e617]
+        - paragraph [ref=e620]:
+          - text: Tracing our path of liberation across
+          - generic [ref=e621]: Asia
+          - text: and
+          - generic [ref=e622]: Australia
+          - text: "- where every pin marks a moment of discovery, growth, and the courage to explore beyond our comfort zones"
+      - generic [ref=e623]:
+        - generic [ref=e624]:
+          - generic [ref=e625]:
+            - img [ref=e626]
+            - heading "Our Journey Map" [level=3] [ref=e630]
+            - img [ref=e631]
+          - paragraph [ref=e633]: 13 destinations across 8 countries - each pin marks a moment of discovery
+        - generic [ref=e634]:
+          - generic [ref=e635]:
+            - generic [ref=e636]: "1"
+            - generic [ref=e637]: 🇮🇩
+            - generic [ref=e638]:
+              - heading "Bali, Indonesia" [level=4] [ref=e639]
+              - generic [ref=e640]:
+                - img [ref=e641]
+                - generic [ref=e644]: May 2023
+          - generic [ref=e645]:
+            - generic [ref=e646]: "2"
+            - generic [ref=e647]: 🇮🇩
+            - generic [ref=e648]:
+              - heading "Gili Islands, Indonesia" [level=4] [ref=e649]
+              - generic [ref=e650]:
+                - img [ref=e651]
+                - generic [ref=e654]: June 2023
+          - generic [ref=e655]:
+            - generic [ref=e656]: "3"
+            - generic [ref=e657]: 🇹🇭
+            - generic [ref=e658]:
+              - heading "Phi Phi Islands, Thailand" [level=4] [ref=e659]
+              - generic [ref=e660]:
+                - img [ref=e661]
+                - generic [ref=e664]: July 2023
+          - generic [ref=e665]:
+            - generic [ref=e666]: "4"
+            - generic [ref=e667]: 🇹🇭
+            - generic [ref=e668]:
+              - heading "Bangkok, Thailand" [level=4] [ref=e669]
+              - generic [ref=e670]:
+                - img [ref=e671]
+                - generic [ref=e674]: July 2023
+          - generic [ref=e675]:
+            - generic [ref=e676]: "5"
+            - generic [ref=e677]: 🇰🇭
+            - generic [ref=e678]:
+              - heading "Siem Reap, Cambodia" [level=4] [ref=e679]
+              - generic [ref=e680]:
+                - img [ref=e681]
+                - generic [ref=e684]: August 2023
+          - generic [ref=e685]:
+            - generic [ref=e686]: "6"
+            - generic [ref=e687]: 🇻🇳
+            - generic [ref=e688]:
+              - heading "Ho Chi Minh City, Vietnam" [level=4] [ref=e689]
+              - generic [ref=e690]:
+                - img [ref=e691]
+                - generic [ref=e694]: August 2023
+          - generic [ref=e695]:
+            - generic [ref=e696]: "7"
+            - generic [ref=e697]: 🇻🇳
+            - generic [ref=e698]:
+              - heading "Hanoi, Vietnam" [level=4] [ref=e699]
+              - generic [ref=e700]:
+                - img [ref=e701]
+                - generic [ref=e704]: September 2023
+          - generic [ref=e705]:
+            - generic [ref=e706]: "8"
+            - generic [ref=e707]: 🇻🇳
+            - generic [ref=e708]:
+              - heading "Ha Long Bay, Vietnam" [level=4] [ref=e709]
+              - generic [ref=e710]:
+                - img [ref=e711]
+                - generic [ref=e714]: September 2023
+          - generic [ref=e715]:
+            - generic [ref=e716]: "9"
+            - generic [ref=e717]: 🇯🇵
+            - generic [ref=e718]:
+              - heading "Tokyo, Japan" [level=4] [ref=e719]
+              - generic [ref=e720]:
+                - img [ref=e721]
+                - generic [ref=e724]: October 2023
+          - generic [ref=e725]:
+            - generic [ref=e726]: "10"
+            - generic [ref=e727]: 🇯🇵
+            - generic [ref=e728]:
+              - heading "Kyoto, Japan" [level=4] [ref=e729]
+              - generic [ref=e730]:
+                - img [ref=e731]
+                - generic [ref=e734]: October 2023
+          - generic [ref=e735]:
+            - generic [ref=e736]: "11"
+            - generic [ref=e737]: 🇰🇷
+            - generic [ref=e738]:
+              - heading "Seoul, South Korea" [level=4] [ref=e739]
+              - generic [ref=e740]:
+                - img [ref=e741]
+                - generic [ref=e744]: November 2023
+          - generic [ref=e745]:
+            - generic [ref=e746]: "12"
+            - generic [ref=e747]: 🇭🇰
+            - generic [ref=e748]:
+              - heading "Hong Kong" [level=4] [ref=e749]
+              - generic [ref=e750]:
+                - img [ref=e751]
+                - generic [ref=e754]: November 2023
+          - generic [ref=e755]:
+            - generic [ref=e756]: "13"
+            - generic [ref=e757]: 🇦🇺
+            - generic [ref=e758]:
+              - heading "Melbourne, Australia" [level=4] [ref=e759]
+              - generic [ref=e760]:
+                - img [ref=e761]
+                - generic [ref=e764]: December 2023
+        - generic [ref=e766]:
+          - generic [ref=e767]:
+            - generic [ref=e768]: "13"
+            - generic [ref=e769]: Destinations
+          - generic [ref=e770]:
+            - generic [ref=e771]: "8"
+            - generic [ref=e772]: Countries
+          - generic [ref=e773]:
+            - generic [ref=e774]: "8"
+            - generic [ref=e775]: Months
+          - generic [ref=e776]:
+            - generic [ref=e777]: ∞
+            - generic [ref=e778]: Memories
+    - generic [ref=e781]:
+      - generic [ref=e782]:
+        - generic [ref=e783]:
+          - img [ref=e784]
+          - heading "Our Journey in Songs" [level=2] [ref=e788]
+          - img [ref=e789]
+        - paragraph [ref=e791]: The romantic playlist that soundtracks our adventure together - from first meetings in Bali to building our home in Melbourne
+        - img [ref=e794]
+      - generic [ref=e800]:
+        - generic [ref=e801]:
+          - generic [ref=e802]:
+            - img [ref=e804]
+            - img [ref=e809]
+            - img [ref=e814]
+          - heading "Loading Our Playlist..." [level=3] [ref=e818]
+          - paragraph [ref=e819]: Preparing the soundtrack to our journey
+        - iframe [ref=e820]:
+          
+      - generic [ref=e822]:
+        - heading "The Soundtrack to Our Love Story" [level=3] [ref=e823]
+        - generic [ref=e824]:
+          - generic [ref=e825]:
+            - img [ref=e827]
+            - heading "Beautiful Moments" [level=4] [ref=e829]
+            - paragraph [ref=e830]: Songs that capture Sophie's beautiful moments
+          - generic [ref=e831]:
+            - img [ref=e833]
+            - heading "Adventure Anthems" [level=4] [ref=e835]
+            - paragraph [ref=e836]: Tracks that fueled Sophie's exploration across countries
+          - generic [ref=e837]:
+            - img [ref=e839]
+            - heading "Memory Lane" [level=4] [ref=e843]
+            - paragraph [ref=e844]: Melodies that celebrate Sophie's special places
+        - paragraph [ref=e846]:
+          - text: "\"Music is the soundtrack of life, and this playlist holds the melodies that celebrate Sophie as she discovered"
+          - generic [ref=e847]: freedom
+          - text: ","
+          - generic [ref=e848]: adventure
+          - text: ", and"
+          - generic [ref=e849]: her own path
+          - text: across the world."
+    - generic [ref=e851]:
+      - img [ref=e853]
+      - blockquote [ref=e857]:
+        - text: "\""
+        - generic [ref=e858]: Freedom
+        - text: is not worth having if it does not include the freedom to make
+        - generic [ref=e859]: mistakes
+        - text: ", to"
+        - generic [ref=e860]: explore
+        - text: ", and to"
+        - generic [ref=e861]: love
+        - text: without boundaries."
+      - img [ref=e863]
+      - paragraph [ref=e865]: Our philosophy on this incredible journey together
+    - generic [ref=e867]:
+      - generic [ref=e868]:
+        - generic [ref=e869]:
+          - generic [ref=e870]:
+            - generic [ref=e871]:
+              - img [ref=e872]
+              - img [ref=e874]
+            - heading "Sophie & You" [level=3] [ref=e878]
+          - paragraph [ref=e879]: A journey of love, freedom, and endless discovery
+          - paragraph [ref=e880]: Breaking boundaries, creating memories, building dreams
+        - generic [ref=e881]:
+          - generic [ref=e882]:
+            - generic [ref=e883]:
+              - generic [ref=e884]: "8"
+              - generic [ref=e885]: Countries
+            - generic [ref=e886]:
+              - generic [ref=e887]: "13"
+              - generic [ref=e888]: Cities
+            - generic [ref=e889]:
+              - generic [ref=e890]: "1"
+              - generic [ref=e891]: Love Story
+          - generic [ref=e892]:
+            - generic [ref=e893]: Crafted with
+            - img [ref=e894]
+            - generic [ref=e896]: and
+            - img [ref=e897]
+            - generic [ref=e901]: in 2025
+      - generic [ref=e902]:
+        - generic [ref=e903]:
+          - img [ref=e904]
+          - img [ref=e906]
+          - img [ref=e909]
+        - blockquote [ref=e911]:
+          - text: "\""
+          - generic [ref=e912]: Freedom
+          - text: is not a destination, but a way of traveling.
+          - generic [ref=e913]: Love
+          - text: is not a place to arrive, but a
+          - generic [ref=e914]: journey
+          - text: to share."
+        - paragraph [ref=e915]: Our philosophy of liberation through love and adventure
+  - alert [ref=e916]
+```

@@ -1,22 +1,22 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import WelcomeInfo from '@/components/WelcomeInfo'
-import Authority from '@/components/Authority'
-import LessonCards from '@/components/LessonCards'
+import CourseOverview from '@/components/CourseOverview'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import InstructorProfiles from '@/components/InstructorProfiles'
 import Testimonials from '@/components/Testimonials'
-import StaticGallery from '@/components/StaticGallery'
+import BookingSection from '@/components/BookingSection'
 import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main id="main-content" className="min-h-screen">
+    <main className="min-h-screen">
       <Header />
       <Hero />
-      <WelcomeInfo />
-      <Authority />
-      <LessonCards />
+      <CourseOverview />
+      <WhyChooseUs />
+      <InstructorProfiles />
       <Testimonials />
-      <StaticGallery />
+      <BookingSection />
       <Footer />
     </main>
   )

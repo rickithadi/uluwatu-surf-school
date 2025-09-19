@@ -6,7 +6,13 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "analyze": "ANALYZE=true next build",
+    "check-performance": "npm run build && node scripts/performance-check.js",
+    "perf-test": "npm run build && npm run test -- tests/performance.spec.ts"
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
@@ -17,12 +23,15 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "web-vitals": "^5.1.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.55.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "axe-playwright": "^2.2.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
     "postcss": "^8",

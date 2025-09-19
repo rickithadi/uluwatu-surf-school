@@ -7,6 +7,10 @@
     "  \u23bf \u00a0API Error: Claude's response exceeded the 32000 output token maximum. To configure this behavior, set the CLAUDE_CODE_MAX_OUTPUT_TOKENS environment variable.",
     "[Image #1] you do it please",
     "remove Live Conditions\nWave:\n3-4ft\nWind:\n5kts offshore\nTide:\nMid rising\nWater:\n28\u00b0C\n\n",
-    "push"
+    "push",
+    "=do it with github cli",
+    "@agent-ui-ux-dev-team-coordinator base it of https://claude.ai/public/artifacts/db773c6d-8f7c-49a5-8e9c-33806394158e",
+    "run it",
+    "go"
   ]
 }

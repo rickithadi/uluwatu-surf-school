@@ -9,7 +9,7 @@ interface StaggerChildrenProps {
   staggerDelay?: number
 }
 
-export default function StaggerChildren({
+export function StaggerChildren({
   children,
   className = '',
   staggerDelay = 0.1
@@ -27,14 +27,7 @@ export default function StaggerChildren({
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: [0.25, 0.25, 0, 1]
-      }
-    }
+    visible: { y: 0, opacity: 1 }
   }
 
   return (
@@ -56,3 +49,5 @@ export default function StaggerChildren({
     </motion.div>
   )
 }
+
+export default StaggerChildren

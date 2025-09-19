@@ -1,0 +1,2396 @@
+<testsuites id="" name="" tests="75" failures="45" skipped="0" errors="0" time="234.972266">
+<testsuite name="accessibility.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="chromium" tests="6" failures="1" skipped="0" time="46.389" errors="0">
+<testcase name="Accessibility Tests › should not have any accessibility violations" classname="accessibility.spec.ts" time="10.033">
+<failure message="accessibility.spec.ts:10:7 should not have any accessibility violations" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.ts:10:7 › Accessibility Tests › should not have any accessibility violations 
+
+    AssertionError: 1 accessibility violation was detected
+
+    1 !== 0
+
+        at testResultDependsOnViolations (/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/utils.js:16:26)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/index.js:143:51
+        at fulfilled (/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/index.js:28:58)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[┌─────────┬──────────────────┬───────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│ (index) │ id               │ impact    │ description                                                                                                      │ nodes │
+├─────────┼──────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│ 0       │ [32m'color-contrast'[39m │ [32m'serious'[39m │ [32m'Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds'[39m │ [33m12[39m    │
+└─────────┴──────────────────┴───────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘
+┌─────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────┬────────────┐
+│ (index) │ target                                                                                                                           │ html                                                                                        │ violations │
+├─────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┼────────────┤
+│ 0       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-sunrise-600.font-semibold"]'[39m                                               │ [32m'<span class="text-freedom-sunrise-600 font-semibold">freedom</span>'[39m                       │ [32m'[0]'[39m      │
+│ 1       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-ocean-600.font-semibold"]'[39m                                                 │ [32m'<span class="text-freedom-ocean-600 font-semibold"> adventure</span>'[39m                      │ [32m'[0]'[39m      │
+│ 2       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-nature-600.font-semibold"]'[39m                                                │ [32m'<span class="text-freedom-nature-600 font-semibold">discovery</span>'[39m                      │ [32m'[0]'[39m      │
+│ 3       │ [32m'[".text-freedom-nature-600.text-2xl.font-semibold"]'[39m                                                                            │ [32m'<span class="text-freedom-nature-600 font-semibold text-2xl">8 countries</span>'[39m           │ [32m'[0]'[39m      │
+│ 4       │ [32m'[".text-freedom-ocean-600.text-2xl.font-semibold"]'[39m                                                                             │ [32m'<span class="text-freedom-ocean-600 font-semibold text-2xl">13 cities</span>'[39m              │ [32m'[0]'[39m      │
+│ 5       │ [32m'[".text-freedom-sunrise-600.text-2xl.font-semibold"]'[39m                                                                           │ [32m'<span class="text-freedom-sunrise-600 font-semibold text-2xl">countless adventures</span>'[39m │ [32m'[0]'[39m      │
+│ 6       │ [32m'[".max-w-7xl.z-10.mx-auto > .mb-16.text-center > .max-w-4xl.text-xl.leading-relaxed > .text-freedom-ocean-600.font-semibold"]'[39m  │ [32m'<span class="text-freedom-ocean-600 font-semibold">Asia</span>'[39m                            │ [32m'[0]'[39m      │
+│ 7       │ [32m'[".max-w-7xl.z-10.mx-auto > .mb-16.text-center > .max-w-4xl.text-xl.leading-relaxed > .text-freedom-nature-600.font-semibold"]'[39m │ [32m'<span class="text-freedom-nature-600 font-semibold">Australia</span>'[39m                      │ [32m'[0]'[39m      │
+│ 8       │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-ocean-600.font-semibold"]'[39m                                     │ [32m'<span class="text-freedom-ocean-600 font-semibold">freedom</span>'[39m                         │ [32m'[0]'[39m      │
+│ 9       │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-nature-600.font-semibold"]'[39m                                    │ [32m'<span class="text-freedom-nature-600 font-semibold">adventure</span>'[39m                      │ [32m'[0]'[39m      │
+│ 10      │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-sunrise-600.font-semibold"]'[39m                                   │ [32m'<span class="text-freedom-sunrise-600 font-semibold">her own path</span>'[39m                  │ [32m'[0]'[39m      │
+│ 11      │ [32m'["blockquote > .text-freedom-sunrise-300"]'[39m                                                                                     │ [32m'<span class="text-freedom-sunrise-300">Freedom</span>'[39m                                     │ [32m'[0]'[39m      │
+└─────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────┴────────────┘
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-chromium/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have proper heading hierarchy" classname="accessibility.spec.ts" time="9.626">
+<system-out>
+<![CDATA[Heading hierarchy: [
+  [32m'Sophie '[39m,
+  [32m"Sophie's Story of Freedom"[39m,
+  [32m'Freedom to Explore'[39m,
+  [32m'Love Unbound'[39m,
+  [32m'New Beginnings'[39m,
+  [32m'Journey Highlights'[39m,
+  [32m'Our Favorite Moments'[39m,
+  [32m'Our Journey of Liberation'[39m,
+  [32m'First Meeting in Bali'[39m,
+  [32m'Gili Islands Adventure'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok Exploration'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City'[39m,
+  [32m'Hanoi Adventures'[39m,
+  [32m'Ha Long Bay'[39m,
+  [32m'Tokyo Discoveries'[39m,
+  [32m'Kyoto Culture'[39m,
+  [32m'Seoul Adventures'[39m,
+  [32m'Hong Kong Heights'[39m,
+  [32m'Melbourne Home'[39m,
+  [32m'Countries We Liberated Our Spirits In'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Thailand'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Vietnam'[39m,
+  [32m'Japan'[39m,
+  [32m'South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Australia'[39m,
+  [32m'Our Freedom Trail'[39m,
+  [32m'Our Journey Map'[39m,
+  [32m'Bali, Indonesia'[39m,
+  [32m'Gili Islands, Indonesia'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok, Thailand'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City, Vietnam'[39m,
+  [32m'Hanoi, Vietnam'[39m,
+  [32m'Ha Long Bay, Vietnam'[39m,
+  [32m'Tokyo, Japan'[39m,
+  [32m'Kyoto, Japan'[39m,
+  [32m'Seoul, South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Melbourne, Australia'[39m,
+  [32m'Our Journey in Songs'[39m,
+  [32m'Loading Our Playlist...'[39m,
+  [32m'The Soundtrack to Our Love Story'[39m,
+  [32m'Beautiful Moments'[39m,
+  [32m'Adventure Anthems'[39m,
+  [32m'Memory Lane'[39m,
+  [32m'Sophie & You'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have keyboard navigation support" classname="accessibility.spec.ts" time="9.396">
+</testcase>
+<testcase name="Accessibility Tests › should have proper alt text for images" classname="accessibility.spec.ts" time="9.854">
+</testcase>
+<testcase name="Accessibility Tests › should have proper color contrast" classname="accessibility.spec.ts" time="4.189">
+</testcase>
+<testcase name="Accessibility Tests › should have proper form labels" classname="accessibility.spec.ts" time="3.291">
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="chromium" tests="6" failures="6" skipped="0" time="102.523" errors="0">
+<testcase name="Homepage › should load successfully" classname="homepage.spec.ts" time="15.254">
+<failure message="homepage.spec.ts:8:7 should load successfully" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:8:7 › Homepage › should load successfully ──────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Uluwatu Surf School/
+    Received string:  "Sophie ♥ | A Journey of Freedom"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        8 × unexpected value "Sophie ♥ | A Journey of Freedom"
+
+
+       7 |
+       8 |   test('should load successfully', async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Uluwatu Surf School/)
+         |                        ^
+      10 |   })
+      11 |
+      12 |   test('should display main navigation', async ({ page }) => {
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-load-successfully-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-chromium/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="19.783">
+<failure message="homepage.spec.ts:12:7 should display main navigation" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:12:7 › Homepage › should display main navigation ───────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('header')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('header')
+
+
+      12 |   test('should display main navigation', async ({ page }) => {
+      13 |     // Check if header exists
+    > 14 |     await expect(page.locator('header')).toBeVisible()
+         |                                          ^
+      15 |     
+      16 |     // Check navigation items
+      17 |     const navItems = ['Home', 'About', 'Courses', 'Instructors', 'Contact']
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:14:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-main-navigation-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-chromium/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display hero section" classname="homepage.spec.ts" time="16.124">
+<failure message="homepage.spec.ts:23:7 should display hero section" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:23:7 › Homepage › should display hero section ──────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      22 |
+      23 |   test('should display hero section', async ({ page }) => {
+    > 24 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      25 |     await expect(page.getByText(/Experience world-class surf coaching/)).toBeVisible()
+      26 |     
+      27 |     // Check CTA buttons
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:24:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-hero-section-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-chromium/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display stats overlay" classname="homepage.spec.ts" time="19.659">
+<failure message="homepage.spec.ts:32:7 should display stats overlay" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:32:7 › Homepage › should display stats overlay ─────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByText('15+')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('15+')
+
+
+      31 |
+      32 |   test('should display stats overlay', async ({ page }) => {
+    > 33 |     await expect(page.getByText('15+')).toBeVisible()
+         |                                         ^
+      34 |     await expect(page.getByText('Years Experience')).toBeVisible()
+      35 |     await expect(page.getByText('2000+')).toBeVisible()
+      36 |     await expect(page.getByText('Students Taught')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:33:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-stats-overlay-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-chromium/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should be mobile responsive" classname="homepage.spec.ts" time="14.354">
+<failure message="homepage.spec.ts:39:7 should be mobile responsive" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:39:7 › Homepage › should be mobile responsive ──────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      42 |     
+      43 |     // Hero section should still be visible
+    > 44 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      45 |     
+      46 |     // Mobile menu button should be visible
+      47 |     await expect(page.locator('button[aria-label="Toggle menu"]')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:44:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-be-mobile-responsive-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-chromium/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should have accessible navigation" classname="homepage.spec.ts" time="17.349">
+<failure message="homepage.spec.ts:50:7 should have accessible navigation" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:50:7 › Homepage › should have accessible navigation ────────────────
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  getByText('Skip to main content')
+    Expected: in viewport
+    Received: viewport ratio 0
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeInViewport" with timeout 5000ms
+      - waiting for getByText('Skip to main content')
+        8 × locator resolved to <a class="skip-link" href="#main-content">Skip to main content</a>
+          - unexpected value "viewport ratio 0"
+
+
+      50 |   test('should have accessible navigation', async ({ page }) => {
+      51 |     // Check skip link
+    > 52 |     await expect(page.getByText('Skip to main content')).toBeInViewport()
+         |                                                          ^
+      53 |     
+      54 |     // Check heading hierarchy
+      55 |     const h1 = page.locator('h1')
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:52:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-have-accessible-navigation-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-chromium/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="performance.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="chromium" tests="3" failures="3" skipped="0" time="91.821" errors="0">
+<testcase name="Performance Tests › should meet Core Web Vitals thresholds" classname="performance.spec.ts" time="40.242">
+<failure message="performance.spec.ts:4:7 should meet Core Web Vitals thresholds" type="FAILURE">
+<![CDATA[  [chromium] › performance.spec.ts:4:7 › Performance Tests › should meet Core Web Vitals thresholds 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.evaluate: Test timeout of 30000ms exceeded.
+
+      10 |
+      11 |     // Get Web Vitals metrics
+    > 12 |     const metrics = await page.evaluate(() => {
+         |                                ^
+      13 |       return new Promise((resolve) => {
+      14 |         const vitals = {}
+      15 |         
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:12:32
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-chromium/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should load images efficiently" classname="performance.spec.ts" time="40.327">
+<failure message="performance.spec.ts:49:7 should load images efficiently" type="FAILURE">
+<![CDATA[  [chromium] › performance.spec.ts:49:7 › Performance Tests › should load images efficiently ───────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 1048576
+    Received:   2225645
+
+      76 |       if (request.size > 0) {
+      77 |         // Images should be under 1MB for web optimization
+    > 78 |         expect(request.size).toBeLessThan(1024 * 1024)
+         |                              ^
+      79 |         console.log(`Image: ${request.url.split('/').pop()} - ${Math.round(request.size / 1024)}KB`)
+      80 |       }
+      81 |     }
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:78:30
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Tests-should-load-images-efficiently-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Tests-should-load-images-efficiently-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|performance-Performance-Tests-should-load-images-efficiently-chromium/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Tests-should-load-images-efficiently-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should have fast page load times" classname="performance.spec.ts" time="11.252">
+<failure message="performance.spec.ts:84:7 should have fast page load times" type="FAILURE">
+<![CDATA[  [chromium] › performance.spec.ts:84:7 › Performance Tests › should have fast page load times ─────
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 1500
+    Received:   2852
+
+       97 |
+       98 |     // DOM should load within 1.5 seconds
+    >  99 |     expect(domLoadTime).toBeLessThan(1500)
+          |                         ^
+      100 |     
+      101 |     // Full page should load within 3 seconds
+      102 |     expect(fullLoadTime).toBeLessThan(3000)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:99:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[DOM Load Time: 2852ms
+Full Load Time: 2970ms
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-chromium/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="accessibility.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="firefox" tests="6" failures="1" skipped="0" time="81.903" errors="0">
+<testcase name="Accessibility Tests › should not have any accessibility violations" classname="accessibility.spec.ts" time="15.615">
+<failure message="accessibility.spec.ts:10:7 should not have any accessibility violations" type="FAILURE">
+<![CDATA[  [firefox] › accessibility.spec.ts:10:7 › Accessibility Tests › should not have any accessibility violations 
+
+    AssertionError: 1 accessibility violation was detected
+
+    1 !== 0
+
+        at testResultDependsOnViolations (/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/utils.js:16:26)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/index.js:143:51
+        at fulfilled (/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/index.js:28:58)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[┌─────────┬──────────────────┬───────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│ (index) │ id               │ impact    │ description                                                                                                      │ nodes │
+├─────────┼──────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│ 0       │ [32m'color-contrast'[39m │ [32m'serious'[39m │ [32m'Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds'[39m │ [33m12[39m    │
+└─────────┴──────────────────┴───────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘
+┌─────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────┬────────────┐
+│ (index) │ target                                                                                                                           │ html                                                                                        │ violations │
+├─────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┼────────────┤
+│ 0       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-sunrise-600.font-semibold"]'[39m                                               │ [32m'<span class="text-freedom-sunrise-600 font-semibold">freedom</span>'[39m                       │ [32m'[0]'[39m      │
+│ 1       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-ocean-600.font-semibold"]'[39m                                                 │ [32m'<span class="text-freedom-ocean-600 font-semibold"> adventure</span>'[39m                      │ [32m'[0]'[39m      │
+│ 2       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-nature-600.font-semibold"]'[39m                                                │ [32m'<span class="text-freedom-nature-600 font-semibold">discovery</span>'[39m                      │ [32m'[0]'[39m      │
+│ 3       │ [32m'[".text-freedom-nature-600.text-2xl.font-semibold"]'[39m                                                                            │ [32m'<span class="text-freedom-nature-600 font-semibold text-2xl">8 countries</span>'[39m           │ [32m'[0]'[39m      │
+│ 4       │ [32m'[".text-freedom-ocean-600.text-2xl.font-semibold"]'[39m                                                                             │ [32m'<span class="text-freedom-ocean-600 font-semibold text-2xl">13 cities</span>'[39m              │ [32m'[0]'[39m      │
+│ 5       │ [32m'[".text-freedom-sunrise-600.text-2xl.font-semibold"]'[39m                                                                           │ [32m'<span class="text-freedom-sunrise-600 font-semibold text-2xl">countless adventures</span>'[39m │ [32m'[0]'[39m      │
+│ 6       │ [32m'[".max-w-7xl.z-10.mx-auto > .mb-16.text-center > .max-w-4xl.text-xl.leading-relaxed > .text-freedom-ocean-600.font-semibold"]'[39m  │ [32m'<span class="text-freedom-ocean-600 font-semibold">Asia</span>'[39m                            │ [32m'[0]'[39m      │
+│ 7       │ [32m'[".max-w-7xl.z-10.mx-auto > .mb-16.text-center > .max-w-4xl.text-xl.leading-relaxed > .text-freedom-nature-600.font-semibold"]'[39m │ [32m'<span class="text-freedom-nature-600 font-semibold">Australia</span>'[39m                      │ [32m'[0]'[39m      │
+│ 8       │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-ocean-600.font-semibold"]'[39m                                     │ [32m'<span class="text-freedom-ocean-600 font-semibold">freedom</span>'[39m                         │ [32m'[0]'[39m      │
+│ 9       │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-nature-600.font-semibold"]'[39m                                    │ [32m'<span class="text-freedom-nature-600 font-semibold">adventure</span>'[39m                      │ [32m'[0]'[39m      │
+│ 10      │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-sunrise-600.font-semibold"]'[39m                                   │ [32m'<span class="text-freedom-sunrise-600 font-semibold">her own path</span>'[39m                  │ [32m'[0]'[39m      │
+│ 11      │ [32m'["blockquote > .text-freedom-sunrise-300"]'[39m                                                                                     │ [32m'<span class="text-freedom-sunrise-300">Freedom</span>'[39m                                     │ [32m'[0]'[39m      │
+└─────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────┴────────────┘
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-firefox/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have proper heading hierarchy" classname="accessibility.spec.ts" time="7.6">
+<system-out>
+<![CDATA[Heading hierarchy: [
+  [32m'Sophie '[39m,
+  [32m"Sophie's Story of Freedom"[39m,
+  [32m'Freedom to Explore'[39m,
+  [32m'Love Unbound'[39m,
+  [32m'New Beginnings'[39m,
+  [32m'Journey Highlights'[39m,
+  [32m'Our Favorite Moments'[39m,
+  [32m'Our Journey of Liberation'[39m,
+  [32m'First Meeting in Bali'[39m,
+  [32m'Gili Islands Adventure'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok Exploration'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City'[39m,
+  [32m'Hanoi Adventures'[39m,
+  [32m'Ha Long Bay'[39m,
+  [32m'Tokyo Discoveries'[39m,
+  [32m'Kyoto Culture'[39m,
+  [32m'Seoul Adventures'[39m,
+  [32m'Hong Kong Heights'[39m,
+  [32m'Melbourne Home'[39m,
+  [32m'Countries We Liberated Our Spirits In'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Thailand'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Vietnam'[39m,
+  [32m'Japan'[39m,
+  [32m'South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Australia'[39m,
+  [32m'Our Freedom Trail'[39m,
+  [32m'Our Journey Map'[39m,
+  [32m'Bali, Indonesia'[39m,
+  [32m'Gili Islands, Indonesia'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok, Thailand'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City, Vietnam'[39m,
+  [32m'Hanoi, Vietnam'[39m,
+  [32m'Ha Long Bay, Vietnam'[39m,
+  [32m'Tokyo, Japan'[39m,
+  [32m'Kyoto, Japan'[39m,
+  [32m'Seoul, South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Melbourne, Australia'[39m,
+  [32m'Our Journey in Songs'[39m,
+  [32m'Loading Our Playlist...'[39m,
+  [32m'The Soundtrack to Our Love Story'[39m,
+  [32m'Beautiful Moments'[39m,
+  [32m'Adventure Anthems'[39m,
+  [32m'Memory Lane'[39m,
+  [32m'Sophie & You'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have keyboard navigation support" classname="accessibility.spec.ts" time="17.066">
+</testcase>
+<testcase name="Accessibility Tests › should have proper alt text for images" classname="accessibility.spec.ts" time="14.497">
+</testcase>
+<testcase name="Accessibility Tests › should have proper color contrast" classname="accessibility.spec.ts" time="15.952">
+</testcase>
+<testcase name="Accessibility Tests › should have proper form labels" classname="accessibility.spec.ts" time="11.173">
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="firefox" tests="6" failures="6" skipped="0" time="85.187" errors="0">
+<testcase name="Homepage › should load successfully" classname="homepage.spec.ts" time="14.326">
+<failure message="homepage.spec.ts:8:7 should load successfully" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:8:7 › Homepage › should load successfully ───────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Uluwatu Surf School/
+    Received string:  "Sophie ♥ | A Journey of Freedom"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        8 × unexpected value "Sophie ♥ | A Journey of Freedom"
+
+
+       7 |
+       8 |   test('should load successfully', async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Uluwatu Surf School/)
+         |                        ^
+      10 |   })
+      11 |
+      12 |   test('should display main navigation', async ({ page }) => {
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-load-successfully-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-firefox/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="15.83">
+<failure message="homepage.spec.ts:12:7 should display main navigation" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:12:7 › Homepage › should display main navigation ────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('header')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('header')
+
+
+      12 |   test('should display main navigation', async ({ page }) => {
+      13 |     // Check if header exists
+    > 14 |     await expect(page.locator('header')).toBeVisible()
+         |                                          ^
+      15 |     
+      16 |     // Check navigation items
+      17 |     const navItems = ['Home', 'About', 'Courses', 'Instructors', 'Contact']
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:14:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-main-navigation-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-firefox/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display hero section" classname="homepage.spec.ts" time="13.515">
+<failure message="homepage.spec.ts:23:7 should display hero section" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:23:7 › Homepage › should display hero section ───────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      22 |
+      23 |   test('should display hero section', async ({ page }) => {
+    > 24 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      25 |     await expect(page.getByText(/Experience world-class surf coaching/)).toBeVisible()
+      26 |     
+      27 |     // Check CTA buttons
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:24:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-hero-section-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-firefox/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display stats overlay" classname="homepage.spec.ts" time="11.761">
+<failure message="homepage.spec.ts:32:7 should display stats overlay" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:32:7 › Homepage › should display stats overlay ──────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByText('15+')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('15+')
+
+
+      31 |
+      32 |   test('should display stats overlay', async ({ page }) => {
+    > 33 |     await expect(page.getByText('15+')).toBeVisible()
+         |                                         ^
+      34 |     await expect(page.getByText('Years Experience')).toBeVisible()
+      35 |     await expect(page.getByText('2000+')).toBeVisible()
+      36 |     await expect(page.getByText('Students Taught')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:33:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-stats-overlay-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-firefox/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should be mobile responsive" classname="homepage.spec.ts" time="15.259">
+<failure message="homepage.spec.ts:39:7 should be mobile responsive" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:39:7 › Homepage › should be mobile responsive ───────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      42 |     
+      43 |     // Hero section should still be visible
+    > 44 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      45 |     
+      46 |     // Mobile menu button should be visible
+      47 |     await expect(page.locator('button[aria-label="Toggle menu"]')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:44:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-be-mobile-responsive-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-firefox/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should have accessible navigation" classname="homepage.spec.ts" time="14.496">
+<failure message="homepage.spec.ts:50:7 should have accessible navigation" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:50:7 › Homepage › should have accessible navigation ─────────────────
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  getByText('Skip to main content')
+    Expected: in viewport
+    Received: viewport ratio 0
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeInViewport" with timeout 5000ms
+      - waiting for getByText('Skip to main content')
+        7 × locator resolved to <a class="skip-link" href="#main-content">Skip to main content</a>
+          - unexpected value "viewport ratio 0"
+
+
+      50 |   test('should have accessible navigation', async ({ page }) => {
+      51 |     // Check skip link
+    > 52 |     await expect(page.getByText('Skip to main content')).toBeInViewport()
+         |                                                          ^
+      53 |     
+      54 |     // Check heading hierarchy
+      55 |     const h1 = page.locator('h1')
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:52:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-have-accessible-navigation-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-firefox/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="performance.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="firefox" tests="3" failures="3" skipped="0" time="28.728" errors="0">
+<testcase name="Performance Tests › should meet Core Web Vitals thresholds" classname="performance.spec.ts" time="9.938">
+<failure message="performance.spec.ts:4:7 should meet Core Web Vitals thresholds" type="FAILURE">
+<![CDATA[  [firefox] › performance.spec.ts:4:7 › Performance Tests › should meet Core Web Vitals thresholds ─
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      41 |
+      42 |     // Assert LCP is under 2.5 seconds (good threshold)
+    > 43 |     expect(metrics.lcp).toBeLessThan(2500)
+         |                         ^
+      44 |     
+      45 |     // Assert CLS is under 0.1 (good threshold)
+      46 |     expect(metrics.cls).toBeLessThan(0.1)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:43:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Web Vitals: {}
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-firefox/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should load images efficiently" classname="performance.spec.ts" time="10.231">
+<failure message="performance.spec.ts:49:7 should load images efficiently" type="FAILURE">
+<![CDATA[  [firefox] › performance.spec.ts:49:7 › Performance Tests › should load images efficiently ────────
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 1048576
+    Received:   2225645
+
+      76 |       if (request.size > 0) {
+      77 |         // Images should be under 1MB for web optimization
+    > 78 |         expect(request.size).toBeLessThan(1024 * 1024)
+         |                              ^
+      79 |         console.log(`Image: ${request.url.split('/').pop()} - ${Math.round(request.size / 1024)}KB`)
+      80 |       }
+      81 |     }
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:78:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Tests-should-load-images-efficiently-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Tests-should-load-images-efficiently-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Tests-should-load-images-efficiently-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|performance-Performance-Tests-should-load-images-efficiently-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|performance-Performance-Tests-should-load-images-efficiently-firefox/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Tests-should-load-images-efficiently-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should have fast page load times" classname="performance.spec.ts" time="8.559">
+<failure message="performance.spec.ts:84:7 should have fast page load times" type="FAILURE">
+<![CDATA[  [firefox] › performance.spec.ts:84:7 › Performance Tests › should have fast page load times ──────
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 3000
+    Received:   5294
+
+      100 |     
+      101 |     // Full page should load within 3 seconds
+    > 102 |     expect(fullLoadTime).toBeLessThan(3000)
+          |                          ^
+      103 |   })
+      104 | })
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:102:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[DOM Load Time: 980ms
+Full Load Time: 5294ms
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-firefox/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="accessibility.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="webkit" tests="6" failures="2" skipped="0" time="70.853" errors="0">
+<testcase name="Accessibility Tests › should not have any accessibility violations" classname="accessibility.spec.ts" time="18.871">
+<failure message="accessibility.spec.ts:10:7 should not have any accessibility violations" type="FAILURE">
+<![CDATA[  [webkit] › accessibility.spec.ts:10:7 › Accessibility Tests › should not have any accessibility violations 
+
+    AssertionError: 1 accessibility violation was detected
+
+    1 !== 0
+
+        at testResultDependsOnViolations (/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/utils.js:16:26)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/index.js:143:51
+        at fulfilled (/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/node_modules/axe-playwright/dist/index.js:28:58)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-24333-ny-accessibility-violations-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[┌─────────┬──────────────────┬───────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│ (index) │ id               │ impact    │ description                                                                                                      │ nodes │
+├─────────┼──────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│ 0       │ [32m'color-contrast'[39m │ [32m'serious'[39m │ [32m'Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds'[39m │ [33m12[39m    │
+└─────────┴──────────────────┴───────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘
+┌─────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────┬────────────┐
+│ (index) │ target                                                                                                                           │ html                                                                                        │ violations │
+├─────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────┼────────────┤
+│ 0       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-sunrise-600.font-semibold"]'[39m                                               │ [32m'<span class="text-freedom-sunrise-600 font-semibold">freedom</span>'[39m                       │ [32m'[0]'[39m      │
+│ 1       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-ocean-600.font-semibold"]'[39m                                                 │ [32m'<span class="text-freedom-ocean-600 font-semibold"> adventure</span>'[39m                      │ [32m'[0]'[39m      │
+│ 2       │ [32m'[".max-w-3xl.text-xl.leading-relaxed > .text-freedom-nature-600.font-semibold"]'[39m                                                │ [32m'<span class="text-freedom-nature-600 font-semibold">discovery</span>'[39m                      │ [32m'[0]'[39m      │
+│ 3       │ [32m'[".text-freedom-nature-600.text-2xl.font-semibold"]'[39m                                                                            │ [32m'<span class="text-freedom-nature-600 font-semibold text-2xl">8 countries</span>'[39m           │ [32m'[0]'[39m      │
+│ 4       │ [32m'[".text-freedom-ocean-600.text-2xl.font-semibold"]'[39m                                                                             │ [32m'<span class="text-freedom-ocean-600 font-semibold text-2xl">13 cities</span>'[39m              │ [32m'[0]'[39m      │
+│ 5       │ [32m'[".text-freedom-sunrise-600.text-2xl.font-semibold"]'[39m                                                                           │ [32m'<span class="text-freedom-sunrise-600 font-semibold text-2xl">countless adventures</span>'[39m │ [32m'[0]'[39m      │
+│ 6       │ [32m'[".max-w-7xl.z-10.mx-auto > .mb-16.text-center > .max-w-4xl.text-xl.leading-relaxed > .text-freedom-ocean-600.font-semibold"]'[39m  │ [32m'<span class="text-freedom-ocean-600 font-semibold">Asia</span>'[39m                            │ [32m'[0]'[39m      │
+│ 7       │ [32m'[".max-w-7xl.z-10.mx-auto > .mb-16.text-center > .max-w-4xl.text-xl.leading-relaxed > .text-freedom-nature-600.font-semibold"]'[39m │ [32m'<span class="text-freedom-nature-600 font-semibold">Australia</span>'[39m                      │ [32m'[0]'[39m      │
+│ 8       │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-ocean-600.font-semibold"]'[39m                                     │ [32m'<span class="text-freedom-ocean-600 font-semibold">freedom</span>'[39m                         │ [32m'[0]'[39m      │
+│ 9       │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-nature-600.font-semibold"]'[39m                                    │ [32m'<span class="text-freedom-nature-600 font-semibold">adventure</span>'[39m                      │ [32m'[0]'[39m      │
+│ 10      │ [32m'[".text-freedom-cloud-700.leading-relaxed.italic > .text-freedom-sunrise-600.font-semibold"]'[39m                                   │ [32m'<span class="text-freedom-sunrise-600 font-semibold">her own path</span>'[39m                  │ [32m'[0]'[39m      │
+│ 11      │ [32m'["blockquote > .text-freedom-sunrise-300"]'[39m                                                                                     │ [32m'<span class="text-freedom-sunrise-300">Freedom</span>'[39m                                     │ [32m'[0]'[39m      │
+└─────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────┴────────────┘
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-24333-ny-accessibility-violations-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have proper heading hierarchy" classname="accessibility.spec.ts" time="12.039">
+<system-out>
+<![CDATA[Heading hierarchy: [
+  [32m'Sophie '[39m,
+  [32m"Sophie's Story of Freedom"[39m,
+  [32m'Freedom to Explore'[39m,
+  [32m'Love Unbound'[39m,
+  [32m'New Beginnings'[39m,
+  [32m'Journey Highlights'[39m,
+  [32m'Our Favorite Moments'[39m,
+  [32m'Our Journey of Liberation'[39m,
+  [32m'First Meeting in Bali'[39m,
+  [32m'Gili Islands Adventure'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok Exploration'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City'[39m,
+  [32m'Hanoi Adventures'[39m,
+  [32m'Ha Long Bay'[39m,
+  [32m'Tokyo Discoveries'[39m,
+  [32m'Kyoto Culture'[39m,
+  [32m'Seoul Adventures'[39m,
+  [32m'Hong Kong Heights'[39m,
+  [32m'Melbourne Home'[39m,
+  [32m'Countries We Liberated Our Spirits In'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Thailand'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Vietnam'[39m,
+  [32m'Japan'[39m,
+  [32m'South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Australia'[39m,
+  [32m'Our Freedom Trail'[39m,
+  [32m'Our Journey Map'[39m,
+  [32m'Bali, Indonesia'[39m,
+  [32m'Gili Islands, Indonesia'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok, Thailand'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City, Vietnam'[39m,
+  [32m'Hanoi, Vietnam'[39m,
+  [32m'Ha Long Bay, Vietnam'[39m,
+  [32m'Tokyo, Japan'[39m,
+  [32m'Kyoto, Japan'[39m,
+  [32m'Seoul, South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Melbourne, Australia'[39m,
+  [32m'Our Journey in Songs'[39m,
+  [32m'Loading Our Playlist...'[39m,
+  [32m'The Soundtrack to Our Love Story'[39m,
+  [32m'Beautiful Moments'[39m,
+  [32m'Adventure Anthems'[39m,
+  [32m'Memory Lane'[39m,
+  [32m'Sophie & You'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have keyboard navigation support" classname="accessibility.spec.ts" time="17.352">
+<failure message="accessibility.spec.ts:29:7 should have keyboard navigation support" type="FAILURE">
+<![CDATA[  [webkit] › accessibility.spec.ts:29:7 › Accessibility Tests › should have keyboard navigation support 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Skip to main content"
+    Received: "May 2023First Meeting in BaliBali, IndonesiaOur paths crossed in the beautiful island of Bali, where our journey together began.Where our journey of freedom began..."
+
+      33 |     // Skip link should be focused first
+      34 |     const focusedElement = await page.evaluate(() => document.activeElement?.textContent)
+    > 35 |     expect(focusedElement).toBe('Skip to main content')
+         |                            ^
+      36 |
+      37 |     // Continue tabbing through interactive elements
+      38 |     const interactiveElements = await page.locator('a, button, input, select, textarea').count()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/accessibility.spec.ts:35:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8e318-keyboard-navigation-support-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8e318-keyboard-navigation-support-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-8e318-keyboard-navigation-support-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-8e318-keyboard-navigation-support-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8e318-keyboard-navigation-support-webkit/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8e318-keyboard-navigation-support-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have proper alt text for images" classname="accessibility.spec.ts" time="14.659">
+</testcase>
+<testcase name="Accessibility Tests › should have proper color contrast" classname="accessibility.spec.ts" time="4.978">
+</testcase>
+<testcase name="Accessibility Tests › should have proper form labels" classname="accessibility.spec.ts" time="2.954">
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="webkit" tests="6" failures="6" skipped="0" time="88.886" errors="0">
+<testcase name="Homepage › should load successfully" classname="homepage.spec.ts" time="17.285">
+<failure message="homepage.spec.ts:8:7 should load successfully" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:8:7 › Homepage › should load successfully ────────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Uluwatu Surf School/
+    Received string:  "Sophie ♥ | A Journey of Freedom"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        8 × unexpected value "Sophie ♥ | A Journey of Freedom"
+
+
+       7 |
+       8 |   test('should load successfully', async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Uluwatu Surf School/)
+         |                        ^
+      10 |   })
+      11 |
+      12 |   test('should display main navigation', async ({ page }) => {
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-load-successfully-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-webkit/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="17.174">
+<failure message="homepage.spec.ts:12:7 should display main navigation" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:12:7 › Homepage › should display main navigation ─────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('header')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('header')
+
+
+      12 |   test('should display main navigation', async ({ page }) => {
+      13 |     // Check if header exists
+    > 14 |     await expect(page.locator('header')).toBeVisible()
+         |                                          ^
+      15 |     
+      16 |     // Check navigation items
+      17 |     const navItems = ['Home', 'About', 'Courses', 'Instructors', 'Contact']
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:14:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-main-navigation-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-webkit/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display hero section" classname="homepage.spec.ts" time="16.789">
+<failure message="homepage.spec.ts:23:7 should display hero section" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:23:7 › Homepage › should display hero section ────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      22 |
+      23 |   test('should display hero section', async ({ page }) => {
+    > 24 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      25 |     await expect(page.getByText(/Experience world-class surf coaching/)).toBeVisible()
+      26 |     
+      27 |     // Check CTA buttons
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:24:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-hero-section-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-webkit/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display stats overlay" classname="homepage.spec.ts" time="16.972">
+<failure message="homepage.spec.ts:32:7 should display stats overlay" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:32:7 › Homepage › should display stats overlay ───────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByText('15+')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('15+')
+
+
+      31 |
+      32 |   test('should display stats overlay', async ({ page }) => {
+    > 33 |     await expect(page.getByText('15+')).toBeVisible()
+         |                                         ^
+      34 |     await expect(page.getByText('Years Experience')).toBeVisible()
+      35 |     await expect(page.getByText('2000+')).toBeVisible()
+      36 |     await expect(page.getByText('Students Taught')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:33:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-stats-overlay-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-webkit/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should be mobile responsive" classname="homepage.spec.ts" time="10.332">
+<failure message="homepage.spec.ts:39:7 should be mobile responsive" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:39:7 › Homepage › should be mobile responsive ────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      42 |     
+      43 |     // Hero section should still be visible
+    > 44 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      45 |     
+      46 |     // Mobile menu button should be visible
+      47 |     await expect(page.locator('button[aria-label="Toggle menu"]')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:44:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-webkit/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should have accessible navigation" classname="homepage.spec.ts" time="10.334">
+<failure message="homepage.spec.ts:50:7 should have accessible navigation" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:50:7 › Homepage › should have accessible navigation ──────────────────
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  getByText('Skip to main content')
+    Expected: in viewport
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeInViewport" with timeout 5000ms
+      - waiting for getByText('Skip to main content')
+
+
+      50 |   test('should have accessible navigation', async ({ page }) => {
+      51 |     // Check skip link
+    > 52 |     await expect(page.getByText('Skip to main content')).toBeInViewport()
+         |                                                          ^
+      53 |     
+      54 |     // Check heading hierarchy
+      55 |     const h1 = page.locator('h1')
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:52:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-webkit/video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="performance.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="webkit" tests="3" failures="2" skipped="0" time="11.19" errors="0">
+<testcase name="Performance Tests › should meet Core Web Vitals thresholds" classname="performance.spec.ts" time="5.804">
+<failure message="performance.spec.ts:4:7 should meet Core Web Vitals thresholds" type="FAILURE">
+<![CDATA[  [webkit] › performance.spec.ts:4:7 › Performance Tests › should meet Core Web Vitals thresholds ──
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      41 |
+      42 |     // Assert LCP is under 2.5 seconds (good threshold)
+    > 43 |     expect(metrics.lcp).toBeLessThan(2500)
+         |                         ^
+      44 |     
+      45 |     // Assert CLS is under 0.1 (good threshold)
+      46 |     expect(metrics.cls).toBeLessThan(0.1)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:43:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Web Vitals: {}
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-webkit/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should load images efficiently" classname="performance.spec.ts" time="2.556">
+</testcase>
+<testcase name="Performance Tests › should have fast page load times" classname="performance.spec.ts" time="2.83">
+<failure message="performance.spec.ts:84:7 should have fast page load times" type="FAILURE">
+<![CDATA[  [webkit] › performance.spec.ts:84:7 › Performance Tests › should have fast page load times ───────
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 1500
+    Received:   1812
+
+       97 |
+       98 |     // DOM should load within 1.5 seconds
+    >  99 |     expect(domLoadTime).toBeLessThan(1500)
+          |                         ^
+      100 |     
+      101 |     // Full page should load within 3 seconds
+      102 |     expect(fullLoadTime).toBeLessThan(3000)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:99:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Te-caf7e-d-have-fast-page-load-times-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[DOM Load Time: 1812ms
+Full Load Time: 2308ms
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-webkit/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Te-caf7e-d-have-fast-page-load-times-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="accessibility.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="Mobile Chrome" tests="6" failures="0" skipped="0" time="10.307" errors="0">
+<testcase name="Accessibility Tests › should not have any accessibility violations" classname="accessibility.spec.ts" time="1.885">
+<system-out>
+<![CDATA[No accessibility violations detected!
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have proper heading hierarchy" classname="accessibility.spec.ts" time="1.332">
+<system-out>
+<![CDATA[Heading hierarchy: [
+  [32m'Sophie '[39m,
+  [32m"Sophie's Story of Freedom"[39m,
+  [32m'Freedom to Explore'[39m,
+  [32m'Love Unbound'[39m,
+  [32m'New Beginnings'[39m,
+  [32m'Journey Highlights'[39m,
+  [32m'Our Favorite Moments'[39m,
+  [32m'Our Journey of Liberation'[39m,
+  [32m'First Meeting in Bali'[39m,
+  [32m'Gili Islands Adventure'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok Exploration'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City'[39m,
+  [32m'Hanoi Adventures'[39m,
+  [32m'Ha Long Bay'[39m,
+  [32m'Tokyo Discoveries'[39m,
+  [32m'Kyoto Culture'[39m,
+  [32m'Seoul Adventures'[39m,
+  [32m'Hong Kong Heights'[39m,
+  [32m'Melbourne Home'[39m,
+  [32m'Countries We Liberated Our Spirits In'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Thailand'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Vietnam'[39m,
+  [32m'Japan'[39m,
+  [32m'South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Australia'[39m,
+  [32m'Our Freedom Trail'[39m,
+  [32m'Our Journey Map'[39m,
+  [32m'Bali, Indonesia'[39m,
+  [32m'Gili Islands, Indonesia'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok, Thailand'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City, Vietnam'[39m,
+  [32m'Hanoi, Vietnam'[39m,
+  [32m'Ha Long Bay, Vietnam'[39m,
+  [32m'Tokyo, Japan'[39m,
+  [32m'Kyoto, Japan'[39m,
+  [32m'Seoul, South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Melbourne, Australia'[39m,
+  [32m'Our Journey in Songs'[39m,
+  [32m'Loading Our Playlist...'[39m,
+  [32m'The Soundtrack to Our Love Story'[39m,
+  [32m'Beautiful Moments'[39m,
+  [32m'Adventure Anthems'[39m,
+  [32m'Memory Lane'[39m,
+  [32m'Sophie & You'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have keyboard navigation support" classname="accessibility.spec.ts" time="1.683">
+</testcase>
+<testcase name="Accessibility Tests › should have proper alt text for images" classname="accessibility.spec.ts" time="1.873">
+</testcase>
+<testcase name="Accessibility Tests › should have proper color contrast" classname="accessibility.spec.ts" time="1.499">
+</testcase>
+<testcase name="Accessibility Tests › should have proper form labels" classname="accessibility.spec.ts" time="2.035">
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="Mobile Chrome" tests="6" failures="6" skipped="0" time="35.438" errors="0">
+<testcase name="Homepage › should load successfully" classname="homepage.spec.ts" time="5.616">
+<failure message="homepage.spec.ts:8:7 should load successfully" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:8:7 › Homepage › should load successfully ─────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Uluwatu Surf School/
+    Received string:  "Sophie ♥ | A Journey of Freedom"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value "Sophie ♥ | A Journey of Freedom"
+
+
+       7 |
+       8 |   test('should load successfully', async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Uluwatu Surf School/)
+         |                        ^
+      10 |   })
+      11 |
+      12 |   test('should display main navigation', async ({ page }) => {
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-load-successfully-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="5.968">
+<failure message="homepage.spec.ts:12:7 should display main navigation" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:12:7 › Homepage › should display main navigation ──────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('header')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('header')
+
+
+      12 |   test('should display main navigation', async ({ page }) => {
+      13 |     // Check if header exists
+    > 14 |     await expect(page.locator('header')).toBeVisible()
+         |                                          ^
+      15 |     
+      16 |     // Check navigation items
+      17 |     const navItems = ['Home', 'About', 'Courses', 'Instructors', 'Contact']
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:14:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-main-navigation-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display hero section" classname="homepage.spec.ts" time="5.925">
+<failure message="homepage.spec.ts:23:7 should display hero section" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:23:7 › Homepage › should display hero section ─────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      22 |
+      23 |   test('should display hero section', async ({ page }) => {
+    > 24 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      25 |     await expect(page.getByText(/Experience world-class surf coaching/)).toBeVisible()
+      26 |     
+      27 |     // Check CTA buttons
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:24:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-hero-section-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display stats overlay" classname="homepage.spec.ts" time="5.656">
+<failure message="homepage.spec.ts:32:7 should display stats overlay" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:32:7 › Homepage › should display stats overlay ────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByText('15+')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('15+')
+
+
+      31 |
+      32 |   test('should display stats overlay', async ({ page }) => {
+    > 33 |     await expect(page.getByText('15+')).toBeVisible()
+         |                                         ^
+      34 |     await expect(page.getByText('Years Experience')).toBeVisible()
+      35 |     await expect(page.getByText('2000+')).toBeVisible()
+      36 |     await expect(page.getByText('Students Taught')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:33:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-stats-overlay-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should be mobile responsive" classname="homepage.spec.ts" time="6.059">
+<failure message="homepage.spec.ts:39:7 should be mobile responsive" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:39:7 › Homepage › should be mobile responsive ─────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      42 |     
+      43 |     // Hero section should still be visible
+    > 44 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      45 |     
+      46 |     // Mobile menu button should be visible
+      47 |     await expect(page.locator('button[aria-label="Toggle menu"]')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:44:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-be-mobile-responsive-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should have accessible navigation" classname="homepage.spec.ts" time="6.214">
+<failure message="homepage.spec.ts:50:7 should have accessible navigation" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:50:7 › Homepage › should have accessible navigation ───────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('h1')
+    Expected string: "Master the Waves"
+    Received string: "Sophie "
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for locator('h1')
+        9 × locator resolved to <h1 class="text-6xl md:text-8xl font-freedom-display font-bold text-white mb-6 drop-shadow-2xl">…</h1>
+          - unexpected value "Sophie "
+
+
+      55 |     const h1 = page.locator('h1')
+      56 |     await expect(h1).toHaveCount(1)
+    > 57 |     await expect(h1).toContainText('Master the Waves')
+         |                      ^
+      58 |   })
+      59 | })
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:57:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-have-accessible-navigation-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="performance.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="Mobile Chrome" tests="3" failures="1" skipped="0" time="6.473" errors="0">
+<testcase name="Performance Tests › should meet Core Web Vitals thresholds" classname="performance.spec.ts" time="4.533">
+<failure message="performance.spec.ts:4:7 should meet Core Web Vitals thresholds" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › performance.spec.ts:4:7 › Performance Tests › should meet Core Web Vitals thresholds 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      41 |
+      42 |     // Assert LCP is under 2.5 seconds (good threshold)
+    > 43 |     expect(metrics.lcp).toBeLessThan(2500)
+         |                         ^
+      44 |     
+      45 |     // Assert CLS is under 0.1 (good threshold)
+      46 |     expect(metrics.cls).toBeLessThan(0.1)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:43:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Web Vitals: {}
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should load images efficiently" classname="performance.spec.ts" time="1.082">
+</testcase>
+<testcase name="Performance Tests › should have fast page load times" classname="performance.spec.ts" time="0.858">
+<system-out>
+<![CDATA[DOM Load Time: 223ms
+Full Load Time: 725ms
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="accessibility.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="Mobile Safari" tests="6" failures="1" skipped="0" time="13.321" errors="0">
+<testcase name="Accessibility Tests › should not have any accessibility violations" classname="accessibility.spec.ts" time="2.138">
+<system-out>
+<![CDATA[No accessibility violations detected!
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have proper heading hierarchy" classname="accessibility.spec.ts" time="3.08">
+<system-out>
+<![CDATA[Heading hierarchy: [
+  [32m'Sophie '[39m,
+  [32m"Sophie's Story of Freedom"[39m,
+  [32m'Freedom to Explore'[39m,
+  [32m'Love Unbound'[39m,
+  [32m'New Beginnings'[39m,
+  [32m'Journey Highlights'[39m,
+  [32m'Our Favorite Moments'[39m,
+  [32m'Our Journey of Liberation'[39m,
+  [32m'First Meeting in Bali'[39m,
+  [32m'Gili Islands Adventure'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok Exploration'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City'[39m,
+  [32m'Hanoi Adventures'[39m,
+  [32m'Ha Long Bay'[39m,
+  [32m'Tokyo Discoveries'[39m,
+  [32m'Kyoto Culture'[39m,
+  [32m'Seoul Adventures'[39m,
+  [32m'Hong Kong Heights'[39m,
+  [32m'Melbourne Home'[39m,
+  [32m'Countries We Liberated Our Spirits In'[39m,
+  [32m'Indonesia'[39m,
+  [32m'Thailand'[39m,
+  [32m'Cambodia'[39m,
+  [32m'Vietnam'[39m,
+  [32m'Japan'[39m,
+  [32m'South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Australia'[39m,
+  [32m'Our Freedom Trail'[39m,
+  [32m'Our Journey Map'[39m,
+  [32m'Bali, Indonesia'[39m,
+  [32m'Gili Islands, Indonesia'[39m,
+  [32m'Phi Phi Islands, Thailand'[39m,
+  [32m'Bangkok, Thailand'[39m,
+  [32m'Siem Reap, Cambodia'[39m,
+  [32m'Ho Chi Minh City, Vietnam'[39m,
+  [32m'Hanoi, Vietnam'[39m,
+  [32m'Ha Long Bay, Vietnam'[39m,
+  [32m'Tokyo, Japan'[39m,
+  [32m'Kyoto, Japan'[39m,
+  [32m'Seoul, South Korea'[39m,
+  [32m'Hong Kong'[39m,
+  [32m'Melbourne, Australia'[39m,
+  [32m'Our Journey in Songs'[39m,
+  [32m'Loading Our Playlist...'[39m,
+  [32m'The Soundtrack to Our Love Story'[39m,
+  [32m'Beautiful Moments'[39m,
+  [32m'Adventure Anthems'[39m,
+  [32m'Memory Lane'[39m,
+  [32m'Sophie & You'[39m
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have keyboard navigation support" classname="accessibility.spec.ts" time="2.831">
+<failure message="accessibility.spec.ts:29:7 should have keyboard navigation support" type="FAILURE">
+<![CDATA[  [Mobile Safari] › accessibility.spec.ts:29:7 › Accessibility Tests › should have keyboard navigation support 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Skip to main content"
+    Received: "May 2023First Meeting in BaliBali, IndonesiaOur paths crossed in the beautiful island of Bali, where our journey together began.Where our journey of freedom began..."
+
+      33 |     // Skip link should be focused first
+      34 |     const focusedElement = await page.evaluate(() => document.activeElement?.textContent)
+    > 35 |     expect(focusedElement).toBe('Skip to main content')
+         |                            ^
+      36 |
+      37 |     // Continue tabbing through interactive elements
+      38 |     const interactiveElements = await page.locator('a, button, input, select, textarea').count()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/accessibility.spec.ts:35:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8e318-keyboard-navigation-support-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/accessibility-Accessibilit-8e318-keyboard-navigation-support-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/accessibility-Accessibilit-8e318-keyboard-navigation-support-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|accessibility-Accessibilit-8e318-keyboard-navigation-support-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8e318-keyboard-navigation-support-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|accessibility-Accessibilit-8e318-keyboard-navigation-support-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Tests › should have proper alt text for images" classname="accessibility.spec.ts" time="1.549">
+</testcase>
+<testcase name="Accessibility Tests › should have proper color contrast" classname="accessibility.spec.ts" time="2.333">
+</testcase>
+<testcase name="Accessibility Tests › should have proper form labels" classname="accessibility.spec.ts" time="1.39">
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="Mobile Safari" tests="6" failures="6" skipped="0" time="36.918" errors="0">
+<testcase name="Homepage › should load successfully" classname="homepage.spec.ts" time="6.888">
+<failure message="homepage.spec.ts:8:7 should load successfully" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:8:7 › Homepage › should load successfully ─────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Uluwatu Surf School/
+    Received string:  "Sophie ♥ | A Journey of Freedom"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        8 × unexpected value "Sophie ♥ | A Journey of Freedom"
+
+
+       7 |
+       8 |   test('should load successfully', async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Uluwatu Surf School/)
+         |                        ^
+      10 |   })
+      11 |
+      12 |   test('should display main navigation', async ({ page }) => {
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-load-successfully-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-load-successfully-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-load-successfully-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="6.205">
+<failure message="homepage.spec.ts:12:7 should display main navigation" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:12:7 › Homepage › should display main navigation ──────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('header')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('header')
+
+
+      12 |   test('should display main navigation', async ({ page }) => {
+      13 |     // Check if header exists
+    > 14 |     await expect(page.locator('header')).toBeVisible()
+         |                                          ^
+      15 |     
+      16 |     // Check navigation items
+      17 |     const navItems = ['Home', 'About', 'Courses', 'Instructors', 'Contact']
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:14:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-main-navigation-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-main-navigation-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-main-navigation-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display hero section" classname="homepage.spec.ts" time="5.94">
+<failure message="homepage.spec.ts:23:7 should display hero section" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:23:7 › Homepage › should display hero section ─────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      22 |
+      23 |   test('should display hero section', async ({ page }) => {
+    > 24 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      25 |     await expect(page.getByText(/Experience world-class surf coaching/)).toBeVisible()
+      26 |     
+      27 |     // Check CTA buttons
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:24:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-hero-section-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-hero-section-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-hero-section-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should display stats overlay" classname="homepage.spec.ts" time="5.842">
+<failure message="homepage.spec.ts:32:7 should display stats overlay" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:32:7 › Homepage › should display stats overlay ────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByText('15+')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('15+')
+
+
+      31 |
+      32 |   test('should display stats overlay', async ({ page }) => {
+    > 33 |     await expect(page.getByText('15+')).toBeVisible()
+         |                                         ^
+      34 |     await expect(page.getByText('Years Experience')).toBeVisible()
+      35 |     await expect(page.getByText('2000+')).toBeVisible()
+      36 |     await expect(page.getByText('Students Taught')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:33:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-display-stats-overlay-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-display-stats-overlay-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-display-stats-overlay-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should be mobile responsive" classname="homepage.spec.ts" time="6.061">
+<failure message="homepage.spec.ts:39:7 should be mobile responsive" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:39:7 › Homepage › should be mobile responsive ─────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: /Master the Waves/ })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /Master the Waves/ })
+
+
+      42 |     
+      43 |     // Hero section should still be visible
+    > 44 |     await expect(page.getByRole('heading', { name: /Master the Waves/ })).toBeVisible()
+         |                                                                           ^
+      45 |     
+      46 |     // Mobile menu button should be visible
+      47 |     await expect(page.locator('button[aria-label="Toggle menu"]')).toBeVisible()
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:44:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-be-mobile-responsive-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-be-mobile-responsive-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-be-mobile-responsive-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › should have accessible navigation" classname="homepage.spec.ts" time="5.982">
+<failure message="homepage.spec.ts:50:7 should have accessible navigation" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:50:7 › Homepage › should have accessible navigation ───────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('h1')
+    Expected string: "Master the Waves"
+    Received string: "Sophie "
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for locator('h1')
+        9 × locator resolved to <h1 class="text-6xl md:text-8xl font-freedom-display font-bold text-white mb-6 drop-shadow-2xl">…</h1>
+          - unexpected value "Sophie "
+
+
+      55 |     const h1 = page.locator('h1')
+      56 |     await expect(h1).toHaveCount(1)
+    > 57 |     await expect(h1).toContainText('Master the Waves')
+         |                      ^
+      58 |   })
+      59 | })
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/homepage.spec.ts:57:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/homepage-Homepage-should-have-accessible-navigation-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/homepage-Homepage-should-have-accessible-navigation-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|homepage-Homepage-should-have-accessible-navigation-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="performance.spec.ts" timestamp="2025-09-19T07:35:40.695Z" hostname="Mobile Safari" tests="3" failures="1" skipped="0" time="7.158" errors="0">
+<testcase name="Performance Tests › should meet Core Web Vitals thresholds" classname="performance.spec.ts" time="4.585">
+<failure message="performance.spec.ts:4:7 should meet Core Web Vitals thresholds" type="FAILURE">
+<![CDATA[  [Mobile Safari] › performance.spec.ts:4:7 › Performance Tests › should meet Core Web Vitals thresholds 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Matcher error: received value must be a number or bigint
+
+    Received has value: undefined
+
+      41 |
+      42 |     // Assert LCP is under 2.5 seconds (good threshold)
+    > 43 |     expect(metrics.lcp).toBeLessThan(2500)
+         |                         ^
+      44 |     
+      45 |     // Assert CLS is under 0.1 (good threshold)
+      46 |     expect(metrics.cls).toBeLessThan(0.1)
+        at /Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school/tests/performance.spec.ts:43:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Web Vitals: {}
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Safari/test-failed-1.png]]
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Safari/video.webm]]
+
+[[ATTACHMENT|performance-Performance-Te-c407e--Core-Web-Vitals-thresholds-Mobile-Safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Tests › should load images efficiently" classname="performance.spec.ts" time="1.4">
+</testcase>
+<testcase name="Performance Tests › should have fast page load times" classname="performance.spec.ts" time="1.173">
+<system-out>
+<![CDATA[DOM Load Time: 362ms
+Full Load Time: 863ms
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

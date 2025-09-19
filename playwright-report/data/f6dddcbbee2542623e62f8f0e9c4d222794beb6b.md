@@ -1,0 +1,905 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - navigation "Main navigation" [ref=e4]:
+      - generic [ref=e6]:
+        - link "Sophie & You - Home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e8] [cursor=pointer]:
+            - img [ref=e9] [cursor=pointer]
+            - img [ref=e11] [cursor=pointer]
+          - generic [ref=e15] [cursor=pointer]:
+            - generic [ref=e16] [cursor=pointer]: Sophie & You
+            - generic [ref=e17] [cursor=pointer]: Journey of Freedom
+        - generic [ref=e18]:
+          - link "Navigate to journey overview" [ref=e19] [cursor=pointer]:
+            - /url: /
+            - button "Navigate to journey overview" [ref=e20]:
+              - img [ref=e21]
+              - generic [ref=e24]: Journey
+          - link "View photo gallery" [ref=e25] [cursor=pointer]:
+            - /url: /photos
+            - button "View photo gallery" [ref=e26]:
+              - img [ref=e27]
+              - generic [ref=e30]: Photos
+          - button "Navigate to Sophie's music playlist" [ref=e31]:
+            - img [ref=e32]
+            - generic [ref=e36]: Music
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - img [ref=e40]
+        - img [ref=e45]
+        - heading "Sophie" [level=1] [ref=e55]:
+          - text: Sophie
+          - img [ref=e56]
+        - img [ref=e59]
+        - paragraph [ref=e61]: The Beautiful Soul Who Deserves Everything
+        - paragraph [ref=e62]: A celebration of Sophie's journey through freedom, adventure & self-discovery
+        - generic [ref=e63]:
+          - button "Sophie's Journey" [ref=e64]:
+            - img [ref=e65]
+            - text: Sophie's Journey
+          - link "View Photos" [ref=e68] [cursor=pointer]:
+            - /url: /photos
+            - button "View Photos" [ref=e69]:
+              - img [ref=e70]
+              - text: View Photos
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: "8"
+            - generic [ref=e76]: Countries
+          - generic [ref=e77]:
+            - generic [ref=e78]: "13"
+            - generic [ref=e79]: Cities
+          - generic [ref=e80]:
+            - generic [ref=e81]: ∞
+            - generic [ref=e82]: Memories
+      - generic [ref=e84]:
+        - generic [ref=e85]: Explore Sophie's Journey
+        - img [ref=e86]
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - img [ref=e91]
+        - heading "Sophie's Story of Freedom" [level=2] [ref=e95]
+        - img [ref=e96]
+      - generic [ref=e98]:
+        - paragraph [ref=e99]:
+          - text: Sophie deserves the world and every adventure within it. Her journey through
+          - generic [ref=e100]: 8 countries
+          - text: and
+          - generic [ref=e101]: 13 cities
+          - text: shows a beautiful soul embracing
+          - generic [ref=e102]: freedom and discovery
+          - text: .
+        - paragraph [ref=e103]: Sophie's story is one of breaking free from the ordinary, embracing adventure, and creating her own path - a beautiful celebration of liberation, growth, and limitless possibilities.
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - img [ref=e107]
+          - heading "Freedom to Explore" [level=3] [ref=e111]
+          - paragraph [ref=e112]: Breaking boundaries and discovering new horizons together
+        - generic [ref=e113]:
+          - img [ref=e115]
+          - heading "Love Unbound" [level=3] [ref=e117]
+          - paragraph [ref=e118]: A relationship built on adventure and shared dreams
+        - generic [ref=e119]:
+          - img [ref=e121]
+          - heading "New Beginnings" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Building our future in Melbourne's vibrant embrace
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - img [ref=e130]
+          - heading "Journey Highlights" [level=2] [ref=e133]
+        - paragraph [ref=e134]:
+          - text: Capturing moments of pure
+          - generic [ref=e135]: freedom
+          - text: ","
+          - generic [ref=e136]: adventure
+          - text: ", and"
+          - generic [ref=e137]: discovery
+          - text: across our incredible journey
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - img [ref=e141]
+            - heading "Our Favorite Moments" [level=3] [ref=e144]
+            - img [ref=e145]
+          - paragraph [ref=e147]: Highlights from our journey together
+          - paragraph [ref=e148]: 50 photos • Our journey together
+        - generic [ref=e150]:
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - img [ref=e153]
+              - generic [ref=e157]:
+                - heading "Cloudinary Status" [level=4] [ref=e158]
+                - paragraph [ref=e159]: "Connection failed: Cloudinary configuration missing. Please check environment variables."
+            - button "Check" [ref=e160]:
+              - img [ref=e161]
+              - text: Check
+          - generic [ref=e166]:
+            - paragraph [ref=e167]: Check that your environment variables are set correctly in Vercel.
+            - button "Retry Connection" [ref=e168]
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - img "Unknown Location" [ref=e171]
+            - generic [ref=e173]:
+              - paragraph [ref=e174]: Unknown Location
+              - paragraph [ref=e175]: 10/1/2024
+          - generic [ref=e176]:
+            - img "Unknown Location" [ref=e177]
+            - generic [ref=e179]:
+              - paragraph [ref=e180]: Unknown Location
+              - paragraph [ref=e181]: 10/1/2024
+          - generic [ref=e182]:
+            - img "Unknown Location" [ref=e183]
+            - generic [ref=e185]:
+              - paragraph [ref=e186]: Unknown Location
+              - paragraph [ref=e187]: 10/1/2024
+          - generic [ref=e188]:
+            - img "Unknown Location" [ref=e189]
+            - generic [ref=e191]:
+              - paragraph [ref=e192]: Unknown Location
+              - paragraph [ref=e193]: 10/1/2024
+          - generic [ref=e194]:
+            - img "Unknown Location" [ref=e195]
+            - generic [ref=e197]:
+              - paragraph [ref=e198]: Unknown Location
+              - paragraph [ref=e199]: 10/1/2024
+          - generic [ref=e200]:
+            - img "Unknown Location" [ref=e201]
+            - generic [ref=e203]:
+              - paragraph [ref=e204]: Unknown Location
+              - paragraph [ref=e205]: 10/1/2024
+          - generic [ref=e206]:
+            - img "Unknown Location" [ref=e207]
+            - generic [ref=e209]:
+              - paragraph [ref=e210]: Unknown Location
+              - paragraph [ref=e211]: 10/1/2024
+          - generic [ref=e212]:
+            - img "Unknown Location" [ref=e213]
+            - generic [ref=e215]:
+              - paragraph [ref=e216]: Unknown Location
+              - paragraph [ref=e217]: 10/1/2024
+          - generic [ref=e218]:
+            - img "Unknown Location" [ref=e219]
+            - generic [ref=e221]:
+              - paragraph [ref=e222]: Unknown Location
+              - paragraph [ref=e223]: 10/1/2024
+          - generic [ref=e224]:
+            - img "Unknown Location" [ref=e225]
+            - generic [ref=e227]:
+              - paragraph [ref=e228]: Unknown Location
+              - paragraph [ref=e229]: 10/1/2024
+          - generic [ref=e230]:
+            - img "Unknown Location" [ref=e231]
+            - generic [ref=e233]:
+              - paragraph [ref=e234]: Unknown Location
+              - paragraph [ref=e235]: 10/1/2024
+          - generic [ref=e236]:
+            - img "Unknown Location" [ref=e237]
+            - generic [ref=e239]:
+              - paragraph [ref=e240]: Unknown Location
+              - paragraph [ref=e241]: 10/1/2024
+          - generic [ref=e242]:
+            - img "Unknown Location" [ref=e243]
+            - generic [ref=e245]:
+              - paragraph [ref=e246]: Unknown Location
+              - paragraph [ref=e247]: 10/1/2024
+          - generic [ref=e248]:
+            - img "Unknown Location" [ref=e249]
+            - generic [ref=e251]:
+              - paragraph [ref=e252]: Unknown Location
+              - paragraph [ref=e253]: 10/1/2024
+          - generic [ref=e254]:
+            - img "Unknown Location" [ref=e255]
+            - generic [ref=e257]:
+              - paragraph [ref=e258]: Unknown Location
+              - paragraph [ref=e259]: 10/1/2024
+          - generic [ref=e260]:
+            - img "Unknown Location" [ref=e261]
+            - generic [ref=e263]:
+              - paragraph [ref=e264]: Unknown Location
+              - paragraph [ref=e265]: 10/1/2024
+          - generic [ref=e266]:
+            - img "Unknown Location" [ref=e267]
+            - generic [ref=e269]:
+              - paragraph [ref=e270]: Unknown Location
+              - paragraph [ref=e271]: 10/1/2024
+          - generic [ref=e272]:
+            - img "Unknown Location" [ref=e273]
+            - generic [ref=e275]:
+              - paragraph [ref=e276]: Unknown Location
+              - paragraph [ref=e277]: 10/1/2024
+          - generic [ref=e278]:
+            - img "Unknown Location" [ref=e279]
+            - generic [ref=e281]:
+              - paragraph [ref=e282]: Unknown Location
+              - paragraph [ref=e283]: 10/1/2024
+          - generic [ref=e284]:
+            - img "Unknown Location" [ref=e285]
+            - generic [ref=e287]:
+              - paragraph [ref=e288]: Unknown Location
+              - paragraph [ref=e289]: 10/1/2024
+          - generic [ref=e290]:
+            - img "Unknown Location" [ref=e291]
+            - generic [ref=e293]:
+              - paragraph [ref=e294]: Unknown Location
+              - paragraph [ref=e295]: 10/1/2024
+          - generic [ref=e296]:
+            - img "Unknown Location" [ref=e297]
+            - generic [ref=e299]:
+              - paragraph [ref=e300]: Unknown Location
+              - paragraph [ref=e301]: 10/1/2024
+          - generic [ref=e302]:
+            - img "Unknown Location" [ref=e303]
+            - generic [ref=e305]:
+              - paragraph [ref=e306]: Unknown Location
+              - paragraph [ref=e307]: 10/1/2024
+          - generic [ref=e308]:
+            - img "Unknown Location" [ref=e309]
+            - generic [ref=e311]:
+              - paragraph [ref=e312]: Unknown Location
+              - paragraph [ref=e313]: 10/1/2024
+          - generic [ref=e314]:
+            - img "Unknown Location" [ref=e315]
+            - generic [ref=e317]:
+              - paragraph [ref=e318]: Unknown Location
+              - paragraph [ref=e319]: 10/1/2024
+          - generic [ref=e320]:
+            - img "Unknown Location" [ref=e321]
+            - generic [ref=e323]:
+              - paragraph [ref=e324]: Unknown Location
+              - paragraph [ref=e325]: 10/1/2024
+          - generic [ref=e326]:
+            - img "Unknown Location" [ref=e327]
+            - generic [ref=e329]:
+              - paragraph [ref=e330]: Unknown Location
+              - paragraph [ref=e331]: 10/1/2024
+          - generic [ref=e332]:
+            - img "Unknown Location" [ref=e333]
+            - generic [ref=e335]:
+              - paragraph [ref=e336]: Unknown Location
+              - paragraph [ref=e337]: 10/1/2024
+          - generic [ref=e338]:
+            - img "Unknown Location" [ref=e339]
+            - generic [ref=e341]:
+              - paragraph [ref=e342]: Unknown Location
+              - paragraph [ref=e343]: 10/1/2024
+          - generic [ref=e344]:
+            - img "Unknown Location" [ref=e345]
+            - generic [ref=e347]:
+              - paragraph [ref=e348]: Unknown Location
+              - paragraph [ref=e349]: 10/1/2024
+          - generic [ref=e350]:
+            - img "Unknown Location" [ref=e351]
+            - generic [ref=e353]:
+              - paragraph [ref=e354]: Unknown Location
+              - paragraph [ref=e355]: 10/1/2024
+          - generic [ref=e356]:
+            - img "Unknown Location" [ref=e357]
+            - generic [ref=e359]:
+              - paragraph [ref=e360]: Unknown Location
+              - paragraph [ref=e361]: 10/1/2024
+          - generic [ref=e362]:
+            - img "Unknown Location" [ref=e363]
+            - generic [ref=e365]:
+              - paragraph [ref=e366]: Unknown Location
+              - paragraph [ref=e367]: 10/1/2024
+          - generic [ref=e368]:
+            - img "Unknown Location" [ref=e369]
+            - generic [ref=e371]:
+              - paragraph [ref=e372]: Unknown Location
+              - paragraph [ref=e373]: 10/1/2024
+          - generic [ref=e374]:
+            - img "Unknown Location" [ref=e375]
+            - generic [ref=e377]:
+              - paragraph [ref=e378]: Unknown Location
+              - paragraph [ref=e379]: 10/1/2024
+          - generic [ref=e380]:
+            - img "Unknown Location" [ref=e381]
+            - generic [ref=e383]:
+              - paragraph [ref=e384]: Unknown Location
+              - paragraph [ref=e385]: 10/1/2024
+          - generic [ref=e386]:
+            - img "Unknown Location" [ref=e387]
+            - generic [ref=e389]:
+              - paragraph [ref=e390]: Unknown Location
+              - paragraph [ref=e391]: 10/1/2024
+          - generic [ref=e392]:
+            - img "Unknown Location" [ref=e393]
+            - generic [ref=e395]:
+              - paragraph [ref=e396]: Unknown Location
+              - paragraph [ref=e397]: 10/1/2024
+          - generic [ref=e398]:
+            - img "Unknown Location" [ref=e399]
+            - generic [ref=e401]:
+              - paragraph [ref=e402]: Unknown Location
+              - paragraph [ref=e403]: 10/1/2024
+          - generic [ref=e404]:
+            - img "Unknown Location" [ref=e405]
+            - generic [ref=e407]:
+              - paragraph [ref=e408]: Unknown Location
+              - paragraph [ref=e409]: 10/1/2024
+          - generic [ref=e410]:
+            - img "Unknown Location" [ref=e411]
+            - generic [ref=e413]:
+              - paragraph [ref=e414]: Unknown Location
+              - paragraph [ref=e415]: 10/1/2024
+          - generic [ref=e416]:
+            - img "Unknown Location" [ref=e417]
+            - generic [ref=e419]:
+              - paragraph [ref=e420]: Unknown Location
+              - paragraph [ref=e421]: 10/1/2024
+          - generic [ref=e422]:
+            - img "Unknown Location" [ref=e423]
+            - generic [ref=e425]:
+              - paragraph [ref=e426]: Unknown Location
+              - paragraph [ref=e427]: 10/1/2024
+          - generic [ref=e428]:
+            - img "Unknown Location" [ref=e429]
+            - generic [ref=e431]:
+              - paragraph [ref=e432]: Unknown Location
+              - paragraph [ref=e433]: 10/1/2024
+          - generic [ref=e434]:
+            - img "Unknown Location" [ref=e435]
+            - generic [ref=e437]:
+              - paragraph [ref=e438]: Unknown Location
+              - paragraph [ref=e439]: 10/1/2024
+          - generic [ref=e440]:
+            - img "Unknown Location" [ref=e441]
+            - generic [ref=e443]:
+              - paragraph [ref=e444]: Unknown Location
+              - paragraph [ref=e445]: 10/1/2024
+          - generic [ref=e446]:
+            - img "Unknown Location" [ref=e447]
+            - generic [ref=e449]:
+              - paragraph [ref=e450]: Unknown Location
+              - paragraph [ref=e451]: 10/1/2024
+          - generic [ref=e452]:
+            - img "Unknown Location" [ref=e453]
+            - generic [ref=e455]:
+              - paragraph [ref=e456]: Unknown Location
+              - paragraph [ref=e457]: 10/1/2024
+          - generic [ref=e458]:
+            - img "Unknown Location" [ref=e459]
+            - generic [ref=e461]:
+              - paragraph [ref=e462]: Unknown Location
+              - paragraph [ref=e463]: 10/1/2024
+          - generic [ref=e464]:
+            - img "Unknown Location" [ref=e465]
+            - generic [ref=e467]:
+              - paragraph [ref=e468]: Unknown Location
+              - paragraph [ref=e469]: 10/1/2024
+        - button "Refresh Photos" [ref=e471]:
+          - img [ref=e472]
+          - text: Refresh Photos
+    - generic [ref=e478]:
+      - generic [ref=e479]:
+        - generic [ref=e480]:
+          - img [ref=e481]
+          - heading "Our Journey of Liberation" [level=2] [ref=e484]
+        - paragraph [ref=e485]: Follow our path from the first spark in Bali to building our new life in Melbourne - a timeline of growth, adventure, and the freedom to be ourselves
+      - generic [ref=e487]:
+        - 'article "Timeline event: First Meeting in Bali in Bali, Indonesia, May 2023" [ref=e488]':
+          - button "Timeline marker for First Meeting in Bali" [ref=e489]:
+            - img [ref=e491]
+          - generic [ref=e494]:
+            - generic [ref=e496]:
+              - img [ref=e497]
+              - text: May 2023
+            - heading "First Meeting in Bali" [level=3] [ref=e502]
+            - generic [ref=e503]:
+              - img [ref=e504]
+              - generic [ref=e507]: Bali, Indonesia
+            - paragraph [ref=e508]: Our paths crossed in the beautiful island of Bali, where our journey together began.
+            - paragraph [ref=e510]: Where our journey of freedom began...
+          - img "First Meeting in Bali - Our paths crossed in the beautiful island of Bali, where our journey together began." [ref=e511]
+        - 'article "Timeline event: Gili Islands Adventure in Gili Islands, Indonesia, June 2023" [ref=e512]':
+          - button "Timeline marker for Gili Islands Adventure" [ref=e513]:
+            - img [ref=e515]
+          - generic [ref=e519]:
+            - generic [ref=e521]:
+              - img [ref=e522]
+              - text: June 2023
+            - heading "Gili Islands Adventure" [level=3] [ref=e527]
+            - generic [ref=e528]:
+              - img [ref=e529]
+              - generic [ref=e532]: Gili Islands, Indonesia
+            - paragraph [ref=e533]: Crystal clear waters and pristine beaches in the Gili Islands, Indonesia.
+            - paragraph [ref=e535]: Another step towards liberation and discovery.
+          - img "Gili Islands Adventure - Crystal clear waters and pristine beaches in the Gili Islands, Indonesia." [ref=e536]
+        - 'article "Timeline event: Phi Phi Islands, Thailand in Phi Phi Islands, Thailand, July 2023" [ref=e537]':
+          - button "Timeline marker for Phi Phi Islands, Thailand" [ref=e538]:
+            - img [ref=e540]
+          - generic [ref=e545]:
+            - generic [ref=e547]:
+              - img [ref=e548]
+              - text: July 2023
+            - heading "Phi Phi Islands, Thailand" [level=3] [ref=e553]
+            - generic [ref=e554]:
+              - img [ref=e555]
+              - generic [ref=e558]: Phi Phi Islands, Thailand
+            - paragraph [ref=e559]: Exploring the stunning limestone cliffs and turquoise waters of Phi Phi Islands.
+            - paragraph [ref=e561]: Another step towards liberation and discovery.
+          - img "Phi Phi Islands, Thailand - Exploring the stunning limestone cliffs and turquoise waters of Phi Phi Islands." [ref=e562]
+        - 'article "Timeline event: Bangkok Exploration in Bangkok, Thailand, July 2023" [ref=e563]':
+          - button "Timeline marker for Bangkok Exploration" [ref=e564]:
+            - img [ref=e566]
+          - generic [ref=e569]:
+            - generic [ref=e571]:
+              - img [ref=e572]
+              - text: July 2023
+            - heading "Bangkok Exploration" [level=3] [ref=e577]
+            - generic [ref=e578]:
+              - img [ref=e579]
+              - generic [ref=e582]: Bangkok, Thailand
+            - paragraph [ref=e583]: Immersing ourselves in the vibrant street life and culture of Thailand's capital.
+            - paragraph [ref=e585]: Another step towards liberation and discovery.
+          - img "Bangkok Exploration - Immersing ourselves in the vibrant street life and culture of Thailand's capital." [ref=e586]
+        - 'article "Timeline event: Siem Reap, Cambodia in Siem Reap, Cambodia, August 2023" [ref=e587]':
+          - button "Timeline marker for Siem Reap, Cambodia" [ref=e588]:
+            - img [ref=e590]
+          - generic [ref=e594]:
+            - generic [ref=e596]:
+              - img [ref=e597]
+              - text: August 2023
+            - heading "Siem Reap, Cambodia" [level=3] [ref=e602]
+            - generic [ref=e603]:
+              - img [ref=e604]
+              - generic [ref=e607]: Siem Reap, Cambodia
+            - paragraph [ref=e608]: Discovering the ancient temples of Angkor Wat and Cambodian heritage.
+            - paragraph [ref=e610]: Another step towards liberation and discovery.
+          - img "Siem Reap, Cambodia - Discovering the ancient temples of Angkor Wat and Cambodian heritage." [ref=e611]
+        - 'article "Timeline event: Ho Chi Minh City in Ho Chi Minh City, Vietnam, August 2023" [ref=e612]':
+          - button "Timeline marker for Ho Chi Minh City" [ref=e613]:
+            - img [ref=e615]
+          - generic [ref=e621]:
+            - generic [ref=e623]:
+              - img [ref=e624]
+              - text: August 2023
+            - heading "Ho Chi Minh City" [level=3] [ref=e629]
+            - generic [ref=e630]:
+              - img [ref=e631]
+              - generic [ref=e634]: Ho Chi Minh City, Vietnam
+            - paragraph [ref=e635]: Experiencing the bustling energy and rich history of Vietnam's largest city.
+            - paragraph [ref=e637]: Another step towards liberation and discovery.
+          - img "Ho Chi Minh City - Experiencing the bustling energy and rich history of Vietnam's largest city." [ref=e638]
+        - 'article "Timeline event: Hanoi Adventures in Hanoi, Vietnam, September 2023" [ref=e639]':
+          - button "Timeline marker for Hanoi Adventures" [ref=e640]:
+            - img [ref=e642]
+          - generic [ref=e645]:
+            - generic [ref=e647]:
+              - img [ref=e648]
+              - text: September 2023
+            - heading "Hanoi Adventures" [level=3] [ref=e653]
+            - generic [ref=e654]:
+              - img [ref=e655]
+              - generic [ref=e658]: Hanoi, Vietnam
+            - paragraph [ref=e659]: Wandering through the Old Quarter and enjoying authentic Vietnamese cuisine.
+            - paragraph [ref=e661]: Another step towards liberation and discovery.
+          - img "Hanoi Adventures - Wandering through the Old Quarter and enjoying authentic Vietnamese cuisine." [ref=e662]
+        - 'article "Timeline event: Ha Long Bay in Ha Long Bay, Vietnam, September 2023" [ref=e663]':
+          - button "Timeline marker for Ha Long Bay" [ref=e664]:
+            - img [ref=e666]
+          - generic [ref=e670]:
+            - generic [ref=e672]:
+              - img [ref=e673]
+              - text: September 2023
+            - heading "Ha Long Bay" [level=3] [ref=e678]
+            - generic [ref=e679]:
+              - img [ref=e680]
+              - generic [ref=e683]: Ha Long Bay, Vietnam
+            - paragraph [ref=e684]: Cruising through the mystical limestone karsts of this UNESCO World Heritage site.
+            - paragraph [ref=e686]: Another step towards liberation and discovery.
+          - img "Ha Long Bay - Cruising through the mystical limestone karsts of this UNESCO World Heritage site." [ref=e687]
+        - 'article "Timeline event: Tokyo Discoveries in Tokyo, Japan, October 2023" [ref=e688]':
+          - button "Timeline marker for Tokyo Discoveries" [ref=e689]:
+            - img [ref=e691]
+          - generic [ref=e696]:
+            - generic [ref=e698]:
+              - img [ref=e699]
+              - text: October 2023
+            - heading "Tokyo Discoveries" [level=3] [ref=e704]
+            - generic [ref=e705]:
+              - img [ref=e706]
+              - generic [ref=e709]: Tokyo, Japan
+            - paragraph [ref=e710]: From traditional temples to modern skyscrapers in Japan's incredible capital.
+            - paragraph [ref=e712]: Another step towards liberation and discovery.
+          - img "Tokyo Discoveries - From traditional temples to modern skyscrapers in Japan's incredible capital." [ref=e713]
+        - 'article "Timeline event: Kyoto Culture in Kyoto, Japan, October 2023" [ref=e714]':
+          - button "Timeline marker for Kyoto Culture" [ref=e715]:
+            - img [ref=e717]
+          - generic [ref=e720]:
+            - generic [ref=e722]:
+              - img [ref=e723]
+              - text: October 2023
+            - heading "Kyoto Culture" [level=3] [ref=e728]
+            - generic [ref=e729]:
+              - img [ref=e730]
+              - generic [ref=e733]: Kyoto, Japan
+            - paragraph [ref=e734]: Walking through bamboo forests and historic districts in Japan's ancient capital.
+            - paragraph [ref=e736]: Another step towards liberation and discovery.
+          - img "Kyoto Culture - Walking through bamboo forests and historic districts in Japan's ancient capital." [ref=e737]
+        - 'article "Timeline event: Seoul Adventures in Seoul, South Korea, November 2023" [ref=e738]':
+          - button "Timeline marker for Seoul Adventures" [ref=e739]:
+            - img [ref=e741]
+          - generic [ref=e745]:
+            - generic [ref=e747]:
+              - img [ref=e748]
+              - text: November 2023
+            - heading "Seoul Adventures" [level=3] [ref=e753]
+            - generic [ref=e754]:
+              - img [ref=e755]
+              - generic [ref=e758]: Seoul, South Korea
+            - paragraph [ref=e759]: Exploring Korean culture, from palaces to K-pop in South Korea's dynamic capital.
+            - paragraph [ref=e761]: Another step towards liberation and discovery.
+          - img "Seoul Adventures - Exploring Korean culture, from palaces to K-pop in South Korea's dynamic capital." [ref=e762]
+        - 'article "Timeline event: Hong Kong Heights in Hong Kong, November 2023" [ref=e763]':
+          - button "Timeline marker for Hong Kong Heights" [ref=e764]:
+            - img [ref=e766]
+          - generic [ref=e772]:
+            - generic [ref=e774]:
+              - img [ref=e775]
+              - text: November 2023
+            - heading "Hong Kong Heights" [level=3] [ref=e780]
+            - generic [ref=e781]:
+              - img [ref=e782]
+              - generic [ref=e785]: Hong Kong
+            - paragraph [ref=e786]: Taking in skyline views and dim sum experiences in this vibrant city.
+            - paragraph [ref=e788]: Another step towards liberation and discovery.
+          - img "Hong Kong Heights - Taking in skyline views and dim sum experiences in this vibrant city." [ref=e789]
+        - 'article "Timeline event: Melbourne Home in Melbourne, Australia, December 2023" [ref=e790]':
+          - button "Timeline marker for Melbourne Home" [ref=e791]:
+            - img [ref=e793]
+          - generic [ref=e796]:
+            - generic [ref=e798]:
+              - img [ref=e799]
+              - text: December 2023
+            - heading "Melbourne Home" [level=3] [ref=e804]
+            - generic [ref=e805]:
+              - img [ref=e806]
+              - generic [ref=e809]: Melbourne, Australia
+            - paragraph [ref=e810]: Starting our new chapter together in Australia's cultural capital.
+            - paragraph [ref=e812]: Home is where freedom feels most natural.
+          - img "Melbourne Home - Starting our new chapter together in Australia's cultural capital." [ref=e813]
+    - generic [ref=e815]:
+      - generic [ref=e816]:
+        - generic [ref=e817]:
+          - img [ref=e818]
+          - heading "Countries We Liberated Our Spirits In" [level=2] [ref=e822]
+        - paragraph [ref=e823]:
+          - generic [ref=e824]: 8 countries
+          - text: ","
+          - generic [ref=e825]: 13 cities
+          - text: ","
+          - generic [ref=e826]: countless adventures
+          - text: together - each destination adding a new chapter to our story of freedom and discovery
+      - generic [ref=e827]:
+        - generic [ref=e828]:
+          - generic [ref=e829]:
+            - generic [ref=e830]: 🇮🇩
+            - heading "Indonesia" [level=3] [ref=e831]
+          - generic [ref=e832]:
+            - generic [ref=e833]:
+              - img [ref=e834]
+              - generic [ref=e837]: "Cities Visited:"
+            - generic [ref=e838]:
+              - generic [ref=e839]: Bali
+              - generic [ref=e840]: Gili Islands
+          - paragraph [ref=e841]: Where it all began - tropical paradise and crystal clear waters
+        - generic [ref=e842]:
+          - generic [ref=e843]:
+            - generic [ref=e844]: 🇹🇭
+            - heading "Thailand" [level=3] [ref=e845]
+          - generic [ref=e846]:
+            - generic [ref=e847]:
+              - img [ref=e848]
+              - generic [ref=e851]: "Cities Visited:"
+            - generic [ref=e852]:
+              - generic [ref=e853]: Bangkok
+              - generic [ref=e854]: Phi Phi Islands
+          - paragraph [ref=e855]: Street food adventures and island hopping
+        - generic [ref=e856]:
+          - generic [ref=e857]:
+            - generic [ref=e858]: 🇰🇭
+            - heading "Cambodia" [level=3] [ref=e859]
+          - generic [ref=e860]:
+            - generic [ref=e861]:
+              - img [ref=e862]
+              - generic [ref=e865]: "Cities Visited:"
+            - generic [ref=e867]: Siem Reap
+          - paragraph [ref=e868]: Ancient temples and rich cultural heritage
+        - generic [ref=e869]:
+          - generic [ref=e870]:
+            - generic [ref=e871]: 🇻🇳
+            - heading "Vietnam" [level=3] [ref=e872]
+          - generic [ref=e873]:
+            - generic [ref=e874]:
+              - img [ref=e875]
+              - generic [ref=e878]: "Cities Visited:"
+            - generic [ref=e879]:
+              - generic [ref=e880]: Ho Chi Minh City
+              - generic [ref=e881]: Hanoi
+              - generic [ref=e882]: Ha Long Bay
+          - paragraph [ref=e883]: Bustling cities, rich history, and natural wonders
+        - generic [ref=e884]:
+          - generic [ref=e885]:
+            - generic [ref=e886]: 🇯🇵
+            - heading "Japan" [level=3] [ref=e887]
+          - generic [ref=e888]:
+            - generic [ref=e889]:
+              - img [ref=e890]
+              - generic [ref=e893]: "Cities Visited:"
+            - generic [ref=e894]:
+              - generic [ref=e895]: Tokyo
+              - generic [ref=e896]: Kyoto
+          - paragraph [ref=e897]: Modern innovation meets traditional culture
+        - generic [ref=e898]:
+          - generic [ref=e899]:
+            - generic [ref=e900]: 🇰🇷
+            - heading "South Korea" [level=3] [ref=e901]
+          - generic [ref=e902]:
+            - generic [ref=e903]:
+              - img [ref=e904]
+              - generic [ref=e907]: "Cities Visited:"
+            - generic [ref=e909]: Seoul
+          - paragraph [ref=e910]: K-culture, palaces, and incredible food
+        - generic [ref=e911]:
+          - generic [ref=e912]:
+            - generic [ref=e913]: 🇭🇰
+            - heading "Hong Kong" [level=3] [ref=e914]
+          - generic [ref=e915]:
+            - generic [ref=e916]:
+              - img [ref=e917]
+              - generic [ref=e920]: "Cities Visited:"
+            - generic [ref=e922]: Hong Kong
+          - paragraph [ref=e923]: Skyline views and dim sum delights
+        - generic [ref=e924]:
+          - generic [ref=e925]:
+            - generic [ref=e926]: 🇦🇺
+            - heading "Australia" [level=3] [ref=e927]
+          - generic [ref=e928]:
+            - generic [ref=e929]:
+              - img [ref=e930]
+              - generic [ref=e933]: "Cities Visited:"
+            - generic [ref=e935]: Melbourne
+          - paragraph [ref=e936]: Our new home - coffee culture and vibrant arts scene
+    - generic [ref=e938]:
+      - generic [ref=e939]:
+        - generic [ref=e940]:
+          - img [ref=e941]
+          - heading "Our Freedom Trail" [level=2] [ref=e943]
+          - img [ref=e944]
+        - paragraph [ref=e947]:
+          - text: Tracing our path of liberation across
+          - generic [ref=e948]: Asia
+          - text: and
+          - generic [ref=e949]: Australia
+          - text: "- where every pin marks a moment of discovery, growth, and the courage to explore beyond our comfort zones"
+      - generic [ref=e950]:
+        - generic [ref=e951]:
+          - generic [ref=e952]:
+            - img [ref=e953]
+            - heading "Our Journey Map" [level=3] [ref=e957]
+            - img [ref=e958]
+          - paragraph [ref=e960]: 13 destinations across 8 countries - each pin marks a moment of discovery
+        - generic [ref=e961]:
+          - generic [ref=e962]:
+            - generic [ref=e963]: "1"
+            - generic [ref=e964]: 🇮🇩
+            - generic [ref=e965]:
+              - heading "Bali, Indonesia" [level=4] [ref=e966]
+              - generic [ref=e967]:
+                - img [ref=e968]
+                - generic [ref=e971]: May 2023
+          - generic [ref=e972]:
+            - generic [ref=e973]: "2"
+            - generic [ref=e974]: 🇮🇩
+            - generic [ref=e975]:
+              - heading "Gili Islands, Indonesia" [level=4] [ref=e976]
+              - generic [ref=e977]:
+                - img [ref=e978]
+                - generic [ref=e981]: June 2023
+          - generic [ref=e982]:
+            - generic [ref=e983]: "3"
+            - generic [ref=e984]: 🇹🇭
+            - generic [ref=e985]:
+              - heading "Phi Phi Islands, Thailand" [level=4] [ref=e986]
+              - generic [ref=e987]:
+                - img [ref=e988]
+                - generic [ref=e991]: July 2023
+          - generic [ref=e992]:
+            - generic [ref=e993]: "4"
+            - generic [ref=e994]: 🇹🇭
+            - generic [ref=e995]:
+              - heading "Bangkok, Thailand" [level=4] [ref=e996]
+              - generic [ref=e997]:
+                - img [ref=e998]
+                - generic [ref=e1001]: July 2023
+          - generic [ref=e1002]:
+            - generic [ref=e1003]: "5"
+            - generic [ref=e1004]: 🇰🇭
+            - generic [ref=e1005]:
+              - heading "Siem Reap, Cambodia" [level=4] [ref=e1006]
+              - generic [ref=e1007]:
+                - img [ref=e1008]
+                - generic [ref=e1011]: August 2023
+          - generic [ref=e1012]:
+            - generic [ref=e1013]: "6"
+            - generic [ref=e1014]: 🇻🇳
+            - generic [ref=e1015]:
+              - heading "Ho Chi Minh City, Vietnam" [level=4] [ref=e1016]
+              - generic [ref=e1017]:
+                - img [ref=e1018]
+                - generic [ref=e1021]: August 2023
+          - generic [ref=e1022]:
+            - generic [ref=e1023]: "7"
+            - generic [ref=e1024]: 🇻🇳
+            - generic [ref=e1025]:
+              - heading "Hanoi, Vietnam" [level=4] [ref=e1026]
+              - generic [ref=e1027]:
+                - img [ref=e1028]
+                - generic [ref=e1031]: September 2023
+          - generic [ref=e1032]:
+            - generic [ref=e1033]: "8"
+            - generic [ref=e1034]: 🇻🇳
+            - generic [ref=e1035]:
+              - heading "Ha Long Bay, Vietnam" [level=4] [ref=e1036]
+              - generic [ref=e1037]:
+                - img [ref=e1038]
+                - generic [ref=e1041]: September 2023
+          - generic [ref=e1042]:
+            - generic [ref=e1043]: "9"
+            - generic [ref=e1044]: 🇯🇵
+            - generic [ref=e1045]:
+              - heading "Tokyo, Japan" [level=4] [ref=e1046]
+              - generic [ref=e1047]:
+                - img [ref=e1048]
+                - generic [ref=e1051]: October 2023
+          - generic [ref=e1052]:
+            - generic [ref=e1053]: "10"
+            - generic [ref=e1054]: 🇯🇵
+            - generic [ref=e1055]:
+              - heading "Kyoto, Japan" [level=4] [ref=e1056]
+              - generic [ref=e1057]:
+                - img [ref=e1058]
+                - generic [ref=e1061]: October 2023
+          - generic [ref=e1062]:
+            - generic [ref=e1063]: "11"
+            - generic [ref=e1064]: 🇰🇷
+            - generic [ref=e1065]:
+              - heading "Seoul, South Korea" [level=4] [ref=e1066]
+              - generic [ref=e1067]:
+                - img [ref=e1068]
+                - generic [ref=e1071]: November 2023
+          - generic [ref=e1072]:
+            - generic [ref=e1073]: "12"
+            - generic [ref=e1074]: 🇭🇰
+            - generic [ref=e1075]:
+              - heading "Hong Kong" [level=4] [ref=e1076]
+              - generic [ref=e1077]:
+                - img [ref=e1078]
+                - generic [ref=e1081]: November 2023
+          - generic [ref=e1082]:
+            - generic [ref=e1083]: "13"
+            - generic [ref=e1084]: 🇦🇺
+            - generic [ref=e1085]:
+              - heading "Melbourne, Australia" [level=4] [ref=e1086]
+              - generic [ref=e1087]:
+                - img [ref=e1088]
+                - generic [ref=e1091]: December 2023
+        - generic [ref=e1093]:
+          - generic [ref=e1094]:
+            - generic [ref=e1095]: "13"
+            - generic [ref=e1096]: Destinations
+          - generic [ref=e1097]:
+            - generic [ref=e1098]: "8"
+            - generic [ref=e1099]: Countries
+          - generic [ref=e1100]:
+            - generic [ref=e1101]: "8"
+            - generic [ref=e1102]: Months
+          - generic [ref=e1103]:
+            - generic [ref=e1104]: ∞
+            - generic [ref=e1105]: Memories
+    - generic [ref=e1108]:
+      - generic [ref=e1109]:
+        - generic [ref=e1110]:
+          - img [ref=e1111]
+          - heading "Our Journey in Songs" [level=2] [ref=e1115]
+          - img [ref=e1116]
+        - paragraph [ref=e1118]: The romantic playlist that soundtracks our adventure together - from first meetings in Bali to building our home in Melbourne
+        - img [ref=e1121]
+      - generic [ref=e1127]:
+        - generic [ref=e1128]:
+          - generic [ref=e1129]:
+            - img [ref=e1131]
+            - img [ref=e1136]
+            - img [ref=e1141]
+          - heading "Loading Our Playlist..." [level=3] [ref=e1145]
+          - paragraph [ref=e1146]: Preparing the soundtrack to our journey
+        - iframe [ref=e1147]:
+          
+      - generic [ref=e1149]:
+        - heading "The Soundtrack to Our Love Story" [level=3] [ref=e1150]
+        - generic [ref=e1151]:
+          - generic [ref=e1152]:
+            - img [ref=e1154]
+            - heading "Beautiful Moments" [level=4] [ref=e1156]
+            - paragraph [ref=e1157]: Songs that capture Sophie's beautiful moments
+          - generic [ref=e1158]:
+            - img [ref=e1160]
+            - heading "Adventure Anthems" [level=4] [ref=e1162]
+            - paragraph [ref=e1163]: Tracks that fueled Sophie's exploration across countries
+          - generic [ref=e1164]:
+            - img [ref=e1166]
+            - heading "Memory Lane" [level=4] [ref=e1170]
+            - paragraph [ref=e1171]: Melodies that celebrate Sophie's special places
+        - paragraph [ref=e1173]:
+          - text: "\"Music is the soundtrack of life, and this playlist holds the melodies that celebrate Sophie as she discovered"
+          - generic [ref=e1174]: freedom
+          - text: ","
+          - generic [ref=e1175]: adventure
+          - text: ", and"
+          - generic [ref=e1176]: her own path
+          - text: across the world."
+    - generic [ref=e1178]:
+      - img [ref=e1180]
+      - blockquote [ref=e1184]:
+        - text: "\""
+        - generic [ref=e1185]: Freedom
+        - text: is not worth having if it does not include the freedom to make
+        - generic [ref=e1186]: mistakes
+        - text: ", to"
+        - generic [ref=e1187]: explore
+        - text: ", and to"
+        - generic [ref=e1188]: love
+        - text: without boundaries."
+      - img [ref=e1190]
+      - paragraph [ref=e1192]: Our philosophy on this incredible journey together
+    - generic [ref=e1194]:
+      - generic [ref=e1195]:
+        - generic [ref=e1196]:
+          - generic [ref=e1197]:
+            - generic [ref=e1198]:
+              - img [ref=e1199]
+              - img [ref=e1201]
+            - heading "Sophie & You" [level=3] [ref=e1205]
+          - paragraph [ref=e1206]: A journey of love, freedom, and endless discovery
+          - paragraph [ref=e1207]: Breaking boundaries, creating memories, building dreams
+        - generic [ref=e1208]:
+          - generic [ref=e1209]:
+            - generic [ref=e1210]:
+              - generic [ref=e1211]: "8"
+              - generic [ref=e1212]: Countries
+            - generic [ref=e1213]:
+              - generic [ref=e1214]: "13"
+              - generic [ref=e1215]: Cities
+            - generic [ref=e1216]:
+              - generic [ref=e1217]: "1"
+              - generic [ref=e1218]: Love Story
+          - generic [ref=e1219]:
+            - generic [ref=e1220]: Crafted with
+            - img [ref=e1221]
+            - generic [ref=e1223]: and
+            - img [ref=e1224]
+            - generic [ref=e1228]: in 2025
+      - generic [ref=e1229]:
+        - generic [ref=e1230]:
+          - img [ref=e1231]
+          - img [ref=e1233]
+          - img [ref=e1236]
+        - blockquote [ref=e1238]:
+          - text: "\""
+          - generic [ref=e1239]: Freedom
+          - text: is not a destination, but a way of traveling.
+          - generic [ref=e1240]: Love
+          - text: is not a place to arrive, but a
+          - generic [ref=e1241]: journey
+          - text: to share."
+        - paragraph [ref=e1242]: Our philosophy of liberation through love and adventure
+  - alert [ref=e1243]
+```

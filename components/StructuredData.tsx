@@ -166,6 +166,59 @@ export default function StructuredData() {
     ]
   }
 
+  // Website structured data
+  const websiteData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Uluwatu Surf School",
+    "url": "https://uluwatusurfschool.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://uluwatusurfschool.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+
+  // FAQ structured data
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What experience level do I need for Uluwatu surf lessons?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We welcome all levels from complete beginners to advanced surfers. Our ISA certified instructors tailor each lesson to your skill level and provide appropriate safety training for Uluwatu's reef break conditions."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "What's included in the surf lesson price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All lessons include professional surfboard, safety equipment, comprehensive safety briefing, professional instruction, and photo documentation. Private lessons also include video analysis technology for technique improvement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far in advance should I book my surf lesson?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend booking at least 24-48 hours in advance, especially during peak season. However, we often have same-day availability depending on conditions and instructor schedule."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Uluwatu Surf School different from other surf schools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our head instructor has 15+ years of local Uluwatu experience and is ISA certified. We combine traditional local knowledge with modern video analysis technology, maintain small group sizes (max 4 students), and specialize in reef break surfing instruction."
+        }
+      }
+    ]
+  }
+
   return (
     <>
       <Script
@@ -180,6 +233,20 @@ export default function StructuredData() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationData)
+        }}
+      />
+      <Script
+        id="website-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteData)
+        }}
+      />
+      <Script
+        id="faq-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqData)
         }}
       />
     </>

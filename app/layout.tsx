@@ -1,17 +1,20 @@
-import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
-import StructuredData from '@/components/StructuredData'
 
-const inter = Inter({ 
-  subsets: ['latin'], 
+import { Inter, Playfair_Display } from 'next/font/google'
+
+import type { Metadata } from 'next'
+import StructuredData from '@/components/StructuredData'
+import WebVitalsReporter from '@/components/WebVitalsReporter'
+
+const inter = Inter({
+  subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-inter',
   display: 'swap'
 })
 
-const playfair = Playfair_Display({ 
-  subsets: ['latin'], 
+const playfair = Playfair_Display({
+  subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800', '900'],
   variable: '--font-playfair',
   display: 'swap'
@@ -60,6 +63,10 @@ export const metadata: Metadata = {
     description: 'Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. ISA certified instructor.',
     images: ['/images/logo.png'],
     creator: '@uluwatusurfschool',
+    site: '@uluwatusurfschool',
+  },
+  facebook: {
+    appId: '12345678901234567',
   },
   robots: {
     index: true,
@@ -86,6 +93,11 @@ export const metadata: Metadata = {
     'DC.description': 'Professional surf instruction in Uluwatu, Bali with local expertise and modern coaching technology',
     'DC.language': 'en',
     'DC.coverage': 'Uluwatu, Bali, Indonesia',
+    'fb:page_id': '12345678901234567',
+    'og:locale:alternate': 'id_ID',
+    'article:author': 'https://www.facebook.com/uluwatusurfschool',
+    'og:site_name': 'Uluwatu Surf School',
+    'og:updated_time': '2025-09-19T00:00:00Z',
   },
 }
 
@@ -110,10 +122,9 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Uluwatu Surf" />
       </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
-        <a href="#main-content" className="skip-link">
-          Skip to main content
-        </a>
+
         <StructuredData />
+        <WebVitalsReporter />
         {children}
       </body>
     </html>

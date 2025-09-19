@@ -174,5 +174,221 @@
     "permission_mode": "default",
     "hook_event_name": "UserPromptSubmit",
     "prompt": "push"
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "=do it with github cli"
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-ui-ux-dev-team-coordinator base it of https://claude.ai/public/artifacts/db773c6d-8f7c-49a5-8e9c-33806394158e"
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "run it"
+  },
+  {
+    "session_id": "75b021c4-0b70-4431-b0cd-a2e00e976216",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool/75b021c4-0b70-4431-b0cd-a2e00e976216.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "go"
+  },
+  {
+    "session_id": "0faf65ea-e5ab-42f8-ab6f-3fac9300bf89",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/0faf65ea-e5ab-42f8-ab6f-3fac9300bf89.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-qa-tester-agent "
+  },
+  {
+    "session_id": "0faf65ea-e5ab-42f8-ab6f-3fac9300bf89",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/0faf65ea-e5ab-42f8-ab6f-3fac9300bf89.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "https://claude.ai/public/artifacts/db773c6d-8f7c-49a5-8e9c-33806394158e\n\nuse this moodboard to tweak visual direction @agent-ui-ux-dev-team-coordinator "
+  },
+  {
+    "session_id": "0faf65ea-e5ab-42f8-ab6f-3fac9300bf89",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/0faf65ea-e5ab-42f8-ab6f-3fac9300bf89.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "quick"
+  },
+  {
+    "session_id": "4203f3f6-b1c1-4f93-b7cf-5fd508fd5343",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/4203f3f6-b1c1-4f93-b7cf-5fd508fd5343.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-ui-ux-dev-team-coordinator this needs a design redirection. As a highly experienced UI/UX designer who has collaborated with major brands, your task is to generate a wireframe for the landing site on a surf school website. This should include detailed layout designs for each page involved in the user flow, including placement of all buttons, images, and text fields. Ensure the design is user-friendly, intuitive, and aligns with the overall brand aesthetic. The wireframe should facilitate a seamless user experience, encouraging engagement and ensuring user satisfaction. Consider the latest design trends and leverage your extensive experience to make strategic design choices."
+  },
+  {
+    "session_id": "4203f3f6-b1c1-4f93-b7cf-5fd508fd5343",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/4203f3f6-b1c1-4f93-b7cf-5fd508fd5343.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "get surf related assets on substack"
+  },
+  {
+    "session_id": "4203f3f6-b1c1-4f93-b7cf-5fd508fd5343",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/4203f3f6-b1c1-4f93-b7cf-5fd508fd5343.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes, Use your years of experience building beautiful, responsive websites to select the appropriate assets. "
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "continue from last"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "check plans"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": " 1. Performance optimization (image loading, Core Web Vitals)\n  2. SEO enhancements (structured data, meta tags)\n  3. Testing infrastructure (automated testing pipeline)"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "show me where its running"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-qa-tester-agent "
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "its not running at 3001"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1]\n\nthis is the logo, compe up with a plan to align the visual direction with it. also use the logo\n\n"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1]\n\nthis is the logo, compe up with a plan to align the visual direction with it. also use the logo\n\n"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "also integrate the surf assets from unsplash"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-ui-ux-dev-team-coordinator I really like the hero section. Update the rest of the site to reflect the same design direction. \n\nThe icons need to be updated, and the rest of the color scheme needs to be updated. Come up with a plan. "
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "\u2502\u00a0>\u00a0document this in a document plan I'm going to have to compact this instance soon                                                                                             \u2502"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "go"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "keep going"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "run next server"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "keep going "
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "run the dev server"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "there is no dev server at  http://localhost:3001/"
   }
 ]
