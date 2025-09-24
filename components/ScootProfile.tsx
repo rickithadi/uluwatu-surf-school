@@ -34,14 +34,14 @@ const accomplishments = [
 
 export default function ScootProfile() {
   return (
-    <section id="scoot" className="py-20 bg-white">
+    <section id="scoot" className="section-spacing bg-white">
       <div className="container mx-auto px-4">
         <StaggerChildren>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-heading-1 text-charcoal mb-6">
               Meet Scoot
             </h2>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-body-lg text-storm-gray max-w-2xl mx-auto">
               Your head instructor and guide to mastering Uluwatu&apos;s legendary waves
             </p>
           </div>
@@ -71,17 +71,17 @@ export default function ScootProfile() {
             </div>
 
             {/* Profile Content */}
-            <div className="space-y-8">
+            <div className="content-spacing-lg">
               <div>
-                <h3 className="text-3xl font-bold text-black mb-4">
+                <h3 className="text-heading-2 text-charcoal mb-6">
                   Professional Surf Instructor &amp; Local Expert
                 </h3>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                <p className="text-body-lg text-storm-gray mb-6">
                   Born and raised in Bali, Scoot has been surfing the waters around Uluwatu for over 15 years. 
                   His deep understanding of local conditions, combined with proven teaching methods, makes him 
                   the perfect guide for your surfing journey.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-body-lg text-storm-gray">
                   Whether you&apos;re catching your first wave or perfecting your technique on the reef, 
                   Scoot&apos;s patient approach and expert knowledge will accelerate your progress while 
                   keeping you safe in the water.
@@ -97,13 +97,13 @@ export default function ScootProfile() {
                         <achievement.icon className="w-5 h-5 text-white" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h4 className="font-semibold text-black text-sm">
+                        <h4 className="font-semibold text-charcoal text-sm">
                           {achievement.title}
                         </h4>
-                        <p className="text-sm text-gray-600 mt-1">
+                        <p className="text-body-sm text-storm-gray mt-1">
                           {achievement.description}
                         </p>
-                        <p className="text-xs text-gray-500 mt-1">
+                        <p className="text-xs text-storm-gray mt-1">
                           {achievement.detail}
                         </p>
                       </div>
@@ -114,7 +114,7 @@ export default function ScootProfile() {
 
               {/* Video Analysis & Land Coaching */}
               <div className="bg-gradient-to-r from-gray-900 to-black rounded-2xl p-6 text-white">
-                <h4 className="text-xl font-bold mb-3">Video Analysis &amp; Land Coaching</h4>
+                <h4 className="text-heading-3 font-medium mb-3">Video Analysis &amp; Land Coaching</h4>
                 <p className="text-white/90 mb-4">
                   Improve faster with detailed video analysis of your surfing technique. 
                   Scoot provides personalized feedback and land-based coaching to perfect your form.
@@ -149,10 +149,10 @@ export default function ScootProfile() {
           {/* Beginner & Intermediate Examples */}
           <div className="mt-20">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-black mb-4">
+              <h3 className="text-heading-2 text-charcoal mb-6">
                 Beginner &amp; Intermediate Examples
               </h3>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              <p className="text-body-lg text-storm-gray max-w-2xl mx-auto">
                 See the progression journey from first waves to confident reef surfing
               </p>
             </div>
@@ -176,13 +176,13 @@ export default function ScootProfile() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h4 className="text-xl font-bold text-black mb-3">First Wave Success</h4>
-                  <p className="text-gray-700 mb-4">
+                  <h4 className="text-heading-3 text-charcoal mb-3">First Wave Success</h4>
+                  <p className="text-body text-storm-gray mb-4">
                     Watch complete beginners catch their first waves in the safe whitewash. 
                     Focus on safety, basic positioning, and building confidence in the water.
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-600">Duration: 2 hours</span>
+                    <span className="text-body-sm text-storm-gray">Duration: 2 hours</span>
                     <Button variant="outline" size="sm">View Gallery</Button>
                   </div>
                 </div>
@@ -206,13 +206,13 @@ export default function ScootProfile() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h4 className="text-xl font-bold text-black mb-3">Reef Break Mastery</h4>
-                  <p className="text-gray-700 mb-4">
+                  <h4 className="text-heading-3 text-charcoal mb-3">Reef Break Mastery</h4>
+                  <p className="text-body text-storm-gray mb-4">
                     Advanced techniques on Uluwatu&apos;s reef breaks. Learn positioning, 
                     timing, and how to read the waves for longer, more exciting rides.
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-600">Duration: 2.5 hours</span>
+                    <span className="text-body-sm text-storm-gray">Duration: 2.5 hours</span>
                     <Button variant="outline" size="sm">View Gallery</Button>
                   </div>
                 </div>

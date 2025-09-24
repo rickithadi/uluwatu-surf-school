@@ -22,5 +22,13 @@
     "hook_event_name": "PreCompact",
     "trigger": "manual",
     "custom_instructions": ""
+  },
+  {
+    "session_id": "cba2adf3-84fb-4bd4-951b-e6b6d4768fee",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/cba2adf3-84fb-4bd4-951b-e6b6d4768fee.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "hook_event_name": "PreCompact",
+    "trigger": "auto",
+    "custom_instructions": null
   }
 ]

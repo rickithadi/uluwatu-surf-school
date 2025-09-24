@@ -71,14 +71,14 @@ const packages: Package[] = [
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-20 bg-gray-50">
+    <section id="pricing" className="section-spacing bg-gray-50">
       <div className="container mx-auto px-4">
         <StaggerChildren>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-heading-1 text-charcoal mb-6">
               Pricing &amp; Packages
             </h2>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+            <p className="text-body-lg text-storm-gray max-w-2xl mx-auto">
               Choose the perfect surf coaching package for your level. All sessions include 
               personalized instruction with Scoot at Uluwatu&apos;s world-class breaks.
             </p>
@@ -120,14 +120,14 @@ export default function PricingSection() {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-2xl font-bold text-black">
+                    <h3 className="text-heading-3 text-charcoal">
                       {pkg.title}
                     </h3>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-black">
+                      <div className="text-heading-3 text-charcoal">
                         {pkg.price}
                       </div>
-                      <div className="text-sm text-gray-600">
+                      <div className="text-body-sm text-storm-gray">
                         {pkg.duration}
                       </div>
                     </div>
@@ -135,8 +135,8 @@ export default function PricingSection() {
 
                   <ul className="space-y-2 mb-6">
                     {pkg.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-gray-700">
-                        <Check className="w-4 h-4 text-black mr-2 flex-shrink-0" />
+                      <li key={idx} className="flex items-center text-body text-storm-gray">
+                        <Check className="w-4 h-4 text-charcoal mr-2 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}

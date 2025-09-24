@@ -8,6 +8,7 @@ import { StaggerChildren } from './animations/StaggerChildren'
 
 export default function Hero() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false)
+  const [videoError, setVideoError] = useState(false)
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -18,19 +19,24 @@ export default function Hero() {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover transition-opacity duration-1000 ${
+            isVideoLoaded && !videoError ? 'opacity-100' : 'opacity-0'
+          }`}
           onLoadedData={() => setIsVideoLoaded(true)}
+          onError={() => setVideoError(true)}
+          onCanPlay={() => setIsVideoLoaded(true)}
         >
-          <source src="
-          /images/scootAssets/GOPR3236.MOV
-          " type="video/mp4" />
+          <source src="/images/scootAssets/GOPR3236.MOV" type="video/quicktime" />
+          <source src="/images/scootAssets/GOPR3236.MOV" type="video/mp4" />
         </video>
         {/* Fallback background image */}
         <Image
           src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80&sat=-100&con=20"
           alt="Dramatic black and white surf break at Uluwatu"
           fill
-          className="object-cover grayscale contrast-125"
+          className={`object-cover grayscale contrast-125 transition-opacity duration-1000 ${
+            isVideoLoaded && !videoError ? 'opacity-0' : 'opacity-100'
+          }`}
           priority
           sizes="100vw"
         />

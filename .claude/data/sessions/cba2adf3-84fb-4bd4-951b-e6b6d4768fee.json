@@ -5,6 +5,10 @@
     "You're working on a gallery component using the scoot assets in the public folder. ",
     "missing required error components, refreshing...",
     "@agent-design-reviewer-agent keep the monochromatic theme. use more typography, work on the spacing in hero section. move gallery down a section. Add padding in responsive nav. take design reference from https://futuresfins.com.au/?srsltid=AfmBOop0kUP3MH5LTsFrUjIRd3cKjwtyoG4eqqDz7l1s8ZXPG-WniXsM",
-    "remove the descriptions from the gallery"
+    "remove the descriptions from the gallery",
+    "public/images/scootAssets/GOPR3236.MOV\n\nuse this as the hero background",
+    "troubleshoot hero section. video is not loading",
+    "missing required error components, refreshing...",
+    "ensure design cohesiveness @agent-design-reviewer-agent "
   ]
 }
