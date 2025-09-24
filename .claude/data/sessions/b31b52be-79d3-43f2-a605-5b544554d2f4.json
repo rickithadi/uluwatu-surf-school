@@ -17,6 +17,12 @@
     "run next server",
     "keep going ",
     "run the dev server",
-    "there is no dev server at  http://localhost:3001/"
+    "there is no dev server at  http://localhost:3001/",
+    "TypeError: Cannot read properties of null (reading 'useContext')\n\n",
+    "push this up",
+    "use github cli",
+    "push to staging domain",
+    "https://christensonsurfboards.com/\n\n@agent-ui-designer-agent Come up with a plan to further align this visual direction to this website. Let's iterate back and forth. I like the kind of yellow accents. ",
+    "only subtle yellows and typography changes"
   ]
 }

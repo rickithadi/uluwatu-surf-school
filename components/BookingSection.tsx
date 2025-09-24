@@ -6,25 +6,23 @@ import { Button } from './ui/Button'
 import { StaggerChildren } from './animations/StaggerChildren'
 
 interface FormData {
-  name: string
+  fullName: string
+  numberOfPeople: string
+  whatsappNumber: string
   email: string
-  phone: string
-  course: string
-  experience: string
-  dates: string
-  guests: string
+  preferredDateTime: string
+  surfLevel: string
   message: string
 }
 
 export default function BookingSection() {
   const [formData, setFormData] = useState<FormData>({
-    name: '',
+    fullName: '',
+    numberOfPeople: '1',
+    whatsappNumber: '',
     email: '',
-    phone: '',
-    course: '',
-    experience: '',
-    dates: '',
-    guests: '1',
+    preferredDateTime: '',
+    surfLevel: '',
     message: ''
   })
 
@@ -47,12 +45,24 @@ export default function BookingSection() {
     console.log('Form submitted:', formData)
     setIsSubmitting(false)
     
-    // Reset form or show success message
-    alert('Thank you! We&apos;ll contact you within 24 hours to confirm your booking.')
+    // Generate booking confirmation message
+    const confirmationMessage = `Thank you for confirming your booking with Uluwatu Surf School Bali.
+
+Name: ${formData.fullName}
+Number of people: ${formData.numberOfPeople}
+WhatsApp #: ${formData.whatsappNumber}
+Email: ${formData.email}
+Preferred Date/Time: ${formData.preferredDateTime}
+Surf Level: ${formData.surfLevel}
+
+**Please note all payments must be made in cash. We do not take a deposit or cancellation fee, and understand any unforeseen circumstances. We ask that for any cancellations or rescheduling, please provide a notice period of 2 hours before the confirmed start time. Thank you and we look forward to surfing with you! 🤙🏼`
+
+    console.log('Booking confirmation:', confirmationMessage)
+    alert('Thank you! Your booking request has been submitted. We\'ll contact you via WhatsApp within 2 hours to confirm details.')
   }
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="book" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <StaggerChildren>
           <div className="text-center mb-16">
@@ -71,115 +81,33 @@ export default function BookingSection() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Booking Form */}
             <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-black mb-6">Book Your Session</h3>
+              <h3 className="text-2xl font-bold text-black mb-6">Inquiries + Bookings Form</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                </div>
-
                 <div>
                   <label className="block text-sm font-medium text-black mb-2">
-                    Phone Number
+                    Full Name *
                   </label>
                   <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
+                    type="text"
+                    name="fullName"
+                    required
+                    value={formData.fullName}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="Your full name"
                   />
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-black mb-2">
-                      Course Type *
+                      Number of People *
                     </label>
                     <select
-                      name="course"
+                      name="numberOfPeople"
                       required
-                      value={formData.course}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
-                    >
-                      <option value="">Select a course</option>
-                      <option value="wave-rider">Wave Rider (Beginner) - $299</option>
-                      <option value="ocean-explorer">Ocean Explorer (Intermediate) - $249</option>
-                      <option value="uluwatu-master">Uluwatu Master (Advanced) - $199</option>
-                      <option value="consultation">Free Consultation</option>
-                    </select>
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Experience Level
-                    </label>
-                    <select
-                      name="experience"
-                      value={formData.experience}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
-                    >
-                      <option value="">Select level</option>
-                      <option value="complete-beginner">Complete Beginner</option>
-                      <option value="some-experience">Some Experience</option>
-                      <option value="intermediate">Intermediate</option>
-                      <option value="advanced">Advanced</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Preferred Dates
-                    </label>
-                    <input
-                      type="date"
-                      name="dates"
-                      value={formData.dates}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Number of Guests
-                    </label>
-                    <select
-                      name="guests"
-                      value={formData.guests}
+                      value={formData.numberOfPeople}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
                     >
@@ -187,7 +115,73 @@ export default function BookingSection() {
                       <option value="2">2 People</option>
                       <option value="3">3 People</option>
                       <option value="4">4 People</option>
-                      <option value="5+">5+ People</option>
+                      <option value="5">5 People</option>
+                      <option value="6+">6+ People</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-black mb-2">
+                      WA # (WhatsApp Number) *
+                    </label>
+                    <input
+                      type="tel"
+                      name="whatsappNumber"
+                      required
+                      value={formData.whatsappNumber}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
+                      placeholder="+62 812 3456 7890"
+                    />
+                  </div>
+                </div>
+                  
+                <div>
+                  <label className="block text-sm font-medium text-black mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-black mb-2">
+                      Preferred Date / Time *
+                    </label>
+                    <input
+                      type="datetime-local"
+                      name="preferredDateTime"
+                      required
+                      value={formData.preferredDateTime}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-black mb-2">
+                      Surf Level *
+                    </label>
+                    <select
+                      name="surfLevel"
+                      required
+                      value={formData.surfLevel}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
+                    >
+                      <option value="">Select surf level</option>
+                      <option value="complete-beginner">Complete Beginner</option>
+                      <option value="beginner">Beginner (1-10 sessions)</option>
+                      <option value="intermediate">Intermediate (can catch unbroken waves)</option>
+                      <option value="advanced">Advanced (comfortable on reef breaks)</option>
                     </select>
                   </div>
                 </div>
@@ -202,7 +196,7 @@ export default function BookingSection() {
                     value={formData.message}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors resize-none"
-                    placeholder="Any special requirements or questions?"
+                    placeholder="Any special requirements, questions, or requests?"
                   />
                 </div>
 

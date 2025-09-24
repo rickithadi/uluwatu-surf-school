@@ -39,28 +39,56 @@ export default function Hero() {
       <div className="relative z-10 h-full flex items-center justify-center text-center">
         <div className="container mx-auto px-4">
           <StaggerChildren>
+            {/* Logo Display */}
+            <div className="mb-8">
+              <div className="w-24 h-24 mx-auto mb-4">
+                <Image
+                  src="/images/uluwatu-logo.svg"
+                  alt="Uluwatu Surf School"
+                  width={96}
+                  height={96}
+                  className="w-full h-full object-contain brightness-0 invert"
+                />
+              </div>
+            </div>
+
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Master the Waves
-              <span className="block text-white">
-                at Uluwatu
+              Uluwatu Surf School
+              <span className="block text-white text-4xl md:text-5xl font-normal mt-2">
+                with Scoot
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Experience world-class surf coaching at Bali&apos;s most iconic break. 
-              From beginner to pro, we&apos;ll guide your surfing journey.
+              Master the legendary waves of Uluwatu with Bali&apos;s premier surf instructor. 
+              Professional coaching for all levels in paradise.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="min-w-[200px]">
-                Start Your Journey
+              <Button 
+                size="lg" 
+                className="min-w-[200px]"
+                onClick={() => {
+                  const element = document.getElementById('book')
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' })
+                  }
+                }}
+              >
+                Book Your Session
               </Button>
               <Button 
                 variant="outline" 
                 size="lg" 
                 className="min-w-[200px] border-white text-white hover:bg-white hover:text-black"
+                onClick={() => {
+                  const element = document.getElementById('pricing')
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' })
+                  }
+                }}
               >
-                ▶ Watch Video
+                View Pricing
               </Button>
             </div>
           </StaggerChildren>

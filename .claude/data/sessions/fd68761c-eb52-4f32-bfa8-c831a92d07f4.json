@@ -1,0 +1,10 @@
+{
+  "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+  "prompts": [
+    "@agent-ui-designer-agent iterate on the Follow Our Journey to bring it up to date with the visual direction\n\nuse assets from [Image #1]",
+    "use assets from [Image #1]",
+    "no, use image and video assets from /Users/hadi.rickit/Downloads/scootAssets",
+    "no, use image and video assets from /Users/hadi.rickit/Downloads/scootAssets",
+    "[Image #1] use this logo, its the actual one"
+  ]
+}

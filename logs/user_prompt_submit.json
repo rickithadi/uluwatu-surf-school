@@ -390,5 +390,149 @@
     "permission_mode": "default",
     "hook_event_name": "UserPromptSubmit",
     "prompt": "there is no dev server at  http://localhost:3001/"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "TypeError: Cannot read properties of null (reading 'useContext')\n\n"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "push this up"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "use github cli"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "push to staging domain"
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "https://christensonsurfboards.com/\n\n@agent-ui-designer-agent Come up with a plan to further align this visual direction to this website. Let's iterate back and forth. I like the kind of yellow accents. "
+  },
+  {
+    "session_id": "b31b52be-79d3-43f2-a605-5b544554d2f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b31b52be-79d3-43f2-a605-5b544554d2f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "only subtle yellows and typography changes"
+  },
+  {
+    "session_id": "85b21d8b-e4d0-49eb-95ea-a26bd8010f64",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/85b21d8b-e4d0-49eb-95ea-a26bd8010f64.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "these are notes provided by client. come up  with an integration plan. @agent-meta-agent \n\nScoot Website\n\nHome Page\nOpening homepage panoramic video\nLogo\n\nTab 1- Pricing\nPricing & Packages\n\nTab 2- Scoot\nMeet our Head Instructor *Need Notes*\nAccomplishments *Need Notes*\n\nTab 3- Contact Us\nInquiries + Bookings Form\n-Full Name\n-Number of people\n-WA #\n-Email\n-Preferred date/ time\n-Surf level\n\nTab 4- Where to Find Us/ About Us\nSurf School Bio *Need Notes*\nLinks to Instagram \nGoogle Reviews\nLocation\n\nEtc\nVideo Analysis/ Land Coaching\nBeginner & Intermediate Surf Examples (Videos + Photos)\n\nSurf forecast?\n\n\n\nBooking Confirmation message/ template:\n\nThank you for confirming your booking with Uluwatu Surf School Bali.\n\nName:\nDate:\nTime:\n# of people:\nLesson type:\nSurf location:\nMeeting point:\n\n**Please note all payments must be made in cash. We do not take a deposit or cancellation fee, and understand any unforeseen circumstances. We ask that for any cancellations or rescheduling, please provide a notice period of 2 hours before the confirmed start time. Thank you and we look forward to surfing with you! \ud83e\udd19\ud83c\udffc\n"
+  },
+  {
+    "session_id": "85b21d8b-e4d0-49eb-95ea-a26bd8010f64",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/85b21d8b-e4d0-49eb-95ea-a26bd8010f64.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "start on Navigation + Hero + Pricing"
+  },
+  {
+    "session_id": "85b21d8b-e4d0-49eb-95ea-a26bd8010f64",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/85b21d8b-e4d0-49eb-95ea-a26bd8010f64.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1]"
+  },
+  {
+    "session_id": "442bd439-5c27-4a48-bb4d-61370c358b68",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/442bd439-5c27-4a48-bb4d-61370c358b68.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "A Claude instance has just crashed. See if you can recover the work that was being done and continue later after. Start off in Plan Mode and let me know what you're going to do. Ensure you form a multi-expertise team and work in parallel. "
+  },
+  {
+    "session_id": "442bd439-5c27-4a48-bb4d-61370c358b68",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/442bd439-5c27-4a48-bb4d-61370c358b68.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "This is purely a front-end codebase. "
+  },
+  {
+    "session_id": "442bd439-5c27-4a48-bb4d-61370c358b68",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/442bd439-5c27-4a48-bb4d-61370c358b68.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": " no external integrations, focus on styling and searchability\n"
+  },
+  {
+    "session_id": "442bd439-5c27-4a48-bb4d-61370c358b68",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/442bd439-5c27-4a48-bb4d-61370c358b68.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "run the local dev server"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-ui-designer-agent iterate on the Follow Our Journey to bring it up to date with the visual direction\n\nuse assets from [Image #1]"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "use assets from [Image #1]"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "no, use image and video assets from /Users/hadi.rickit/Downloads/scootAssets"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "no, use image and video assets from /Users/hadi.rickit/Downloads/scootAssets"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1] use this logo, its the actual one"
   }
 ]

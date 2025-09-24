@@ -18,11 +18,10 @@ export default function Header() {
   }, [])
 
   const navItems = [
-    { name: 'Courses', href: '#courses' },
-    { name: 'Instructors', href: '#instructors' },
-    { name: 'About', href: '#about' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Pricing & Packages', href: '#pricing' },
+    { name: 'Meet Scoot', href: '#scoot' },
+    { name: 'Book Session', href: '#book' },
+    { name: 'Find Us', href: '#find-us' }
   ]
 
   return (
@@ -59,6 +58,14 @@ export default function Header() {
               className={`font-medium transition-colors duration-200 hover:text-gray-600 ${
                 isScrolled ? 'text-gray-900' : 'text-white'
               }`}
+              onClick={(e) => {
+                e.preventDefault()
+                const targetId = item.href.substring(1)
+                const element = document.getElementById(targetId)
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
             >
               {item.name}
             </Link>
@@ -101,7 +108,15 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   className="block text-slate-700 font-medium py-2 hover:text-orange-500 transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setIsMobileMenuOpen(false)
+                    const targetId = item.href.substring(1)
+                    const element = document.getElementById(targetId)
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' })
+                    }
+                  }}
                 >
                   {item.name}
                 </Link>
