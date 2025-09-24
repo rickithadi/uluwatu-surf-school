@@ -534,5 +534,93 @@
     "permission_mode": "bypassPermissions",
     "hook_event_name": "UserPromptSubmit",
     "prompt": "[Image #1] use this logo, its the actual one"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "go"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "i dont see the logo"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "i have added logo.jpg. use that"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "image needs to be manipulated, logo doesnt look good"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "look into scootAssets and use these assets in the site. move the gallery section up and update the styling to a more mosaic and understated, professional style"
+  },
+  {
+    "session_id": "fd68761c-eb52-4f32-bfa8-c831a92d07f4",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/fd68761c-eb52-4f32-bfa8-c831a92d07f4.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "look into scootAssets and use these assets in the site. move the gallery section up and update the styling to a more mosaic and understated, professional style. its in public folder"
+  },
+  {
+    "session_id": "cba2adf3-84fb-4bd4-951b-e6b6d4768fee",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/cba2adf3-84fb-4bd4-951b-e6b6d4768fee.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "claude has crashed, continue from last"
+  },
+  {
+    "session_id": "cba2adf3-84fb-4bd4-951b-e6b6d4768fee",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/cba2adf3-84fb-4bd4-951b-e6b6d4768fee.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "You're working on a gallery component using the scoot assets in the public folder. "
+  },
+  {
+    "session_id": "cba2adf3-84fb-4bd4-951b-e6b6d4768fee",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/cba2adf3-84fb-4bd4-951b-e6b6d4768fee.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "missing required error components, refreshing..."
+  },
+  {
+    "session_id": "cba2adf3-84fb-4bd4-951b-e6b6d4768fee",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/cba2adf3-84fb-4bd4-951b-e6b6d4768fee.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-design-reviewer-agent keep the monochromatic theme. use more typography, work on the spacing in hero section. move gallery down a section. Add padding in responsive nav. take design reference from https://futuresfins.com.au/?srsltid=AfmBOop0kUP3MH5LTsFrUjIRd3cKjwtyoG4eqqDz7l1s8ZXPG-WniXsM"
+  },
+  {
+    "session_id": "cba2adf3-84fb-4bd4-951b-e6b6d4768fee",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/cba2adf3-84fb-4bd4-951b-e6b6d4768fee.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "default",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "remove the descriptions from the gallery"
   }
 ]

@@ -31,19 +31,19 @@ export default function Header() {
       <nav className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3">
-          <div className={`w-12 h-12 transition-all duration-300 ${
-            isScrolled ? 'invert-0' : 'invert'
-          }`}>
+          <div className="w-14 h-14 transition-all duration-300">
             <Image
-              src="/images/uluwatu-logo.svg"
-              alt="Uluwatu Surf School"
-              width={48}
-              height={48}
-              className="w-full h-full object-contain"
+              src="/images/logo.jpg"
+              alt="Uluwatu Surf School - Bali"
+              width={56}
+              height={56}
+              className={`w-full h-full object-contain rounded-full transition-all duration-300 ${
+                isScrolled ? 'drop-shadow-md' : 'drop-shadow-lg'
+              }`}
             />
           </div>
           <span className={`font-bold text-xl transition-colors duration-300 ${
-            isScrolled ? 'text-black' : 'text-white'
+            isScrolled ? 'text-black' : 'text-white drop-shadow-sm'
           }`}>
             Uluwatu Surf School
           </span>
@@ -102,12 +102,12 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="absolute top-20 left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg md:hidden">
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-6 py-8 space-y-6">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block text-slate-700 font-medium py-2 hover:text-orange-500 transition-colors"
+                  className="block text-slate-700 font-medium py-4 hover:text-black transition-colors text-lg"
                   onClick={(e) => {
                     e.preventDefault()
                     setIsMobileMenuOpen(false)
@@ -121,8 +121,8 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4">
-                <Button className="w-full">
+              <div className="mt-6">
+                <Button className="w-full" size="lg">
                   Book Now
                 </Button>
               </div>

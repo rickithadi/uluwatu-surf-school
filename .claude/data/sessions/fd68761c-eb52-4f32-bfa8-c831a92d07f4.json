@@ -5,6 +5,12 @@
     "use assets from [Image #1]",
     "no, use image and video assets from /Users/hadi.rickit/Downloads/scootAssets",
     "no, use image and video assets from /Users/hadi.rickit/Downloads/scootAssets",
-    "[Image #1] use this logo, its the actual one"
+    "[Image #1] use this logo, its the actual one",
+    "go",
+    "i dont see the logo",
+    "i have added logo.jpg. use that",
+    "image needs to be manipulated, logo doesnt look good",
+    "look into scootAssets and use these assets in the site. move the gallery section up and update the styling to a more mosaic and understated, professional style",
+    "look into scootAssets and use these assets in the site. move the gallery section up and update the styling to a more mosaic and understated, professional style. its in public folder"
   ]
 }

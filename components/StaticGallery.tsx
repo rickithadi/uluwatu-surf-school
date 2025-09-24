@@ -1,82 +1,159 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Instagram } from 'lucide-react'
+import { Instagram, Camera, Play } from 'lucide-react'
 
-// Placeholder gallery data - can be updated with actual Instagram content
+// Professional gallery using scootAssets - curated selection of best shots
 const galleryImages = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    alt: 'Uluwatu surf lesson in action',
-    caption: 'Perfect waves at Uluwatu 🏄‍♂️'
+    src: '/images/scootAssets/IMG_4743.JPG',
+    alt: 'Professional surf lesson at Uluwatu',
+    caption: 'Learning proper technique with professional guidance',
+    size: 'large',
+    type: 'photo'
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    alt: 'Student learning to surf',
-    caption: 'Another successful lesson! 🤙'
+    src: '/images/scootAssets/IMG_4755.JPG',
+    alt: 'Surf coaching technique',
+    caption: 'One-on-one coaching in perfect conditions',
+    size: 'medium',
+    type: 'photo'
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    alt: 'Scotty coaching a student',
-    caption: 'Technique improvement with video analysis'
+    src: '/images/scootAssets/IMG_4764.JPG',
+    alt: 'Perfect wave conditions',
+    caption: 'Uluwatu\'s world-class waves',
+    size: 'small',
+    type: 'photo'
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    alt: 'Sunset surf session',
-    caption: 'Golden hour sessions 🌅'
+    src: '/images/scootAssets/IMG_4768.JPG',
+    alt: 'Student progression',
+    caption: 'Watching students progress and gain confidence',
+    size: 'medium',
+    type: 'photo'
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1465188035480-a4d29da2845a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    alt: 'Group surf lesson',
-    caption: 'Semi-private lessons for friends'
+    src: '/images/scootAssets/IMG_2724.JPG',
+    alt: 'Uluwatu surf break',
+    caption: 'The legendary Uluwatu break',
+    size: 'small',
+    type: 'photo'
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    alt: 'Uluwatu waves',
-    caption: 'Reading the waves like a local'
+    src: '/images/scootAssets/IMG_3250.JPG',
+    alt: 'Surf school atmosphere',
+    caption: 'Creating memories and building skills',
+    size: 'large',
+    type: 'photo'
+  },
+  {
+    id: 7,
+    src: '/images/scootAssets/IMG_4772.JPG',
+    alt: 'Advanced surfing technique',
+    caption: 'Perfecting advanced maneuvers',
+    size: 'medium',
+    type: 'photo'
+  },
+  {
+    id: 8,
+    src: '/images/scootAssets/IMG_4759.JPG',
+    alt: 'Ocean safety training',
+    caption: 'Safety first - comprehensive ocean awareness',
+    size: 'small',
+    type: 'photo'
+  },
+  {
+    id: 9,
+    src: '/images/scootAssets/GOPR3236.MOV',
+    alt: 'Surf session highlight reel',
+    caption: 'Action-packed session highlights',
+    size: 'large',
+    type: 'video',
+    thumbnail: '/images/scootAssets/IMG_4746.JPG'
+  },
+  {
+    id: 10,
+    src: '/images/scootAssets/IMG_0631.JPG',
+    alt: 'Sunset surf session',
+    caption: 'Golden hour sessions at Uluwatu',
+    size: 'medium',
+    type: 'photo'
+  },
+  {
+    id: 11,
+    src: '/images/scootAssets/IMG_4551.JPG',
+    alt: 'Group surf lesson',
+    caption: 'Learning together in small groups',
+    size: 'small',
+    type: 'photo'
+  },
+  {
+    id: 12,
+    src: '/images/scootAssets/IMG_3414.JPG',
+    alt: 'Professional surf photography',
+    caption: 'Capturing your surfing moments',
+    size: 'medium',
+    type: 'photo'
   }
 ]
 
 export default function StaticGallery() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="section-spacing bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light text-charcoal mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-heading-1 text-charcoal mb-6">
             Gallery
           </h2>
-          <p className="text-lg text-storm-gray max-w-2xl mx-auto">
+          <p className="text-body-lg text-storm-gray max-w-2xl mx-auto">
             See our students in action and follow our journey on Instagram
           </p>
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {galleryImages.map((image) => (
-            <div key={image.id} className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="aspect-square relative">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4">
-                <p className="text-sm text-storm-gray">{image.caption}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {galleryImages.map((item) => (
+            <div key={item.id} className={`bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300 ${
+              item.size === 'large' ? 'md:col-span-2' : ''
+            }`}>
+              <div className="aspect-square relative group">
+                {item.type === 'video' ? (
+                  <>
+                    <Image
+                      src={item.thumbnail || item.src}
+                      alt={item.alt}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <Play className="h-12 w-12 text-white drop-shadow-lg" />
+                    </div>
+                    <div className="absolute top-4 right-4 bg-black bg-opacity-50 rounded-full p-2">
+                      <Play className="h-4 w-4 text-white" />
+                    </div>
+                  </>
+                ) : (
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                )}
               </div>
             </div>
           ))}
         </div>
 
         {/* Instagram CTAs */}
-        <div className="text-center space-y-4">
-          <p className="text-lg text-charcoal font-medium">Follow us for more updates!</p>
+        <div className="text-center content-spacing">
+          <p className="text-body-lg text-charcoal font-medium">Follow us for more updates!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="https://instagram.com/uluwatusurfschool_official"

@@ -1,0 +1,10 @@
+{
+  "session_id": "cba2adf3-84fb-4bd4-951b-e6b6d4768fee",
+  "prompts": [
+    "claude has crashed, continue from last",
+    "You're working on a gallery component using the scoot assets in the public folder. ",
+    "missing required error components, refreshing...",
+    "@agent-design-reviewer-agent keep the monochromatic theme. use more typography, work on the spacing in hero section. move gallery down a section. Add padding in responsive nav. take design reference from https://futuresfins.com.au/?srsltid=AfmBOop0kUP3MH5LTsFrUjIRd3cKjwtyoG4eqqDz7l1s8ZXPG-WniXsM",
+    "remove the descriptions from the gallery"
+  ]
+}

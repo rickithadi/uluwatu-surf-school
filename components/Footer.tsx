@@ -13,10 +13,10 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <div className="relative w-10 h-10">
                 <Image
-                  src="/images/uluwatu-logo.svg"
-                  alt="Uluwatu Surf School"
+                  src="/images/logo.jpg"
+                  alt="Uluwatu Surf School - Bali"
                   fill
-                  className="invert"
+                  className="object-contain rounded-full opacity-90 hover:opacity-100 transition-opacity"
                   sizes="40px"
                 />
               </div>

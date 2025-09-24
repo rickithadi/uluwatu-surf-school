@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import StaticGallery from '@/components/StaticGallery'
 import PricingSection from '@/components/PricingSection'
 import ScootProfile from '@/components/ScootProfile'
 import BookingSection from '@/components/BookingSection'
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <PricingSection />
       <ScootProfile />
+      <StaticGallery />
       <BookingSection />
       <FindUsSection />
       <Footer />
