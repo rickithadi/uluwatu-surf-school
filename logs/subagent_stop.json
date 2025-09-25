@@ -174,5 +174,21 @@
     "permission_mode": "bypassPermissions",
     "hook_event_name": "SubagentStop",
     "stop_hook_active": false
+  },
+  {
+    "session_id": "3c6e729d-158a-496b-8034-d09b70c3c7e0",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/3c6e729d-158a-496b-8034-d09b70c3c7e0.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "34b07b62-4768-458a-9152-c970c4170728",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/34b07b62-4768-458a-9152-c970c4170728.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false
   }
 ]

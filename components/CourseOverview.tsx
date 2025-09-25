@@ -23,7 +23,7 @@ const courses: Course[] = [
     level: 'Beginner',
     duration: '5 Days',
     price: '$299',
-    image: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=-100&con=25',
+    image: '/images/courses/beginner.jpg',
     features: [
       'Beach safety & theory',
       'Wave reading basics', 
@@ -38,7 +38,7 @@ const courses: Course[] = [
     level: 'Intermediate',
     duration: '3 Days',
     price: '$249',
-    image: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=-100&con=30',
+    image: '/images/courses/intermediate.jpg',
     features: [
       'Advanced positioning',
       'Turn techniques',
@@ -54,7 +54,7 @@ const courses: Course[] = [
     level: 'Advanced',
     duration: '2 Days',
     price: '$199',
-    image: 'https://images.unsplash.com/photo-1573160813759-54583e3c2bb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=-100&con=35',
+    image: '/images/courses/advanced.jpg',
     features: [
       'Uluwatu secret spots',
       'Barrel riding',

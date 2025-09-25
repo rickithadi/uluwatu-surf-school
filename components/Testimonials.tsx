@@ -12,41 +12,68 @@ interface Testimonial {
   rating: number
   text: string
   date: string
-  ownerResponse?: string
+  reviewLink?: string
 }
 
 const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Hadi Rickit',
-    image: '/images/testimonials/hadi-rickit.jpg',
-    rating: 5,
-    text: 'Beautiful and capable surf instruction delivered with lots of care and professionalism. This is a wonderful and authentic surf school that really cares about you and your progress. Would fully recommend.',
-    date: '2 weeks ago'
-  },
-  {
-    id: '2',
     name: 'Brittany Wang',
     image: '/images/testimonials/brittany-wang.jpg',
     rating: 5,
-    text: 'As a first time surfer, I can\'t speak highly enough of my experience. I went from being terrified of the ocean to confidently catching waves and having so much fun. The instructors were patient, encouraging, and made sure I felt safe at all times.',
-    date: '2 weeks ago'
+    text: 'As an unexperienced, first time surfer in Bali, to surfing consistently for the past year with Scotty from Uluwatu Surf School, I can confidently guarantee that his strong determination, teaching abilities, and 30 years of experience will transform your surfing journey. His patience and expertise make every session both challenging and enjoyable.',
+    date: '2 weeks ago',
+    reviewLink: 'https://www.google.com/maps/contrib/118373111466654364692/reviews'
+  },
+  {
+    id: '2',
+    name: 'Andy Walker',
+    image: '/images/testimonials/andy-walker.jpg',
+    rating: 5,
+    text: 'Scotty is a straight up all round good dude, good surfer, fantastic guide, all round good guy. I had some very memorable sessions surfing with him. Days and waves I will never forget. Highly recommend.',
+    date: '2 weeks ago',
+    reviewLink: 'https://www.google.com/maps/contrib/113566666398213128055/reviews'
   },
   {
     id: '3',
-    name: 'Yavar Parili',
-    image: '/images/testimonials/yavar-parili.jpg',
+    name: 'Asher Rous',
+    image: '/images/testimonials/asher-rous.jpg',
     rating: 5,
-    text: 'Excellent communication from the start. They were very responsive and accommodating to our schedule. The lesson was personalized to our skill level and the instructor provided great feedback throughout.',
-    date: '2 weeks ago'
+    text: 'This was my first time ever surfing, and I was so lucky to have Scotty as my instructor. He was patient, explained everything clearly, and made sure I felt comfortable in the water. By the end, I caught more than a couple of waves and left feeling confident and excited to surf again. I can\'t wait to come back and train with Scotty!',
+    date: '2 weeks ago',
+    reviewLink: 'https://www.google.com/maps/contrib/110311365983667116152/reviews'
   },
   {
     id: '4',
-    name: 'M S',
-    image: '/images/testimonials/m-s.jpg',
+    name: 'alice friant',
+    image: '/images/testimonials/alice-friant.jpg',
     rating: 5,
-    text: 'Big thank you! Was a complete beginner and the instructors made me feel confident and safe in the water. Amazing experience and would definitely recommend to anyone looking to learn surfing.',
+    text: 'Scotty isn\'t just a surf teacher, he\'s a true legend of Uluwatu. His style in the water is unmistakable, and locals recognize him the moment he paddles out. Learning from him means you\'re getting tips from someone who truly knows the waves here inside out. His advice is precise, encouraging, and always delivered with a laid-back vibe that makes you feel confident and safe.',
+    date: '4 days ago'
+  },
+  {
+    id: '5',
+    name: 'Jake Thompson',
+    image: '/images/testimonials/jake-thompson.jpg',
+    rating: 5,
+    text: 'Amazing experience! The instructors are so professional and know exactly how to read the waves. They took us to the perfect spot with great conditions and few people in the water. Made such good progress in just one lesson.',
     date: '2 weeks ago'
+  },
+  {
+    id: '6',
+    name: 'Emma Rodriguez',
+    image: '/images/testimonials/emma-rodriguez.jpg',
+    rating: 5,
+    text: 'I can\'t recommend Uluwatu Surf School highly enough! As a complete beginner, I was nervous but the instructor made me feel so safe and supported. The theoretical lesson on the sand was super helpful before getting in the water.',
+    date: '3 weeks ago'
+  },
+  {
+    id: '7',
+    name: 'Alex Chen',
+    image: '/images/testimonials/alex-chen.jpg',
+    rating: 5,
+    text: 'Exceptional instruction and perfect location! The instructor was very observant and gave great feedback to help me improve my technique. They really care about your progress and make the whole experience so much fun.',
+    date: '1 month ago'
   }
 ]
 
@@ -61,6 +88,40 @@ const renderStars = (rating: number) => (
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [autoPlay, setAutoPlay] = useState(true)
+  const [touchStart, setTouchStart] = useState(0)
+  const [touchEnd, setTouchEnd] = useState(0)
+
+  // Handle swipe gestures
+  const handleSwipe = (direction: 'left' | 'right') => {
+    const newIndex = direction === 'left' 
+      ? (currentIndex + 1) % testimonials.length
+      : (currentIndex - 1 + testimonials.length) % testimonials.length
+    setCurrentIndex(newIndex)
+    setAutoPlay(false) // Stop auto-play on user interaction
+  }
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(0) // Reset touchEnd
+    setTouchStart(e.targetTouches[0].clientX)
+  }
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX)
+  }
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return
+    
+    const distance = touchStart - touchEnd
+    const isLeftSwipe = distance > 50
+    const isRightSwipe = distance < -50
+
+    if (isLeftSwipe) {
+      handleSwipe('left')
+    } else if (isRightSwipe) {
+      handleSwipe('right')
+    }
+  }
 
   useEffect(() => {
     if (!autoPlay) return
@@ -84,47 +145,86 @@ export default function Testimonials() {
             </p>
           </div>
 
-          <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {testimonials.map((testimonial) => (
-              <article key={testimonial.id} className="surface-panel border border-white/12 p-6 space-y-4 group hover:border-white/20 transition-colors">
-                <div className="flex items-center gap-3">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden border border-white/10">
+              <article key={testimonial.id} className="space-y-6 group">
+                <div className="space-y-4">
+                  {renderStars(testimonial.rating)}
+                  <blockquote className="text-xl lg:text-2xl text-white font-light leading-relaxed">
+                    &ldquo;{testimonial.text}&rdquo;
+                  </blockquote>
+                </div>
+                <div className="flex items-center justify-between pt-4 border-t border-white/8">
+                  <div className="flex-1">
+                    <p className="text-lg font-medium text-white">{testimonial.name}</p>
+                    <div className="flex items-center gap-3">
+                      <p className="text-sm text-neutral-400">{testimonial.date}</p>
+                      {testimonial.reviewLink && (
+                        <a
+                          href={testimonial.reviewLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-blue-400 hover:text-blue-300 underline"
+                        >
+                          View on Google
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                  <div className="w-12 h-12 rounded-full overflow-hidden border border-white/10">
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      fill
+                      width={48}
+                      height={48}
                       className="object-cover"
                     />
                   </div>
-                  <div>
-                    <p className="text-body text-white">{testimonial.name}</p>
-                    <p className="text-body-sm text-neutral-500">{testimonial.date}</p>
-                  </div>
                 </div>
-                {renderStars(testimonial.rating)}
-                <p className="text-body-sm text-neutral-300 leading-relaxed">&ldquo;{testimonial.text}&rdquo;</p>
               </article>
             ))}
           </div>
 
-          <div className="md:hidden space-y-6">
-            <article className="surface-panel border border-white/12 p-6 space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border border-white/10">
+          <div className="md:hidden space-y-8">
+            <article 
+              className="space-y-6"
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
+            >
+              <div className="space-y-4">
+                {renderStars(testimonials[currentIndex].rating)}
+                <blockquote className="text-lg text-white font-light leading-relaxed">
+                  &ldquo;{testimonials[currentIndex].text}&rdquo;
+                </blockquote>
+              </div>
+              <div className="flex items-center justify-between pt-4 border-t border-white/8">
+                <div className="flex-1">
+                  <p className="text-base font-medium text-white">{testimonials[currentIndex].name}</p>
+                  <div className="flex items-center gap-3">
+                    <p className="text-sm text-neutral-400">{testimonials[currentIndex].date}</p>
+                    {testimonials[currentIndex].reviewLink && (
+                      <a
+                        href={testimonials[currentIndex].reviewLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-blue-400 hover:text-blue-300 underline"
+                      >
+                        View on Google
+                      </a>
+                    )}
+                  </div>
+                </div>
+                <div className="w-10 h-10 rounded-full overflow-hidden border border-white/10">
                   <Image
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
-                    fill
+                    width={40}
+                    height={40}
                     className="object-cover"
                   />
                 </div>
-                <div>
-                  <p className="text-body text-white">{testimonials[currentIndex].name}</p>
-                  <p className="text-body-sm text-neutral-500">{testimonials[currentIndex].date}</p>
-                </div>
               </div>
-              {renderStars(testimonials[currentIndex].rating)}
-              <p className="text-body-sm text-neutral-300 leading-relaxed">&ldquo;{testimonials[currentIndex].text}&rdquo;</p>
             </article>
 
             <div className="flex justify-center gap-2">

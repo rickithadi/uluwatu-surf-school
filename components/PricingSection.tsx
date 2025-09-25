@@ -24,7 +24,7 @@ const packages: Package[] = [
     level: 'Beginner Progression',
     duration: '2 Hours • Land + Water',
     price: 'IDR 400K',
-    image: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/packages/beginner.jpg',
     features: [
       'Structured safety briefing + reef orientation',
       'Board control and pop-up mechanics',
@@ -38,7 +38,7 @@ const packages: Package[] = [
     level: 'Intermediate Refinement',
     duration: '2.5 Hours • Video Review',
     price: 'IDR 500K',
-    image: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/packages/intermediate.jpg',
     features: [
       'Wave selection + positioning drills',
       'On-wave communication and tactical feedback',
@@ -53,7 +53,7 @@ const packages: Package[] = [
     level: 'Advanced Execution',
     duration: '3 Hours • Performance Lab',
     price: 'IDR 700K',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/packages/advanced.jpg',
     features: [
       'Secret tide windows + reef tactics',
       'Critical section management + barrel entry',
@@ -98,6 +98,8 @@ export default function PricingSection() {
                     fill
                     className="object-cover opacity-80 transition-transform duration-500 hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black/85" />
                   <div className="absolute bottom-5 left-6">
@@ -116,7 +118,7 @@ export default function PricingSection() {
                   <div className="space-y-3">
                     <h3 className="text-heading-2">{pkg.title}</h3>
                     <p className="text-body-sm">{pkg.duration}</p>
-                    <p className="text-3xl font-semibold tracking-[0.18em] text-white">{pkg.price}</p>
+                    <p className="text-3xl font-bold tracking-[0.18em] text-white bg-gradient-to-r from-white to-white/80 bg-clip-text">{pkg.price}</p>
                   </div>
 
                   <ul className="space-y-4 text-body">

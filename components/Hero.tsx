@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Button } from './ui/Button'
 import { StaggerChildren } from './animations/StaggerChildren'
@@ -14,6 +14,16 @@ const stats = [
 export default function Hero() {
   const [mediaReady, setMediaReady] = useState(false)
   const [mediaError, setMediaError] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   const handleScrollTo = (targetId: string) => {
     const element = document.getElementById(targetId)
@@ -30,7 +40,7 @@ export default function Hero() {
         muted
         loop
         playsInline
-        preload="metadata"
+        preload={isMobile ? "none" : "metadata"}
         poster="/images/scootAssets/IMG_4743.JPG"
         className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
           mediaReady && !mediaError ? 'opacity-100' : 'opacity-0'
@@ -38,6 +48,9 @@ export default function Hero() {
         onLoadedData={() => setMediaReady(true)}
         onError={() => setMediaError(true)}
       >
+        <source src="/videos/hero-1080.webm" type="video/webm" media="(min-width: 1024px)" />
+        <source src="/videos/hero-720.mp4" type="video/mp4" media="(min-width: 768px)" />
+        <source src="/videos/hero-480.mp4" type="video/mp4" />
         <source src="/images/scootAssets/hero.mp4" type="video/mp4" />
       </video>
 
