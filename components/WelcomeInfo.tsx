@@ -8,7 +8,7 @@ export default function WelcomeInfo() {
           </h2>
           <div className="text-lg text-storm-gray leading-relaxed space-y-6 max-w-3xl mx-auto">
             <p>
-              Born and raised in Uluwatu with 30 years of surfing and 8 years of coaching experience, we deliver the most personalized surf instruction in the Bukit Peninsula. Our local expertise and proven progression methods are reflected in every client's water experience and skill development.
+              Born and raised in Uluwatu with 30 years of surfing and 8 years of coaching experience, we deliver the most personalized surf instruction in the Bukit Peninsula. Our local expertise and proven progression methods are reflected in every client&apos;s water experience and skill development.
             </p>
             
             <p>

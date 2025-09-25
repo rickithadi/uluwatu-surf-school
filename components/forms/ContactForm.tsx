@@ -44,7 +44,11 @@ export default function ContactForm() {
 
     if (submitMethod === 'formspree') {
       // Submit via Formspree
-      await handleFormspreeSubmit(formState)
+      const formData = new FormData()
+      Object.entries(formState).forEach(([key, value]) => {
+        formData.append(key, value)
+      })
+      await handleFormspreeSubmit(formData)
       if (formspreeState.succeeded) {
         setFormState(initialState)
       }

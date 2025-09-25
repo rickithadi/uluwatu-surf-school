@@ -1,4 +1,4 @@
-import { useForm } from '@formspree/core'
+import { useForm } from '@formspree/react'
 
 export const useFormspreeForm = (formId: string) => {
   return useForm(formId)
