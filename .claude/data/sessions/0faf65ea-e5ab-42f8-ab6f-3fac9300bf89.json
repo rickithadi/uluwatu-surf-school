@@ -1,8 +1,0 @@
-{
-  "session_id": "0faf65ea-e5ab-42f8-ab6f-3fac9300bf89",
-  "prompts": [
-    "@agent-qa-tester-agent ",
-    "https://claude.ai/public/artifacts/db773c6d-8f7c-49a5-8e9c-33806394158e\n\nuse this moodboard to tweak visual direction @agent-ui-ux-dev-team-coordinator ",
-    "quick"
-  ]
-}

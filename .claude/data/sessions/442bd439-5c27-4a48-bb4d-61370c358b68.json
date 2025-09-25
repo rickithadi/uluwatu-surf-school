@@ -1,9 +1,0 @@
-{
-  "session_id": "442bd439-5c27-4a48-bb4d-61370c358b68",
-  "prompts": [
-    "A Claude instance has just crashed. See if you can recover the work that was being done and continue later after. Start off in Plan Mode and let me know what you're going to do. Ensure you form a multi-expertise team and work in parallel. ",
-    "This is purely a front-end codebase. ",
-    " no external integrations, focus on styling and searchability\n",
-    "run the local dev server"
-  ]
-}
