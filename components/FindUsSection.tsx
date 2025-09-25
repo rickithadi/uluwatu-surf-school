@@ -114,19 +114,19 @@ export default function FindUsSection() {
                     <div>
                       <p className="text-body-sm text-white">Field updates</p>
                       <Link
-                        href="https://instagram.com/uluwatusurf_scoot"
+                        href="https://www.instagram.com/uluwatusurfschool_official/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-white"
                       >
-                        @uluwatusurf_scoot
+                        @uluwatusurfschool_official
                       </Link>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-white/60" />
                     <div>
-                      <p className="text-body-sm text-white">Meeting point</p>
+                      <p className="text-body-sm text-white">Office address</p>
                       <p>{schoolInfo.location.address}</p>
                     </div>
                   </div>
