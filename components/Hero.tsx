@@ -48,6 +48,7 @@ export default function Hero() {
         onLoadedData={() => setMediaReady(true)}
         onError={() => setMediaError(true)}
       >
+        <source src="/images/surf/hero-optimized.mp4" type="video/mp4" />
         <source src="/videos/hero-1080.webm" type="video/webm" media="(min-width: 1024px)" />
         <source src="/videos/hero-720.mp4" type="video/mp4" media="(min-width: 768px)" />
         <source src="/videos/hero-480.mp4" type="video/mp4" />
