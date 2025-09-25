@@ -10,7 +10,7 @@ const WHATSAPP_NUMBER = '+62 819 9988 5826'
 
 export const metadata: Metadata = {
   title: 'Contact Us - Uluwatu Surf School Booking & Information',
-  description: 'Contact Uluwatu Surf School for lesson bookings and information. Located in Uluwatu, Pecatu, Bali. Phone: +62 812 3456 7890. Email: info@uluwatusurfschool.com. Daily 6AM-6PM.',
+  description: 'Contact Uluwatu Surf School for lesson bookings and information. Located in Uluwatu, Pecatu, Bali. Phone: +62 819 9988 5826. Email: dexscott04@gmail.com. Daily 6AM-6PM.',
   keywords: ['contact uluwatu surf school', 'book surf lesson uluwatu', 'surf school phone number', 'uluwatu surf instruction contact', 'bali surf lessons booking'],
   alternates: {
     canonical: '/contact',
@@ -64,7 +64,7 @@ export default function Contact() {
                   <div>
                     <p className="text-body-sm text-white">Phone</p>
                     <Link
-                      href="https://wa.me/6281234567890"
+                      href="https://wa.me/6281999885826"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-white"
@@ -77,8 +77,8 @@ export default function Contact() {
                   <Mail className="h-5 w-5 text-white/60" />
                   <div>
                     <p className="text-body-sm text-white">Email</p>
-                    <Link href="mailto:info@uluwatusurfschool.com" className="hover:text-white">
-                      info@uluwatusurfschool.com
+                    <Link href="mailto:dexscott04@gmail.com" className="hover:text-white">
+                      dexscott04@gmail.com
                     </Link>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                   @uluwatusurfschool_official
                 </Link>
                 <Link
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/6281999885826"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 border border-white/15 px-5 py-3 rounded-full text-sm uppercase tracking-[0.24em] text-white hover:bg-white hover:text-black transition"

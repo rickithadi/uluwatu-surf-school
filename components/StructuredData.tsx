@@ -8,8 +8,8 @@ export default function StructuredData() {
     "alternateName": "Professional Surf Instruction Uluwatu",
     "description": "Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. Offering group lessons, semi-private, and private surf coaching with video analysis. ISA certified instructor with 15+ years local knowledge.",
     "url": "https://uluwatusurfschool.com",
-    "telephone": "+62-812-3456-7890",
-    "email": "info@uluwatusurfschool.com",
+    "telephone": "+62-819-9988-5826",
+    "email": "dexscott04@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Uluwatu",
@@ -155,7 +155,7 @@ export default function StructuredData() {
     "logo": "https://uluwatusurfschool.com/images/logo.jpg",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+62-812-3456-7890",
+      "telephone": "+62-819-9988-5826",
       "contactType": "customer service",
       "availableLanguage": ["English", "Indonesian"],
       "areaServed": "ID"

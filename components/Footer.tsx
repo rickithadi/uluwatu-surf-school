@@ -73,7 +73,7 @@ export default function Footer() {
               <p>&copy; {currentYear} Uluwatu Surf School. All rights reserved.</p>
               <div className="flex space-x-4">
                 <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
-                <Link href="mailto:info@uluwatusurfschool.com" className="hover:text-white transition-colors">Email Us</Link>
+                <Link href="mailto:dexscott04@gmail.com" className="hover:text-white transition-colors">Email Us</Link>
               </div>
             </div>
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
