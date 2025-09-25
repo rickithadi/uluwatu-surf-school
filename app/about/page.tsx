@@ -27,181 +27,112 @@ export const metadata: Metadata = {
   },
 }
 
+const methodologyPoints = [
+  {
+    title: 'Local Knowledge Transfer',
+    summary: 'Tide, swell, and crowd intelligence from daily reef study.',
+    detail: 'Entry and exit points, safe zones, and etiquette across Temple, Peak, and Racetrack.'
+  },
+  {
+    title: 'Video Analysis',
+    summary: 'Cliff and water footage reviewed frame-by-frame after each session.',
+    detail: 'Playback notes and key stills delivered with priority focus points.'
+  },
+  {
+    title: 'Systematic Progression',
+    summary: 'Deliberate drills tailored to current stage – no guesswork.',
+    detail: 'Session plans recorded and iterated for returning surfers.'
+  }
+]
+
 export default function About() {
   return (
-    <main id="main-content" className="min-h-screen">
+    <main id="main-content" className="min-h-screen bg-carbon">
       <Header />
       <Breadcrumb items={[{ label: 'About Scotty' }]} />
       
-      {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-clean-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-light text-charcoal mb-6">
-              About Scotty
-            </h1>
-            <p className="text-xl text-storm-gray max-w-2xl mx-auto">
-              Professional surf instruction through local expertise and modern methodology
-            </p>
+      <section className="pt-24 pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+          <span className="chip">About</span>
+          <h1 className="text-display-2">Scotty — Head Coach</h1>
+          <p className="text-body-lg text-neutral-300 max-w-3xl mx-auto">
+            Fifteen years of daily reef study applied to disciplined, quiet coaching. Straightforward, safety-first instruction.
+          </p>
+        </div>
+      </section>
+
+      <section className="pb-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-16 lg:grid-cols-[1.1fr,0.9fr]">
+          <div className="relative h-[560px] rounded-[32px] overflow-hidden border border-white/10">
+            <div
+              className="absolute inset-0 bg-cover bg-center grayscale"
+              style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80')" }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+          </div>
+
+          <div className="space-y-10">
+            <div className="space-y-6">
+              <h2 className="text-heading-1">Background</h2>
+              <p className="text-body text-neutral-300">
+                Scoot moved to Uluwatu in 2009 and logged every tide shift and swell cycle since. Coaching began organically—helping travelling surfers navigate Temple when conditions turned on.
+              </p>
+              <p className="text-body text-neutral-300">
+                Today the approach remains low-key: maximum four surfers in the water, accountability through video, and honest feedback delivered without ego.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-3 gap-6">
+              <div className="surface-panel border border-white/12 p-6 space-y-2">
+                <Award className="h-5 w-5 text-white/70" />
+                <p className="text-body-sm text-white">ISA Level 2</p>
+                <p className="text-body text-neutral-300">International Surfing Association accredited.</p>
+              </div>
+              <div className="surface-panel border border-white/12 p-6 space-y-2">
+                <Clock className="h-5 w-5 text-white/70" />
+                <p className="text-body-sm text-white">Daily Read</p>
+                <p className="text-body text-neutral-300">Full condition reports tracked every morning.</p>
+              </div>
+              <div className="surface-panel border border-white/12 p-6 space-y-2">
+                <MapPin className="h-5 w-5 text-white/70" />
+                <p className="text-body-sm text-white">Temple Focus</p>
+                <p className="text-body text-neutral-300">Guided entry, take-off zones, and exit plans.</p>
+              </div>
+            </div>
+
+            <Link
+              href="https://instagram.com/scotty_dex"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 border border-white/20 px-6 py-3 rounded-full text-sm uppercase tracking-[0.24em] text-white hover:bg-white hover:text-black transition"
+            >
+              <Instagram className="h-4 w-4" />
+              @scotty_dex
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Scotty's Story */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            
-            <div className="space-y-8">
-              <h2 className="text-3xl font-light text-charcoal">
-                15 Years of Local Knowledge
-              </h2>
-              
-              <div className="space-y-6 text-storm-gray leading-relaxed">
-                <p>
-                  Scotty moved to Uluwatu in 2009, drawn by the consistency and power 
-                  of the Bukit Peninsula&rsquo;s reef breaks. What started as a personal 
-                  surfing journey evolved into a deep understanding of Bali&rsquo;s most 
-                  technical waves.
-                </p>
-                
-                <p>
-                  After years of studying the reef, tides, and seasonal patterns, 
-                  Scotty began teaching other surfers the nuances that separate 
-                  surviving these waves from truly surfing them. His approach 
-                  combines traditional local knowledge with video analysis technology.
-                </p>
-                
-                <p>
-                  Today, Uluwatu Surf School represents the evolution of surf 
-                  instruction—respecting the break&rsquo;s power while using modern 
-                  tools to accelerate learning and ensure safety.
-                </p>
-              </div>
-
-              <Link
-                href="https://instagram.com/scotty_dex"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-deep-ocean hover:text-blue-800 transition-colors duration-200"
-              >
-                <Instagram className="h-5 w-5" />
-                <span className="font-medium">Follow @scotty_dex</span>
-              </Link>
-            </div>
-
-            <div className="lg:order-first">
-              <div className="aspect-[4/5] rounded-lg overflow-hidden bg-gray-200">
-                <div 
-                  className="w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"
-                  }}
-                ></div>
-              </div>
-            </div>
+      <section className="pb-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center space-y-6">
+            <span className="chip">Methodology</span>
+            <h2 className="text-heading-1">How Sessions Run</h2>
           </div>
-        </div>
-      </section>
 
-      {/* Credentials */}
-      <section className="py-20 bg-clean-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-light text-charcoal text-center mb-16">
-            Professional Credentials
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-gray-50 rounded-lg">
-              <Award className="h-12 w-12 text-deep-ocean mx-auto mb-4" />
-              <h3 className="font-semibold text-charcoal mb-2">ISA Certified</h3>
-              <p className="text-storm-gray text-sm">
-                International Surfing Association Level 2 Instructor
-              </p>
-            </div>
-            
-            <div className="text-center p-8 bg-gray-50 rounded-lg">
-              <Clock className="h-12 w-12 text-deep-ocean mx-auto mb-4" />
-              <h3 className="font-semibold text-charcoal mb-2">Water Safety</h3>
-              <p className="text-storm-gray text-sm">
-                Advanced lifeguard and first aid certified
-              </p>
-            </div>
-            
-            <div className="text-center p-8 bg-gray-50 rounded-lg">
-              <MapPin className="h-12 w-12 text-deep-ocean mx-auto mb-4" />
-              <h3 className="font-semibold text-charcoal mb-2">Local Expert</h3>
-              <p className="text-storm-gray text-sm">
-                15+ years surfing Bali&rsquo;s most challenging breaks
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Methodology */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-light text-charcoal mb-6">
-              Teaching Methodology
-            </h2>
-            <p className="text-lg text-storm-gray">
-              Quality instruction through systematic progression and technical analysis
-            </p>
-          </div>
-          
-          <div className="space-y-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-xl font-semibold text-charcoal mb-4">
-                  1. Local Knowledge Transfer
-                </h3>
-                <p className="text-storm-gray">
-                  Understanding reef breaks, reading conditions, and positioning 
-                  based on years of observing Uluwatu&rsquo;s patterns.
-                </p>
-              </div>
-              <div className="bg-clean-white p-6 rounded-lg">
-                <div className="text-sm text-storm-gray">
-                  Tide charts, wind analysis, crowd management, safety protocols
+          <div className="space-y-8">
+            {methodologyPoints.map((item, index) => (
+              <div key={item.title} className="surface-panel border border-white/10 p-8 grid gap-6 md:grid-cols-[0.4fr,1fr]">
+                <div className="space-y-2">
+                  <p className="text-body-sm text-neutral-500">0{index + 1}</p>
+                  <h3 className="text-heading-3">{item.title}</h3>
+                </div>
+                <div className="space-y-3">
+                  <p className="text-body text-neutral-300">{item.summary}</p>
+                  <p className="text-body text-neutral-400">{item.detail}</p>
                 </div>
               </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="md:order-2">
-                <h3 className="text-xl font-semibold text-charcoal mb-4">
-                  2. Video Analysis Technology
-                </h3>
-                <p className="text-storm-gray">
-                  Modern coaching tools that provide immediate feedback on 
-                  technique, timing, and wave selection.
-                </p>
-              </div>
-              <div className="bg-clean-white p-6 rounded-lg md:order-1">
-                <div className="text-sm text-storm-gray">
-                  Slow-motion review, technique breakdown, progress tracking
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-xl font-semibold text-charcoal mb-4">
-                  3. Systematic Progression
-                </h3>
-                <p className="text-storm-gray">
-                  Building competence through measured steps, not rushing 
-                  students beyond their current ability level.
-                </p>
-              </div>
-              <div className="bg-clean-white p-6 rounded-lg">
-                <div className="text-sm text-storm-gray">
-                  Skill assessment, progressive challenges, safety margins
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

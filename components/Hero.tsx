@@ -1,127 +1,97 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-
-import { Button } from './ui/Button'
+import { useState } from 'react'
 import Image from 'next/image'
+import { Button } from './ui/Button'
 import { StaggerChildren } from './animations/StaggerChildren'
 
+const stats = [
+  { label: 'Years Coaching', value: '15+' },
+  { label: 'Surfers Guided', value: '2000+' },
+  { label: 'Google Rating', value: '5.0' }
+]
+
 export default function Hero() {
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false)
-  const [videoError, setVideoError] = useState(false)
+  const [mediaReady, setMediaReady] = useState(false)
+  const [mediaError, setMediaError] = useState(false)
+
+  const handleScrollTo = (targetId: string) => {
+    const element = document.getElementById(targetId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Video/Image */}
-      <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className={`w-full h-full object-cover transition-opacity duration-1000 ${
-            isVideoLoaded && !videoError ? 'opacity-100' : 'opacity-0'
-          }`}
-          onLoadedData={() => setIsVideoLoaded(true)}
-          onError={() => setVideoError(true)}
-          onCanPlay={() => setIsVideoLoaded(true)}
-        >
-          <source src="/images/scootAssets/GOPR3236.MOV" type="video/quicktime" />
-          <source src="/images/scootAssets/GOPR3236.MOV" type="video/mp4" />
-        </video>
-        {/* Fallback background image */}
+    <section className="relative min-h-[90vh] overflow-hidden bg-black">
+      {/* Background media */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/images/scootAssets/IMG_4743.JPG"
+        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+          mediaReady && !mediaError ? 'opacity-100' : 'opacity-0'
+        }`}
+        onLoadedData={() => setMediaReady(true)}
+        onError={() => setMediaError(true)}
+      >
+        <source src="/images/scootAssets/hero.mp4" type="video/mp4" />
+      </video>
+
+      {(!mediaReady || mediaError) && (
         <Image
-          src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80&sat=-100&con=20"
-          alt="Dramatic black and white surf break at Uluwatu"
+          src="/images/scootAssets/IMG_4746.JPG"
+          alt="Scoot coaching at Uluwatu"
           fill
-          className={`object-cover grayscale contrast-125 transition-opacity duration-1000 ${
-            isVideoLoaded && !videoError ? 'opacity-0' : 'opacity-100'
-          }`}
           priority
-          sizes="100vw"
+          className="absolute inset-0 h-full w-full object-cover"
         />
-        {/* Overlay - darker for dramatic effect */}
-        <div className="absolute inset-0 bg-black/60" />
-      </div>
+      )}
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center text-center">
+      {/* Overlays */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-black/60" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08)_0,rgba(0,0,0,0)_45%)]" />
+
+      <div className="relative z-10">
         <div className="container mx-auto px-4">
-          <StaggerChildren>
-            {/* Logo Display */}
-            <div className="mb-12">
-              <div className="w-24 h-24 mx-auto mb-6">
-                <Image
-                  src="/images/logo.jpg"
-                  alt="Uluwatu Surf School"
-                  width={96}
-                  height={96}
-                  className="w-full h-full object-contain rounded-full"
-                />
+          <div className="py-32 md:py-40">
+            <StaggerChildren className="max-w-5xl space-y-12">
+              <div className="space-y-6 text-left">
+                <span className="inline-flex items-center px-5 py-2 text-xs uppercase tracking-[0.28em] text-white/70 border border-white/30 rounded-full backdrop-blur-sm">
+                  Premium Surf Instruction
+                </span>
+                <h1 className="text-display-1 text-white drop-shadow-[0_18px_35px_rgba(0,0,0,0.65)] leading-tight">
+                  Uluwatu Surf School
+                </h1>
+                <p className="max-w-2xl text-body-lg text-neutral-100/90 drop-shadow-[0_10px_25px_rgba(0,0,0,0.55)]">
+                  Understated coaching for surfers who want results. Local reef fluency, disciplined safety protocols, and
+                  video-led refinement delivered in one of Bali&apos;s most demanding lineups.
+                </p>
               </div>
-            </div>
 
-            <h1 className="text-display-1 text-white mb-8">
-              Uluwatu Surf School
-              <span className="block text-white text-display-2 font-light mt-3">
-                with Scoot
-              </span>
-            </h1>
+              <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
+                <Button size="lg" onClick={() => handleScrollTo('book')}>
+                  Book A Session
+                </Button>
+                <Button variant="outline" size="lg" onClick={() => handleScrollTo('pricing')}>
+                  View Programs
+                </Button>
+              </div>
 
-            <p className="text-body-lg text-white/90 mb-12 max-w-3xl mx-auto">
-              Master the legendary waves of Uluwatu with Bali&apos;s premier surf instructor.
-              Professional coaching for all levels in paradise.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button
-                size="lg"
-                className="min-w-[200px]"
-                onClick={() => {
-                  const element = document.getElementById('book')
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' })
-                  }
-                }}
-              >
-                Book Your Session
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="min-w-[200px] border-white text-white hover:bg-white hover:text-black"
-                onClick={() => {
-                  const element = document.getElementById('pricing')
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' })
-                  }
-                }}
-              >
-                View Pricing
-              </Button>
-            </div>
-          </StaggerChildren>
-        </div>
-      </div>
-
-
-
-      {/* Stats Overlay */}
-      <div className="absolute bottom-12 left-4 right-4 md:left-8 md:right-8">
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8">
-          <div className="grid grid-cols-3 gap-6 text-center text-white">
-            <div>
-              <div className="text-3xl md:text-4xl font-light mb-2">15+</div>
-              <div className="text-sm md:text-base text-white/80 font-normal">Years Experience</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-light mb-2">2000+</div>
-              <div className="text-sm md:text-base text-white/80 font-normal">Students Taught</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-light mb-2">5★</div>
-              <div className="text-sm md:text-base text-white/80 font-normal">Average Rating</div>
-            </div>
+              <div className="rounded-3xl border border-white/15 bg-black/50 backdrop-blur-xl px-8 py-6">
+                <dl className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+                  {stats.map((stat) => (
+                    <div key={stat.label} className="space-y-1">
+                      <dt className="text-body-sm text-neutral-400 uppercase">{stat.label}</dt>
+                      <dd className="text-display-3 text-white tracking-[0.18em]">{stat.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </StaggerChildren>
           </div>
         </div>
       </div>

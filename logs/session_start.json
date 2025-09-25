@@ -75,5 +75,33 @@
     "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
     "hook_event_name": "SessionStart",
     "source": "compact"
+  },
+  {
+    "session_id": "94e2b117-d8db-4f62-8cf8-f5de07894023",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/94e2b117-d8db-4f62-8cf8-f5de07894023.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
+  },
+  {
+    "session_id": "94c33634-ec5c-40ad-ba10-6cf8f07e0522",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/94c33634-ec5c-40ad-ba10-6cf8f07e0522.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
+  },
+  {
+    "session_id": "94c33634-ec5c-40ad-ba10-6cf8f07e0522",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/94c33634-ec5c-40ad-ba10-6cf8f07e0522.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "hook_event_name": "SessionStart",
+    "source": "compact"
+  },
+  {
+    "session_id": "b25cb69c-5a0e-40d9-9e7b-902607ddd42b",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/b25cb69c-5a0e-40d9-9e7b-902607ddd42b.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
   }
 ]

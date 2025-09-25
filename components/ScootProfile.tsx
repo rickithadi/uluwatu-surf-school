@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import { Award, Users, Calendar, Trophy } from 'lucide-react'
 import { Button } from './ui/Button'
 import { StaggerChildren } from './animations/StaggerChildren'
@@ -8,214 +9,161 @@ import { StaggerChildren } from './animations/StaggerChildren'
 const accomplishments = [
   {
     icon: Award,
-    title: 'Professional Certification',
-    description: 'ISA Level 2 Surf Instructor',
-    detail: 'International Surfing Association certified professional'
+    title: 'ISA Certified',
+    description: 'Level 2 Instructor',
+    detail: 'International Surfing Association credentials'
   },
   {
     icon: Users,
-    title: '2000+ Students Taught',
-    description: 'Successful surf coaching',
-    detail: 'From complete beginners to competitive surfers'
+    title: '2000+ Surfers',
+    description: 'Coached on reef breaks',
+    detail: 'From first waves to competitive athletes'
   },
   {
     icon: Calendar,
-    title: '15+ Years Experience',
-    description: 'Surfing Uluwatu waters',
-    detail: 'Deep knowledge of local conditions and breaks'
+    title: '15+ Years',
+    description: 'Uluwatu reef experience',
+    detail: 'Tracking Temple, Padang Padang, Bingin daily'
   },
   {
     icon: Trophy,
-    title: 'Local Champion',
-    description: 'Competitive achievements',
-    detail: 'Multiple local and regional surf competitions'
+    title: 'Local Titles',
+    description: 'Temple competitions',
+    detail: 'Regional contest wins & lineup leadership'
   }
 ]
 
 export default function ScootProfile() {
+  const router = useRouter()
+
+  const goToGallery = () => router.push('/#gallery')
+
   return (
-    <section id="scoot" className="section-spacing bg-white">
+    <section id="scoot" className="section-spacing bg-carbon">
       <div className="container mx-auto px-4">
-        <StaggerChildren>
-          <div className="text-center mb-16">
-            <h2 className="text-heading-1 text-charcoal mb-6">
-              Meet Scoot
-            </h2>
-            <p className="text-body-lg text-storm-gray max-w-2xl mx-auto">
-              Your head instructor and guide to mastering Uluwatu&apos;s legendary waves
+        <StaggerChildren className="space-y-16">
+          <div className="text-center space-y-6">
+            <span className="chip">Meet the Coach</span>
+            <h2 className="text-heading-1">Scoot, Lead Instructor</h2>
+            <p className="text-body-lg text-neutral-300 max-w-3xl mx-auto">
+              Local knowledge across the Bukit paired with disciplined coaching. Scoot keeps ratios tight, feedback clear, and safety first.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            {/* Profile Image */}
+          <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
             <div className="relative">
-              <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden">
+              <div className="relative h-[520px] rounded-[32px] overflow-hidden border border-white/10">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=-20&con=15"
-                  alt="Scoot - Head Surf Instructor"
+                  src="/images/instagram/surf-lifestyle-1.jpg"
+                  alt="Scoot preparing boards for the next session"
                   fill
-                  className="object-cover grayscale contrast-110"
+                  className="object-cover grayscale"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               </div>
-              
-              {/* Floating Stats */}
-              <div className="absolute -bottom-6 -right-6 bg-black text-white rounded-2xl p-6 shadow-lg">
-                <div className="text-center">
-                  <div className="text-3xl font-bold">5★</div>
-                  <div className="text-sm text-white/80">Average Rating</div>
-                  <div className="text-xs text-white/60 mt-1">500+ Reviews</div>
-                </div>
+              <div className="absolute bottom-[-28px] right-[-28px] surface-panel border border-white/15 px-8 py-6 text-center">
+                <p className="text-heading-3">5.0</p>
+                <p className="text-body-sm text-neutral-500">Google rating</p>
+                <p className="text-body-sm text-neutral-600">500+ verified reviews</p>
               </div>
             </div>
 
-            {/* Profile Content */}
-            <div className="content-spacing-lg">
-              <div>
-                <h3 className="text-heading-2 text-charcoal mb-6">
-                  Professional Surf Instructor &amp; Local Expert
-                </h3>
-                <p className="text-body-lg text-storm-gray mb-6">
-                  Born and raised in Bali, Scoot has been surfing the waters around Uluwatu for over 15 years. 
-                  His deep understanding of local conditions, combined with proven teaching methods, makes him 
-                  the perfect guide for your surfing journey.
+            <div className="space-y-10">
+              <div className="space-y-6">
+                <h3 className="text-heading-2">Understated. Professional. Consistent.</h3>
+                <p className="text-body text-neutral-300">
+                  Temple, Padang Padang, Bingin and surrounding reefs form the daily circuit. Scoot logs tides, crowd shifts and swell consistency every morning before any surfer paddles out.
                 </p>
-                <p className="text-body-lg text-storm-gray">
-                  Whether you&apos;re catching your first wave or perfecting your technique on the reef, 
-                  Scoot&apos;s patient approach and expert knowledge will accelerate your progress while 
-                  keeping you safe in the water.
+                <p className="text-body text-neutral-300">
+                  Sessions run with small ratios, structured drills and straight feedback. Expect notes in your inbox, clips for analysis, and a clear plan for the next booking.
                 </p>
               </div>
 
-              {/* Accomplishments Grid */}
               <div className="grid sm:grid-cols-2 gap-4">
-                {accomplishments.map((achievement, index) => (
-                  <div key={index} className="bg-gray-50 rounded-xl p-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="bg-black rounded-lg p-2 flex-shrink-0">
-                        <achievement.icon className="w-5 h-5 text-white" />
+                {accomplishments.map((achievement) => (
+                  <div key={achievement.title} className="surface-panel border border-white/10 p-5">
+                    <div className="flex items-start gap-3">
+                      <div className="rounded-full border border-white/15 p-2 text-white/80">
+                        <achievement.icon className="h-4 w-4" />
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <h4 className="font-semibold text-charcoal text-sm">
-                          {achievement.title}
-                        </h4>
-                        <p className="text-body-sm text-storm-gray mt-1">
-                          {achievement.description}
-                        </p>
-                        <p className="text-xs text-storm-gray mt-1">
-                          {achievement.detail}
-                        </p>
+                      <div className="space-y-1">
+                        <p className="text-body-sm text-white">{achievement.title}</p>
+                        <p className="text-body text-neutral-300">{achievement.description}</p>
+                        <p className="text-xs uppercase tracking-[0.16em] text-neutral-500">{achievement.detail}</p>
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
 
-              {/* Video Analysis & Land Coaching */}
-              <div className="bg-gradient-to-r from-gray-900 to-black rounded-2xl p-6 text-white">
-                <h4 className="text-heading-3 font-medium mb-3">Video Analysis &amp; Land Coaching</h4>
-                <p className="text-white/90 mb-4">
-                  Improve faster with detailed video analysis of your surfing technique. 
-                  Scoot provides personalized feedback and land-based coaching to perfect your form.
+              <div className="surface-panel border border-white/12 p-6 space-y-4">
+                <h4 className="text-heading-3">Video Analysis & Land Lab</h4>
+                <p className="text-body text-neutral-300">
+                  Every session includes land mechanics, filmed water time and a debrief. Clips are reviewed frame-by-frame with practical notes emailed post-surf.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <div className="flex-1 bg-white/10 rounded-lg p-3">
-                    <div className="text-sm font-semibold">On-Water Recording</div>
-                    <div className="text-xs text-white/80">Professional surf footage</div>
+                  <div className="flex-1 border border-white/12 rounded-xl px-4 py-3 text-body-sm text-neutral-400">
+                    4K capture • Temple + Padang angles
                   </div>
-                  <div className="flex-1 bg-white/10 rounded-lg p-3">
-                    <div className="text-sm font-semibold">Technique Analysis</div>
-                    <div className="text-xs text-white/80">Frame-by-frame breakdown</div>
+                  <div className="flex-1 border border-white/12 rounded-xl px-4 py-3 text-body-sm text-neutral-400">
+                    Playback • Key stills + timestamps
                   </div>
-                  <div className="flex-1 bg-white/10 rounded-lg p-3">
-                    <div className="text-sm font-semibold">Land Practice</div>
-                    <div className="text-xs text-white/80">Pop-up & balance drills</div>
+                  <div className="flex-1 border border-white/12 rounded-xl px-4 py-3 text-body-sm text-neutral-400">
+                    Land drills • Custom progression map
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="flex-1">
-                  Book Session with Scoot
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button size="lg" onClick={() => router.push('/book?instructor=scoot')}>
+                  Book With Scoot
                 </Button>
-                <Button variant="outline" size="lg" className="flex-1">
-                  View Success Stories
+                <Button variant="secondary" size="lg" onClick={goToGallery}>
+                  View Sessions
                 </Button>
               </div>
             </div>
           </div>
 
-          {/* Beginner & Intermediate Examples */}
-          <div className="mt-20">
-            <div className="text-center mb-12">
-              <h3 className="text-heading-2 text-charcoal mb-6">
-                Beginner &amp; Intermediate Examples
-              </h3>
-              <p className="text-body-lg text-storm-gray max-w-2xl mx-auto">
-                See the progression journey from first waves to confident reef surfing
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Beginner Example */}
-              <div className="bg-gray-50 rounded-2xl overflow-hidden">
-                <div className="relative h-64">
-                  <Image
-                    src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=-30&con=20"
-                    alt="Beginner surfer learning basics"
-                    fill
-                    className="object-cover grayscale contrast-110"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <div className="absolute bottom-4 left-4">
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      Beginner Level
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h4 className="text-heading-3 text-charcoal mb-3">First Wave Success</h4>
-                  <p className="text-body text-storm-gray mb-4">
-                    Watch complete beginners catch their first waves in the safe whitewash. 
-                    Focus on safety, basic positioning, and building confidence in the water.
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-body-sm text-storm-gray">Duration: 2 hours</span>
-                    <Button variant="outline" size="sm">View Gallery</Button>
-                  </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="surface-panel border border-white/10 overflow-hidden">
+              <div className="relative h-80">
+                <Image
+                  src="/images/instagram/surf-lifestyle-2.jpg"
+                  alt="Padang Padang beginner session"
+                  fill
+                  className="object-cover grayscale"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-5 left-5">
+                  <span className="chip text-white/80 border-white/30">Padang Padang</span>
                 </div>
               </div>
+              <div className="p-6 space-y-3">
+                <h4 className="text-heading-3">Beginner Framework</h4>
+                <p className="text-body text-neutral-300">Sand-bottom take-offs and controlled whitewater at Padang Padang before stepping onto the reef.</p>
+              </div>
+            </div>
 
-              {/* Intermediate Example */}
-              <div className="bg-gray-50 rounded-2xl overflow-hidden">
-                <div className="relative h-64">
-                  <Image
-                    src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=-30&con=25"
-                    alt="Intermediate surfer on reef break"
-                    fill
-                    className="object-cover grayscale contrast-110"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <div className="absolute bottom-4 left-4">
-                    <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      Intermediate Level
-                    </span>
-                  </div>
+            <div className="surface-panel border border-white/10 overflow-hidden">
+              <div className="relative h-80">
+                <Image
+                  src="/images/instagram/surf-action-4.jpg"
+                  alt="Temple reef set"
+                  fill
+                  className="object-cover grayscale"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-5 left-5">
+                  <span className="chip text-white/80 border-white/30">Temple Reef</span>
                 </div>
-                <div className="p-6">
-                  <h4 className="text-heading-3 text-charcoal mb-3">Reef Break Mastery</h4>
-                  <p className="text-body text-storm-gray mb-4">
-                    Advanced techniques on Uluwatu&apos;s reef breaks. Learn positioning, 
-                    timing, and how to read the waves for longer, more exciting rides.
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-body-sm text-storm-gray">Duration: 2.5 hours</span>
-                    <Button variant="outline" size="sm">View Gallery</Button>
-                  </div>
-                </div>
+              </div>
+              <div className="p-6 space-y-3">
+                <h4 className="text-heading-3">Advanced Execution</h4>
+                <p className="text-body text-neutral-300">Tide windows, positioning and barrel sequencing tailored around Temple and Bingin peaks.</p>
               </div>
             </div>
           </div>

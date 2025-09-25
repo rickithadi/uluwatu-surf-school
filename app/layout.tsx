@@ -1,6 +1,6 @@
 import './globals.css'
 
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Space_Grotesk } from 'next/font/google'
 
 import type { Metadata } from 'next'
 import StructuredData from '@/components/StructuredData'
@@ -8,15 +8,15 @@ import WebVitalsReporter from '@/components/WebVitalsReporter'
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-inter',
   display: 'swap'
 })
 
-const playfair = Playfair_Display({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
-  variable: '--font-playfair',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-headlines',
   display: 'swap'
 })
 
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   category: 'Sports & Recreation',
   classification: 'Surf School',
   formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
+    email: true,
+    address: true,
+    telephone: true,
   },
   metadataBase: new URL('https://uluwatusurfschool.com'),
   alternates: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/logo.png',
+        url: '/images/logo.jpg',
         width: 1200,
         height: 630,
         alt: 'Uluwatu Surf School - Professional Surf Instruction in Bali with reef break expertise',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Uluwatu Surf School - Professional Surf Instruction in Bali',
     description: 'Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. ISA certified instructor.',
-    images: ['/images/logo.png'],
+    images: ['/images/logo.jpg'],
     creator: '@uluwatusurfschool',
     site: '@uluwatusurfschool',
   },
@@ -107,7 +107,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-carbon">
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
@@ -116,13 +116,12 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-        <meta name="theme-color" content="#1E293B" />
+        <meta name="theme-color" content="#0f0f0f" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Uluwatu Surf" />
       </head>
-      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
-
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased bg-carbon text-neutral-100`}>
         <StructuredData />
         <WebVitalsReporter />
         {children}

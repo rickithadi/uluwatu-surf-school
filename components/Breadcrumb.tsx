@@ -12,22 +12,21 @@ interface BreadcrumbProps {
 }
 
 export default function Breadcrumb({ items }: BreadcrumbProps) {
-  // Create structured data for breadcrumbs
   const breadcrumbStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://uluwatusurfschool.com"
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://uluwatusurfschool.com'
       },
       ...items.map((item, index) => ({
-        "@type": "ListItem",
-        "position": index + 2,
-        "name": item.label,
-        ...(item.href && { "item": `https://uluwatusurfschool.com${item.href}` })
+        '@type': 'ListItem',
+        position: index + 2,
+        name: item.label,
+        ...(item.href && { item: `https://uluwatusurfschool.com${item.href}` })
       }))
     ]
   }
@@ -41,30 +40,30 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
           __html: JSON.stringify(breadcrumbStructuredData)
         }}
       />
-      <nav aria-label="Breadcrumb" className="py-4 bg-gray-50">
+      <nav aria-label="Breadcrumb" className="border-b border-white/10 bg-black/40 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ol className="flex items-center space-x-2 text-sm">
+          <ol className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-neutral-500 py-4">
             <li>
               <Link
                 href="/"
-                className="flex items-center text-storm-gray hover:text-deep-ocean transition-colors duration-200"
+                className="inline-flex items-center gap-2 text-neutral-400 hover:text-white transition"
               >
-                <Home className="h-4 w-4 mr-1" />
+                <Home className="h-4 w-4" />
                 Home
               </Link>
             </li>
             {items.map((item, index) => (
-              <li key={index} className="flex items-center">
-                <ChevronRight className="h-4 w-4 text-gray-400 mx-2" />
+              <li key={index} className="flex items-center gap-3">
+                <ChevronRight className="h-4 w-4 text-neutral-600" />
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className="text-storm-gray hover:text-deep-ocean transition-colors duration-200"
+                    className="text-neutral-400 hover:text-white transition"
                   >
                     {item.label}
                   </Link>
                 ) : (
-                  <span className="text-charcoal font-medium">{item.label}</span>
+                  <span className="text-white">{item.label}</span>
                 )}
               </li>
             ))}

@@ -26,7 +26,7 @@ export default function StructuredData() {
     "openingHours": "Mo-Su 06:00-18:00",
     "priceRange": "IDR 400,000 - IDR 700,000",
     "currenciesAccepted": "IDR",
-    "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+    "paymentAccepted": "Cash",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -152,7 +152,7 @@ export default function StructuredData() {
     "@type": "Organization",
     "name": "Uluwatu Surf School",
     "url": "https://uluwatusurfschool.com",
-    "logo": "https://uluwatusurfschool.com/logo.png",
+    "logo": "https://uluwatusurfschool.com/images/logo.jpg",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+62-812-3456-7890",

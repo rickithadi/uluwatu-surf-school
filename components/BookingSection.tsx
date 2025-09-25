@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { Button } from './ui/Button'
 import { StaggerChildren } from './animations/StaggerChildren'
@@ -15,17 +17,21 @@ interface FormData {
   message: string
 }
 
-export default function BookingSection() {
-  const [formData, setFormData] = useState<FormData>({
-    fullName: '',
-    numberOfPeople: '1',
-    whatsappNumber: '',
-    email: '',
-    preferredDateTime: '',
-    surfLevel: '',
-    message: ''
-  })
+const initialFormState: FormData = {
+  fullName: '',
+  numberOfPeople: '1',
+  whatsappNumber: '',
+  email: '',
+  preferredDateTime: '',
+  surfLevel: '',
+  message: ''
+}
 
+const WHATSAPP_NUMBER = '6281234567890'
+const WHATSAPP_DISPLAY = '+62 812 3456 7890'
+
+export default function BookingSection() {
+  const [formData, setFormData] = useState<FormData>(initialFormState)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -38,165 +44,136 @@ export default function BookingSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    console.log('Form submitted:', formData)
+
+    const message = `Hi Scoot! I'd like to book a surf session.\n\nName: ${formData.fullName}\nNumber of people: ${formData.numberOfPeople}\nWhatsApp #: ${formData.whatsappNumber}\nEmail: ${formData.email}\nPreferred Date/Time: ${formData.preferredDateTime}\nSurf Level: ${formData.surfLevel || 'Not specified'}\nNotes: ${formData.message || 'None'}\n\nI understand payment is cash on the day.`
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+
+    await new Promise((resolve) => setTimeout(resolve, 400))
+
+    setFormData(initialFormState)
     setIsSubmitting(false)
-    
-    // Generate booking confirmation message
-    const confirmationMessage = `Thank you for confirming your booking with Uluwatu Surf School Bali.
-
-Name: ${formData.fullName}
-Number of people: ${formData.numberOfPeople}
-WhatsApp #: ${formData.whatsappNumber}
-Email: ${formData.email}
-Preferred Date/Time: ${formData.preferredDateTime}
-Surf Level: ${formData.surfLevel}
-
-**Please note all payments must be made in cash. We do not take a deposit or cancellation fee, and understand any unforeseen circumstances. We ask that for any cancellations or rescheduling, please provide a notice period of 2 hours before the confirmed start time. Thank you and we look forward to surfing with you! 🤙🏼`
-
-    console.log('Booking confirmation:', confirmationMessage)
-    alert('Thank you! Your booking request has been submitted. We\'ll contact you via WhatsApp within 2 hours to confirm details.')
   }
 
   return (
-    <section id="book" className="py-20 bg-white">
+    <section id="book" className="section-spacing bg-carbon">
       <div className="container mx-auto px-4">
-        <StaggerChildren>
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-              Ready to Catch Your 
-              <span className="text-black">
-                {' '}Perfect Wave?
-              </span>
-            </h2>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-              Book your surf lesson today and start your journey to becoming a confident surfer 
-              at one of the world's most iconic breaks.
+        <StaggerChildren className="space-y-16">
+          <div className="text-center space-y-6">
+            <span className="chip">Bookings</span>
+            <h2 className="text-heading-1">Reserve Your Session</h2>
+            <p className="text-body-lg text-neutral-300 max-w-2xl mx-auto">
+              Submit the form and we&apos;ll respond on WhatsApp within the day to confirm conditions and timing.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Booking Form */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-black mb-6">Inquiries + Bookings Form</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-black mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="fullName"
-                    required
-                    value={formData.fullName}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
-                    placeholder="Your full name"
-                  />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Number of People *
-                    </label>
+          <div className="grid gap-12 lg:grid-cols-[1.2fr,0.8fr]">
+            <div className="surface-panel border border-white/10 p-10">
+              <h3 className="text-heading-2 mb-10">Booking Form</h3>
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-body-sm text-neutral-500" htmlFor="fullName">Full Name *</label>
+                    <input
+                      id="fullName"
+                      type="text"
+                      name="fullName"
+                      required
+                      value={formData.fullName}
+                      onChange={handleInputChange}
+                      className="w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-white/30"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-body-sm text-neutral-500" htmlFor="numberOfPeople">Number of People *</label>
                     <select
+                      id="numberOfPeople"
                       name="numberOfPeople"
                       required
                       value={formData.numberOfPeople}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
+                      className="w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-white/30"
                     >
-                      <option value="1">1 Person</option>
-                      <option value="2">2 People</option>
-                      <option value="3">3 People</option>
-                      <option value="4">4 People</option>
-                      <option value="5">5 People</option>
-                      <option value="6+">6+ People</option>
+                      {['1','2','3','4','5','6+'].map(option => (
+                        <option key={option} value={option}>{option} Surfer{option === '1' ? '' : 's'}</option>
+                      ))}
                     </select>
                   </div>
+                </div>
 
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      WA # (WhatsApp Number) *
-                    </label>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-body-sm text-neutral-500" htmlFor="whatsappNumber">WhatsApp Number *</label>
                     <input
+                      id="whatsappNumber"
                       type="tel"
                       name="whatsappNumber"
                       required
                       value={formData.whatsappNumber}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
+                      className="w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-white/30"
                       placeholder="+62 812 3456 7890"
                     />
                   </div>
-                </div>
-                  
-                <div>
-                  <label className="block text-sm font-medium text-black mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
-                    placeholder="your@email.com"
-                  />
+                  <div className="space-y-2">
+                    <label className="text-body-sm text-neutral-500" htmlFor="email">Email *</label>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-white/30"
+                      placeholder="you@email.com"
+                    />
+                  </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Preferred Date / Time *
-                    </label>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-body-sm text-neutral-500" htmlFor="preferredDateTime">Preferred Date / Time *</label>
                     <input
+                      id="preferredDateTime"
                       type="datetime-local"
                       name="preferredDateTime"
                       required
                       value={formData.preferredDateTime}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
+                      className="w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-white/30"
                     />
                   </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Surf Level *
-                    </label>
+                  <div className="space-y-2">
+                    <label className="text-body-sm text-neutral-500" htmlFor="surfLevel">Surf Level *</label>
                     <select
+                      id="surfLevel"
                       name="surfLevel"
                       required
                       value={formData.surfLevel}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors"
+                      className="w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-white/30"
                     >
-                      <option value="">Select surf level</option>
-                      <option value="complete-beginner">Complete Beginner</option>
+                      <option value="">Select level</option>
+                      <option value="complete-beginner">Complete beginner</option>
                       <option value="beginner">Beginner (1-10 sessions)</option>
-                      <option value="intermediate">Intermediate (can catch unbroken waves)</option>
-                      <option value="advanced">Advanced (comfortable on reef breaks)</option>
+                      <option value="intermediate">Intermediate (unbroken waves)</option>
+                      <option value="advanced">Advanced (comfortable on reef)</option>
                     </select>
                   </div>
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-black mb-2">
-                    Additional Message
-                  </label>
+                <div className="space-y-2">
+                  <label className="text-body-sm text-neutral-500" htmlFor="message">Additional Notes</label>
                   <textarea
+                    id="message"
                     name="message"
                     rows={4}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors resize-none"
-                    placeholder="Any special requirements, questions, or requests?"
+                    className="w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-white/30"
+                    placeholder="Goals, concerns, travel schedule..."
                   />
                 </div>
 
@@ -206,87 +183,95 @@ Surf Level: ${formData.surfLevel}
                   className="w-full"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Submitting...' : 'Book Now'}
+                  {isSubmitting ? 'Opening WhatsApp…' : 'Send Booking Request'}
                 </Button>
 
-                <p className="text-sm text-gray-600 text-center">
-                  We&apos;ll contact you within 24 hours to confirm your booking and arrange payment.
+                <p className="text-body-sm text-neutral-500 text-center">
+                  Payment is cash on the day. Please give two hours notice for reschedules.
                 </p>
               </form>
             </div>
 
-            {/* Contact Info & Map */}
             <div className="space-y-8">
-              <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg">
-                <h3 className="text-2xl font-bold text-black mb-6">Get in Touch</h3>
-                
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-black p-3 rounded-lg">
-                      <MapPin className="w-6 h-6 text-white" />
+              <div className="surface-panel border border-white/10 p-8 space-y-6">
+                <h3 className="text-heading-2">Direct Contact</h3>
+
+                <div className="space-y-5 text-body text-neutral-300">
+                  <div className="flex items-start gap-4">
+                    <div className="rounded-full border border-white/20 p-3 text-white/70">
+                      <MapPin className="h-5 w-5" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-black mb-1">Location</h4>
-                      <p className="text-gray-700">
-                        Jalan Pantai Suluban<br />
-                        Uluwatu, Bali 80361<br />
-                        Indonesia
-                      </p>
+                      <p className="text-body-sm text-white">Location</p>
+                      <p>Jalan Pantai Suluban<br />Uluwatu, Bali 80361</p>
                     </div>
                   </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-black p-3 rounded-lg">
-                      <Phone className="w-6 h-6 text-white" />
+                  <div className="flex items-start gap-4">
+                    <div className="rounded-full border border-white/20 p-3 text-white/70">
+                      <Phone className="h-5 w-5" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-black mb-1">Phone</h4>
-                      <p className="text-gray-700">
-                        +62 812 3456 7890<br />
-                        +62 813 4567 8901
-                      </p>
+                      <p className="text-body-sm text-white">WhatsApp</p>
+                      <Link
+                        href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-white"
+                      >
+                        {WHATSAPP_DISPLAY}
+                      </Link>
                     </div>
                   </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-black p-3 rounded-lg">
-                      <Mail className="w-6 h-6 text-white" />
+                  <div className="flex items-start gap-4">
+                    <div className="rounded-full border border-white/20 p-3 text-white/70">
+                      <Mail className="h-5 w-5" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-black mb-1">Email</h4>
-                      <p className="text-gray-700">
-                        info@uluwatusurf.com<br />
-                        booking@uluwatusurf.com
-                      </p>
+                      <p className="text-body-sm text-white">Email</p>
+                      <Link href="mailto:info@uluwatusurfschool.com" className="hover:text-white">
+                        info@uluwatusurfschool.com
+                      </Link>
                     </div>
                   </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-black p-3 rounded-lg">
-                      <Clock className="w-6 h-6 text-white" />
+                  <div className="flex items-start gap-4">
+                    <div className="rounded-full border border-white/20 p-3 text-white/70">
+                      <Clock className="h-5 w-5" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-black mb-1">Hours</h4>
-                      <p className="text-gray-700">
-                        Daily: 6:00 AM - 6:00 PM<br />
-                        Best waves: Dawn & Dusk
-                      </p>
+                      <p className="text-body-sm text-white">Hours</p>
+                      <p>Daily 06:00 – 18:00<br />Dawn and dusk recommended</p>
                     </div>
                   </div>
                 </div>
+
+                <Link
+                  href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.2em] text-white hover:bg-white hover:text-black transition"
+                >
+                  Message on WhatsApp
+                </Link>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 rounded-2xl h-64 relative overflow-hidden border border-gray-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=-100&con=25"
-                  alt="Uluwatu Location"
-                  className="w-full h-full object-cover grayscale contrast-125"
+              <div className="relative h-64 rounded-[28px] overflow-hidden border border-white/8">
+                <Image
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80"
+                  alt="Uluwatu location overview"
+                  fill
+                  className="object-cover grayscale"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
                 />
-                <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                  <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black">
-                    View on Google Maps
-                  </Button>
+                <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center gap-4 text-center">
+                  <p className="text-body-sm text-neutral-400">View precise pin</p>
+                  <Link
+                    href="https://maps.google.com/?q=Jalan+Pantai+Suluban,+Uluwatu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-sm uppercase tracking-[0.2em] text-white hover:bg-white hover:text-black transition"
+                  >
+                    Open Google Maps
+                  </Link>
                 </div>
               </div>
             </div>

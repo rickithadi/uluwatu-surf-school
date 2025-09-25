@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { StaggerChildren } from './animations/StaggerChildren'
 
 interface Instructor {
@@ -19,8 +20,8 @@ const instructors: Instructor[] = [
     name: 'Made Wardana',
     experience: '15+ years',
     specialties: ['Beginner Coaching', 'Wave Safety', 'Traditional Balinese Surfing'],
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&sat=-100&con=25',
-    quote: "The ocean is our teacher, I'm just here to translate.",
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    quote: 'The ocean is our teacher, I’m just here to translate.',
     certifications: ['ISA Level 2', 'Water Safety', 'First Aid']
   },
   {
@@ -28,8 +29,8 @@ const instructors: Instructor[] = [
     name: 'Kadek Suryana',
     experience: '12+ years',
     specialties: ['Advanced Technique', 'Competition Prep', 'Barrel Riding'],
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&sat=-100&con=25',
-    quote: "Every wave is a chance to express yourself.",
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    quote: 'Every wave is a chance to express yourself.',
     certifications: ['ISA Level 3', 'Surf Coach Australia', 'Lifeguard']
   },
   {
@@ -37,8 +38,8 @@ const instructors: Instructor[] = [
     name: 'Wayan Sukerta',
     experience: '18+ years',
     specialties: ['Big Wave Preparation', 'Mental Coaching', 'Photography'],
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&sat=-100&con=25',
-    quote: "Respect the ocean, and it will respect you back.",
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80',
+    quote: 'Respect the ocean, and it will respect you back.',
     certifications: ['ISA Level 3', 'Big Wave Safety', 'Rescue Specialist']
   },
   {
@@ -46,8 +47,8 @@ const instructors: Instructor[] = [
     name: 'Putu Mahendra',
     experience: '10+ years',
     specialties: ['Youth Coaching', 'Surf Therapy', 'Equipment Specialist'],
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&sat=-100&con=25',
-    quote: "Surfing is not just a sport, it's a way of life.",
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    quote: 'Surfing is not just a sport, it’s a way of life.',
     certifications: ['ISA Level 2', 'Youth Development', 'Surf Therapy']
   }
 ]
@@ -56,41 +57,37 @@ export default function InstructorProfiles() {
   const [activeInstructor, setActiveInstructor] = useState(0)
 
   return (
-    <section id="instructors" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <StaggerChildren>
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">
-              Meet Your 
-              <span className="text-black">
-                {' '}Instructors
-              </span>
-            </h2>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-              Learn from the best. Our team of certified professionals brings decades 
-              of combined experience and deep local knowledge.
+    <section id="instructors" className="section-spacing bg-carbon">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <StaggerChildren className="space-y-16">
+          <div className="text-center space-y-6">
+            <span className="chip">Team</span>
+            <h2 className="text-heading-1">Instructor Bench</h2>
+            <p className="text-body-lg text-neutral-300 max-w-3xl mx-auto">
+              A small, disciplined group of coaches rotating across sessions. Each brings verified credentials and deep reef fluency.
             </p>
           </div>
 
-          {/* Mobile: Stacked Cards */}
           <div className="md:hidden space-y-6">
-            {instructors.map((instructor, index) => (
-              <div key={instructor.id} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-                <div className="flex items-center space-x-4 mb-4">
-                  <img 
+            {instructors.map((instructor) => (
+              <div key={instructor.id} className="surface-panel border border-white/10 p-6 space-y-4">
+                <div className="flex items-center gap-4">
+                  <Image
                     src={instructor.image}
                     alt={instructor.name}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-black grayscale contrast-110"
+                    width={64}
+                    height={64}
+                    className="rounded-full object-cover grayscale"
                   />
                   <div>
-                    <h3 className="text-xl font-bold text-black">{instructor.name}</h3>
-                    <p className="text-black font-medium">{instructor.experience}</p>
+                    <h3 className="text-heading-3 text-white">{instructor.name}</h3>
+                    <p className="text-body-sm text-neutral-400">{instructor.experience}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 italic mb-4">"{instructor.quote}"</p>
+                <p className="text-body text-neutral-300">“{instructor.quote}”</p>
                 <div className="flex flex-wrap gap-2">
-                  {instructor.specialties.map((specialty, idx) => (
-                    <span key={idx} className="bg-gray-100 text-black px-3 py-1 rounded-full text-sm border border-gray-200">
+                  {instructor.specialties.map((specialty) => (
+                    <span key={specialty} className="border border-white/15 px-3 py-1 rounded-full text-xs uppercase tracking-[0.16em] text-neutral-300">
                       {specialty}
                     </span>
                   ))}
@@ -99,72 +96,67 @@ export default function InstructorProfiles() {
             ))}
           </div>
 
-          {/* Desktop: Interactive Layout */}
-          <div className="hidden md:block">
-            <div className="grid grid-cols-4 gap-4 mb-8">
+          <div className="hidden md:block space-y-10">
+            <div className="grid grid-cols-4 gap-4">
               {instructors.map((instructor, index) => (
                 <button
                   key={instructor.id}
+                  type="button"
                   onClick={() => setActiveInstructor(index)}
-                  className={`p-4 rounded-xl transition-all duration-300 text-left ${
-                    activeInstructor === index 
-                      ? 'bg-black text-white shadow-xl' 
-                      : 'bg-white border border-gray-200 hover:bg-gray-50'
+                  className={`surface-panel border border-white/10 py-6 flex flex-col items-center gap-3 transition ${
+                    activeInstructor === index ? 'border-white/40' : 'hover:border-white/25'
                   }`}
                 >
-                  <img 
+                  <Image
                     src={instructor.image}
                     alt={instructor.name}
-                    className="w-16 h-16 rounded-full object-cover mx-auto mb-3 border-2 border-current grayscale contrast-110"
+                    width={80}
+                    height={80}
+                    className="rounded-full object-cover grayscale"
                   />
-                  <h3 className="font-semibold text-center">{instructor.name.split(' ')[0]}</h3>
-                  <p className="text-sm text-center opacity-80">{instructor.experience}</p>
+                  <span className="text-body text-white">{instructor.name.split(' ')[0]}</span>
+                  <span className="text-body-sm text-neutral-500">{instructor.experience}</span>
                 </button>
               ))}
             </div>
 
-            {/* Active Instructor Details */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-              <div className="grid md:grid-cols-3 gap-8 items-center">
-                <div className="text-center md:text-left">
-                  <img 
-                    src={instructors[activeInstructor].image}
-                    alt={instructors[activeInstructor].name}
-                    className="w-32 h-32 rounded-full object-cover mx-auto md:mx-0 mb-4 border-4 border-black grayscale contrast-110"
-                  />
-                  <h3 className="text-2xl font-bold mb-2 text-black">
-                    {instructors[activeInstructor].name}
-                  </h3>
-                  <p className="text-black text-lg font-medium">
-                    {instructors[activeInstructor].experience}
-                  </p>
+            <div className="surface-panel border border-white/10 p-10 grid grid-cols-1 md:grid-cols-[0.35fr,1fr] gap-10 items-center">
+              <div className="text-center md:text-left space-y-4">
+                <Image
+                  src={instructors[activeInstructor].image}
+                  alt={instructors[activeInstructor].name}
+                  width={120}
+                  height={120}
+                  className="rounded-full object-cover grayscale mx-auto md:mx-0"
+                />
+                <div>
+                  <h3 className="text-heading-2 text-white">{instructors[activeInstructor].name}</h3>
+                  <p className="text-body-sm text-neutral-400">{instructors[activeInstructor].experience}</p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <blockquote className="text-body-lg text-neutral-300">“{instructors[activeInstructor].quote}”</blockquote>
+
+                <div>
+                  <h4 className="text-body-sm text-neutral-500 mb-2">Specialties</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {instructors[activeInstructor].specialties.map((specialty) => (
+                      <span key={specialty} className="border border-white/15 px-3 py-1 rounded-full text-xs uppercase tracking-[0.16em] text-neutral-300">
+                        {specialty}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
-                <div className="md:col-span-2 space-y-6">
-                  <blockquote className="text-xl italic text-gray-700">
-                    &quot;{instructors[activeInstructor].quote}&quot;
-                  </blockquote>
-
-                  <div>
-                    <h4 className="font-semibold text-black mb-3">Specialties:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {instructors[activeInstructor].specialties.map((specialty, idx) => (
-                        <span key={idx} className="bg-black text-white px-3 py-1 rounded-full text-sm">
-                          {specialty}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-black mb-3">Certifications:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {instructors[activeInstructor].certifications.map((cert, idx) => (
-                        <span key={idx} className="bg-gray-100 text-black border border-gray-200 px-3 py-1 rounded-full text-sm">
-                          {cert}
-                        </span>
-                      ))}
-                    </div>
+                <div>
+                  <h4 className="text-body-sm text-neutral-500 mb-2">Certifications</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {instructors[activeInstructor].certifications.map((cert) => (
+                      <span key={cert} className="border border-white/15 px-3 py-1 rounded-full text-xs uppercase tracking-[0.16em] text-neutral-400">
+                        {cert}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
