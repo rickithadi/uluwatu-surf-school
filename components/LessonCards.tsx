@@ -1,4 +1,5 @@
-import Link from 'next/link'
+'use client'
+
 import { Users, Camera, Map } from 'lucide-react'
 import { FadeIn, ScaleIn, StaggerChildren } from './animations'
 
@@ -49,6 +50,11 @@ const lessons = [
 ]
 
 export default function LessonCards() {
+  const handleBookLesson = (lessonTitle: string) => {
+    const message = `Hi Scotty Dex! I'd like to book a ${lessonTitle}. Can you help me with availability and pricing?`
+    const whatsappUrl = `https://wa.me/6281999885826?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+  }
   return (
     <section className="section-spacing bg-carbon">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,12 +111,12 @@ export default function LessonCards() {
                     <p className="text-body-sm text-neutral-500 uppercase tracking-[0.16em]">{lesson.note}</p>
                   )}
 
-                  <Link
-                    href={`/book?lesson=${lesson.id}`}
+                  <button
+                    onClick={() => handleBookLesson(lesson.title)}
                     className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.24em] text-white hover:bg-white hover:text-black transition"
                   >
                     Book Now
-                  </Link>
+                  </button>
                 </div>
               </ScaleIn>
             )
