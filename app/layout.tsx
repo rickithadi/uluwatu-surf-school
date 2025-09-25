@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     default: 'Uluwatu Surf School - Professional Surf Instruction in Bali',
     template: '%s | Uluwatu Surf School'
   },
-  description: 'Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. Group lessons from IDR 400k, semi-private IDR 500k, private + video analysis IDR 700k. ISA certified instructor with 15+ years local knowledge.',
+  description: 'Born and raised in Uluwatu with 30 years of surfing and 8 years of coaching experience, we deliver the most personalized surf instruction in the Bukit Peninsula. Professional video analysis, comprehensive surf packages, and technical guidance from beginner to advanced levels.',
   keywords: ['surf school', 'uluwatu', 'bali surf lessons', 'professional surf instruction', 'reef break surfing', 'video analysis', 'surf coaching', 'bali surfing', 'uluwatu lessons', 'surf school bali', 'pecatu surf', 'ISA certified instructor', 'bukit peninsula surf'],
   authors: [{ name: 'Uluwatu Surf School' }],
   creator: 'Uluwatu Surf School',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Uluwatu Surf School - Professional Surf Instruction in Bali',
-    description: 'Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. ISA certified instructor with 15+ years experience.',
+    description: 'Born and raised in Uluwatu with 30 years of surfing and 8 years of coaching experience, we deliver the most personalized surf instruction in the Bukit Peninsula. Professional video analysis and technical guidance.',
     url: 'https://uluwatusurfschool.com',
     siteName: 'Uluwatu Surf School',
     locale: 'en_US',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Uluwatu Surf School - Professional Surf Instruction in Bali',
-    description: 'Professional surf instruction in Uluwatu, Bali. Local expertise enhanced by modern analysis technology. ISA certified instructor.',
+    description: 'Born and raised in Uluwatu with 30 years of surfing and 8 years of coaching experience, we deliver the most personalized surf instruction in the Bukit Peninsula. Professional video analysis and technical guidance.',
     images: ['/images/logo.jpg'],
     creator: '@uluwatusurfschool',
     site: '@uluwatusurfschool',

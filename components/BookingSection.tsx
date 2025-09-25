@@ -27,7 +27,7 @@ const initialFormState: FormData = {
   message: ''
 }
 
-const WHATSAPP_NUMBER = '6281234567890'
+const WHATSAPP_NUMBER = '6281999885826'
 const WHATSAPP_DISPLAY = '+62 812 3456 7890'
 
 export default function BookingSection() {
@@ -45,7 +45,7 @@ export default function BookingSection() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    const message = `Hi Scoot! I'd like to book a surf session.\n\nName: ${formData.fullName}\nNumber of people: ${formData.numberOfPeople}\nWhatsApp #: ${formData.whatsappNumber}\nEmail: ${formData.email}\nPreferred Date/Time: ${formData.preferredDateTime}\nSurf Level: ${formData.surfLevel || 'Not specified'}\nNotes: ${formData.message || 'None'}\n\nI understand payment is cash on the day.`
+    const message = `Hi Scotty Dex! I'd like to book a surf session.\n\nName: ${formData.fullName}\nNumber of people: ${formData.numberOfPeople}\nWhatsApp #: ${formData.whatsappNumber}\nEmail: ${formData.email}\nPreferred Date/Time: ${formData.preferredDateTime}\nSurf Level: ${formData.surfLevel || 'Not specified'}\nNotes: ${formData.message || 'None'}\n\nI understand payment is cash on the day.`
 
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
@@ -256,16 +256,16 @@ export default function BookingSection() {
 
               <div className="relative h-64 rounded-[28px] overflow-hidden border border-white/8">
                 <Image
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80"
+                  src="/images/surf/1V0A6058.JPG"
                   alt="Uluwatu location overview"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
                 />
                 <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center gap-4 text-center">
                   <p className="text-body-sm text-neutral-400">View precise pin</p>
                   <Link
-                    href="https://maps.google.com/?q=Jalan+Pantai+Suluban,+Uluwatu"
+                    href="https://maps.app.goo.gl/hb1GTmGar8rwiRvG9"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-sm uppercase tracking-[0.2em] text-white hover:bg-white hover:text-black transition"

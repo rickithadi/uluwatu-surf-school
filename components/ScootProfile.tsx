@@ -8,28 +8,24 @@ import { StaggerChildren } from './animations/StaggerChildren'
 
 const accomplishments = [
   {
+    icon: Trophy,
+    title: 'Competition Winner',
+    description: 'Single Fin Classic 2019 • Uluwatu Boardriders 2024'
+  },
+  {
     icon: Award,
     title: 'ISA Certified',
-    description: 'Level 2 Instructor',
-    detail: 'International Surfing Association credentials'
+    description: 'Surf Instructor • Competition Judge'
   },
   {
     icon: Users,
-    title: '2000+ Surfers',
-    description: 'Coached on reef breaks',
-    detail: 'From first waves to competitive athletes'
+    title: 'Safety Certified',
+    description: 'Balawista Bali Life Saving'
   },
   {
     icon: Calendar,
-    title: '15+ Years',
-    description: 'Uluwatu reef experience',
-    detail: 'Tracking Temple, Padang Padang, Bingin daily'
-  },
-  {
-    icon: Trophy,
-    title: 'Local Titles',
-    description: 'Temple competitions',
-    detail: 'Regional contest wins & lineup leadership'
+    title: 'Local Expert',
+    description: '30 years surfing • 8 years coaching • Born in Uluwatu'
   }
 ]
 
@@ -44,9 +40,9 @@ export default function ScootProfile() {
         <StaggerChildren className="space-y-16">
           <div className="text-center space-y-6">
             <span className="chip">Meet the Coach</span>
-            <h2 className="text-heading-1">Scoot, Lead Instructor</h2>
+            <h2 className="text-heading-1">Scotty Dex, Lead Instructor</h2>
             <p className="text-body-lg text-neutral-300 max-w-3xl mx-auto">
-              Local knowledge across the Bukit paired with disciplined coaching. Scoot keeps ratios tight, feedback clear, and safety first.
+              Local knowledge across the Bukit paired with disciplined coaching. Scotty Dex keeps ratios tight, feedback clear, and safety first.
             </p>
           </div>
 
@@ -54,10 +50,10 @@ export default function ScootProfile() {
             <div className="relative">
               <div className="relative h-[520px] rounded-[32px] overflow-hidden border border-white/10">
                 <Image
-                  src="/images/instagram/surf-lifestyle-1.jpg"
-                  alt="Scoot preparing boards for the next session"
+                  src="/images/surf/1V0A9213.JPG"
+                  alt="Scotty Dex preparing boards for the next session"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -73,24 +69,23 @@ export default function ScootProfile() {
               <div className="space-y-6">
                 <h3 className="text-heading-2">Understated. Professional. Consistent.</h3>
                 <p className="text-body text-neutral-300">
-                  Temple, Padang Padang, Bingin and surrounding reefs form the daily circuit. Scoot logs tides, crowd shifts and swell consistency every morning before any surfer paddles out.
+                  Temple, Padang Padang, Bingin and surrounding reefs form the daily circuit. Scotty Dex logs tides, crowd shifts and swell consistency every morning before any surfer paddles out.
                 </p>
                 <p className="text-body text-neutral-300">
                   Sessions run with small ratios, structured drills and straight feedback. Expect notes in your inbox, clips for analysis, and a clear plan for the next booking.
                 </p>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-2 gap-6">
                 {accomplishments.map((achievement) => (
-                  <div key={achievement.title} className="surface-panel border border-white/10 p-5">
-                    <div className="flex items-start gap-3">
-                      <div className="rounded-full border border-white/15 p-2 text-white/80">
-                        <achievement.icon className="h-4 w-4" />
+                  <div key={achievement.title} className="surface-panel border border-white/10 p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="rounded-full border border-white/15 p-3 text-white/80 flex-shrink-0">
+                        <achievement.icon className="h-5 w-5" />
                       </div>
-                      <div className="space-y-1">
-                        <p className="text-body-sm text-white">{achievement.title}</p>
-                        <p className="text-body text-neutral-300">{achievement.description}</p>
-                        <p className="text-xs uppercase tracking-[0.16em] text-neutral-500">{achievement.detail}</p>
+                      <div className="space-y-2">
+                        <h4 className="text-sm font-medium text-white">{achievement.title}</h4>
+                        <p className="text-sm text-neutral-300 leading-relaxed">{achievement.description}</p>
                       </div>
                     </div>
                   </div>
@@ -117,7 +112,7 @@ export default function ScootProfile() {
 
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" onClick={() => router.push('/book?instructor=scoot')}>
-                  Book With Scoot
+                  Book With Scotty Dex
                 </Button>
                 <Button variant="secondary" size="lg" onClick={goToGallery}>
                   View Sessions
@@ -130,10 +125,10 @@ export default function ScootProfile() {
             <div className="surface-panel border border-white/10 overflow-hidden">
               <div className="relative h-80">
                 <Image
-                  src="/images/instagram/surf-lifestyle-2.jpg"
+                  src="/images/surf/IMG_0631.JPG"
                   alt="Padang Padang beginner session"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -150,10 +145,10 @@ export default function ScootProfile() {
             <div className="surface-panel border border-white/10 overflow-hidden">
               <div className="relative h-80">
                 <Image
-                  src="/images/instagram/surf-action-4.jpg"
+                  src="/images/surf/0U4A8561.JPG"
                   alt="Temple reef set"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

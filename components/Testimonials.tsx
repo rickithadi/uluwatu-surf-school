@@ -1,14 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import { Star } from 'lucide-react'
 import { StaggerChildren } from './animations/StaggerChildren'
 
 interface Testimonial {
   id: string
   name: string
-  image: string
   rating: number
   text: string
   date: string
@@ -19,7 +17,6 @@ const testimonials: Testimonial[] = [
   {
     id: '1',
     name: 'Brittany Wang',
-    image: '/images/testimonials/brittany-wang.jpg',
     rating: 5,
     text: 'As an unexperienced, first time surfer in Bali, to surfing consistently for the past year with Scotty from Uluwatu Surf School, I can confidently guarantee that his strong determination, teaching abilities, and 30 years of experience will transform your surfing journey. His patience and expertise make every session both challenging and enjoyable.',
     date: '2 weeks ago',
@@ -28,7 +25,6 @@ const testimonials: Testimonial[] = [
   {
     id: '2',
     name: 'Andy Walker',
-    image: '/images/testimonials/andy-walker.jpg',
     rating: 5,
     text: 'Scotty is a straight up all round good dude, good surfer, fantastic guide, all round good guy. I had some very memorable sessions surfing with him. Days and waves I will never forget. Highly recommend.',
     date: '2 weeks ago',
@@ -37,7 +33,6 @@ const testimonials: Testimonial[] = [
   {
     id: '3',
     name: 'Asher Rous',
-    image: '/images/testimonials/asher-rous.jpg',
     rating: 5,
     text: 'This was my first time ever surfing, and I was so lucky to have Scotty as my instructor. He was patient, explained everything clearly, and made sure I felt comfortable in the water. By the end, I caught more than a couple of waves and left feeling confident and excited to surf again. I can\'t wait to come back and train with Scotty!',
     date: '2 weeks ago',
@@ -46,7 +41,6 @@ const testimonials: Testimonial[] = [
   {
     id: '4',
     name: 'alice friant',
-    image: '/images/testimonials/alice-friant.jpg',
     rating: 5,
     text: 'Scotty isn\'t just a surf teacher, he\'s a true legend of Uluwatu. His style in the water is unmistakable, and locals recognize him the moment he paddles out. Learning from him means you\'re getting tips from someone who truly knows the waves here inside out. His advice is precise, encouraging, and always delivered with a laid-back vibe that makes you feel confident and safe.',
     date: '4 days ago'
@@ -54,7 +48,6 @@ const testimonials: Testimonial[] = [
   {
     id: '5',
     name: 'Jake Thompson',
-    image: '/images/testimonials/jake-thompson.jpg',
     rating: 5,
     text: 'Amazing experience! The instructors are so professional and know exactly how to read the waves. They took us to the perfect spot with great conditions and few people in the water. Made such good progress in just one lesson.',
     date: '2 weeks ago'
@@ -62,7 +55,6 @@ const testimonials: Testimonial[] = [
   {
     id: '6',
     name: 'Emma Rodriguez',
-    image: '/images/testimonials/emma-rodriguez.jpg',
     rating: 5,
     text: 'I can\'t recommend Uluwatu Surf School highly enough! As a complete beginner, I was nervous but the instructor made me feel so safe and supported. The theoretical lesson on the sand was super helpful before getting in the water.',
     date: '3 weeks ago'
@@ -70,7 +62,6 @@ const testimonials: Testimonial[] = [
   {
     id: '7',
     name: 'Alex Chen',
-    image: '/images/testimonials/alex-chen.jpg',
     rating: 5,
     text: 'Exceptional instruction and perfect location! The instructor was very observant and gave great feedback to help me improve my technique. They really care about your progress and make the whole experience so much fun.',
     date: '1 month ago'
@@ -171,15 +162,6 @@ export default function Testimonials() {
                       )}
                     </div>
                   </div>
-                  <div className="w-12 h-12 rounded-full overflow-hidden border border-white/10">
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      width={48}
-                      height={48}
-                      className="object-cover"
-                    />
-                  </div>
                 </div>
               </article>
             ))}
@@ -214,15 +196,6 @@ export default function Testimonials() {
                       </a>
                     )}
                   </div>
-                </div>
-                <div className="w-10 h-10 rounded-full overflow-hidden border border-white/10">
-                  <Image
-                    src={testimonials[currentIndex].image}
-                    alt={testimonials[currentIndex].name}
-                    width={40}
-                    height={40}
-                    className="object-cover"
-                  />
                 </div>
               </div>
             </article>

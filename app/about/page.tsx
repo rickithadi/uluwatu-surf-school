@@ -65,7 +65,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-16 lg:grid-cols-[1.1fr,0.9fr]">
           <div className="relative h-[560px] rounded-[32px] overflow-hidden border border-white/10">
             <div
-              className="absolute inset-0 bg-cover bg-center grayscale"
+              className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80')" }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -75,7 +75,7 @@ export default function About() {
             <div className="space-y-6">
               <h2 className="text-heading-1">Background</h2>
               <p className="text-body text-neutral-300">
-                Scoot moved to Uluwatu in 2009 and logged every tide shift and swell cycle since. Coaching began organically—helping travelling surfers navigate Temple when conditions turned on.
+                Scotty Dex moved to Uluwatu in 2009 and logged every tide shift and swell cycle since. Coaching began organically—helping travelling surfers navigate Temple when conditions turned on.
               </p>
               <p className="text-body text-neutral-300">
                 Today the approach remains low-key: maximum four surfers in the water, accountability through video, and honest feedback delivered without ego.

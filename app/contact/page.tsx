@@ -6,7 +6,7 @@ import ContactForm from '@/components/forms/ContactForm'
 import { MapPin, Phone, Mail, Clock, Instagram, MessageSquare } from 'lucide-react'
 import type { Metadata } from 'next'
 
-const WHATSAPP_NUMBER = '+62 812 3456 7890'
+const WHATSAPP_NUMBER = '+62 819 9988 5826'
 
 export const metadata: Metadata = {
   title: 'Contact Us - Uluwatu Surf School Booking & Information',

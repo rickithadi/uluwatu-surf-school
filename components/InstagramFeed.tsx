@@ -114,7 +114,7 @@ export default function InstagramFeed() {
                   src={post.image}
                   alt={post.alt}
                   fill
-                  className="object-cover grayscale transition-transform duration-500 hover:scale-105"
+                  className="object-cover transition-transform duration-500 hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   loading="lazy"
                 />

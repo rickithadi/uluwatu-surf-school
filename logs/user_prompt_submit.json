@@ -1302,5 +1302,229 @@
     "permission_mode": "bypassPermissions",
     "hook_event_name": "UserPromptSubmit",
     "prompt": "push this up"
+  },
+  {
+    "session_id": "34b07b62-4768-458a-9152-c970c4170728",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/34b07b62-4768-458a-9152-c970c4170728.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/Users/hadi.rickit/Downloads/MVI_7236.MP4 use this asset for the hero background image"
+  },
+  {
+    "session_id": "34b07b62-4768-458a-9152-c970c4170728",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/34b07b62-4768-458a-9152-c970c4170728.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "dev server running at 3000. update it locally first"
+  },
+  {
+    "session_id": "34b07b62-4768-458a-9152-c970c4170728",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/34b07b62-4768-458a-9152-c970c4170728.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1]\n\nthe background video is not there"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "update the hero background image"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "use /images/surf/MVI_7236.MP4"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "not playing, it should autoplay and loop"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "can we the colours pop more"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "no just let video colours come through"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@agent-design-reviewer-agent critique hero section"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "everything but the confirmation message update"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/Users/hadi.rickit/Downloads/IMG_3414.JPG /Users/hadi.rickit/Downloads/IMG_4764.JPG /Users/hadi.rickit/Downloads/0U4A8560.JPG \n\nuse these assets for the packages cards"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/var/folders/gy/574p89h16mj752hpgdk6_q880000gn/T/TemporaryItems/NSIRD_screencaptureui_kJxE0X/Screenshot\\ 2025-09-25\\ at\\ 6.01.17\u202fPM.png [I\n\nupdate the cards"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "change all references from scoot to scotty dex"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Scoot Website\n\nHome Page\nOpening homepage panoramic video\nLogo\n\nTab 1- Pricing\nPricing & Packages\n\nOption 1 (Lesson only)\nPrivate 700k IDR\nSemi Private 500k IDR\n\nOption 2 (Lesson + Surf Video and Analysis)\nPrivate 800k IDR\nSemi Private 600k IDR\n\nOptions 3 Guiding \n500k IDR/person/session\n\nNotes:\nGuiding session including optional surf video and review charge extra 200k\n\n*** Guiding prices do not include board rental.\n\nWe provide all Surf Equipment.\nOur session is 1.30 minutes in the water and  20-30 minutes for Land Coaching (Beginner Class). At the beginning of every session, we will explain the break.\nAlso, surfing location and time depends on tide, swell and weather conditions, and we will always find the right surf spot for each individual person\u2019s level.\n\nTab 2- Scoot\nMeet our Head Instructor\n-8 years instructional experience\n-30 years surfing experience\n-born and raised in uluwatu\n\n\nAccomplishments \n-single fin classic 2019\n-uluwatu boardriders challenge 2024\n-isa surf instructor certification\n-isa judge certification\n-life saving from balawista bali\n\n\nTab 3- Contact Us\nInquiries + Bookings Form\n-Full Name\n-Number of people\n-WA #\n-Email\n-Preferred date/ time\n-Surf level\n\nTab 4- Where to Find Us/ About Us\nSurf School Bio\n* Welcome to Uluwatu Surf School Bali. Owned locally, born and raised in the heart of Uluwatu, and with 30 years of surfing experience and 8 years of teaching and coaching experience- we specialize in offering the most personalized experience for every individual surfer in the Bukit area. Our experience is reflected in the water with each and every client\u2019s surf experience and skill progression. We are available for surf lessons for all levels, surf guiding, and surfing packages including video/ photos and review. Our goal is to provide a positive and safe experience for our guests while improving their skills with passionate and technical guidance to help you become the surfer you want to be.\nLinks to Instagram \nGoogle Reviews\nLocation\n\nEtc\nVideo Analysis/ Land Coaching\nBeginner & Intermediate Surf Examples (Videos + Photos)\n\nSurf forecast?\n\n\n\nBooking Confirmation message/ template:\n\nThank you for confirming your booking with Uluwatu Surf School Bali.\n\nName:\nDate:\nTime:\n# of people:\nLesson type:\nSurf location:\nMeeting point:\n\n**Please note all payments must be made in cash. We do not take a deposit or cancellation fee, and understand any unforeseen circumstances. We ask that for any cancellations or rescheduling, please provide a notice period of 2 hours before the confirmed start time. Thank you and we look forward to surfing with you! \ud83e\udd19\ud83c\udffc\n\n\nWA link:\n\nwa.me/6281999885826\n\nupdate copy to reflect latest client notes"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "iterate on typography and visual heirachy for Programs sections\n\nalso streamline the copy "
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "update this asset Uluwatu Temple Reef\n"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "fix the google reviews link"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "the price wording could be better"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "change this 500K per person to just the price\n\nadd the semi/private stuff under the main price"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "iterate on a way to show private vs semi-private pricing, use iconography"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "specify video analysis where analysis is mentioned and private Lesson + Analysis\n\n1.5hr water + 30min land + review\nSemi-Private 600K\nPrivate 900K\n\n\nalso mention equipment is included for all but guidingo"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "integrate formspree cli in this codebase \nproject id 2833978329348964282\ndeploy key 96b543e80feb4b48b3b658f5e251f6d0"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "push this up"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "add a gallery tab on the nav"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "remove scotty dex from nav, gallery should just scroll down to gallery section"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "debug mobile nav"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "iterate on Welcome to Uluwatu Surf School Bali. Owned locally, born and raised in the heart of Uluwatu, and with 30 years of surfing experience and 8 years of teaching and coaching experience- we specialize in offering the most personalized experience for every individual surfer in the Bukit area. Our experience is reflected in the water with each and every client's surf experience and skill progression. We are available for surf lessons for all levels, surf guiding, and surfing packages including video/ photos and review. Our goal is to provide a positive and safe experience for our guests while improving their skills with passionate and technical guidance to help you become the surfer you want to be.\n\nand use for meta desc"
+  },
+  {
+    "session_id": "de6d7a0b-6bef-4c8e-991b-a204eb00b000",
+    "transcript_path": "/Users/hadi.rickit/.claude/projects/-Users-hadi-rickit-dev-uluwatuSurfSchool-uluwatu-surf-school/de6d7a0b-6bef-4c8e-991b-a204eb00b000.jsonl",
+    "cwd": "/Users/hadi.rickit/dev/uluwatuSurfSchool/uluwatu-surf-school",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "push this up"
   }
 ]

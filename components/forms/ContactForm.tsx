@@ -1,30 +1,37 @@
 'use client'
 
 import { useState } from 'react'
+import { useFormspreeForm, FORMSPREE_FORMS } from '@/lib/formspree'
 
-const WHATSAPP_NUMBER = '6281234567890'
+const WHATSAPP_NUMBER = '6281999885826'
 
 interface FormState {
-  firstName: string
-  lastName: string
+  fullName: string
+  numberOfPeople: string
+  whatsapp: string
   email: string
-  experience: string
-  lessonType: string
+  preferredDateTime: string
+  surfLevel: string
   message: string
 }
 
 const initialState: FormState = {
-  firstName: '',
-  lastName: '',
+  fullName: '',
+  numberOfPeople: '',
+  whatsapp: '',
   email: '',
-  experience: '',
-  lessonType: '',
+  preferredDateTime: '',
+  surfLevel: '',
   message: ''
 }
 
 export default function ContactForm() {
   const [formState, setFormState] = useState<FormState>(initialState)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMethod, setSubmitMethod] = useState<'formspree' | 'whatsapp'>('formspree')
+  
+  // Initialize Formspree form
+  const [formspreeState, handleFormspreeSubmit] = useFormspreeForm(FORMSPREE_FORMS.contact)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = event.target
@@ -35,14 +42,23 @@ export default function ContactForm() {
     event.preventDefault()
     setIsSubmitting(true)
 
-    const message = `Hi Scoot! I'd love more detail on lessons.\n\nName: ${formState.firstName} ${formState.lastName}\nEmail: ${formState.email}\nExperience: ${formState.experience || 'Not specified'}\nLesson interest: ${formState.lessonType || 'Not specified'}\n\nMessage: ${formState.message || 'No additional notes yet.'}`
+    if (submitMethod === 'formspree') {
+      // Submit via Formspree
+      await handleFormspreeSubmit(formState)
+      if (formspreeState.succeeded) {
+        setFormState(initialState)
+      }
+    } else {
+      // Submit via WhatsApp (fallback)
+      const message = `Hi Scotty Dex! I'd love more detail on lessons.\n\nFull Name: ${formState.fullName}\nNumber of people: ${formState.numberOfPeople || 'Not specified'}\nWhatsApp #: ${formState.whatsapp || 'Not provided'}\nEmail: ${formState.email}\nPreferred date/time: ${formState.preferredDateTime || 'Not specified'}\nSurf level: ${formState.surfLevel || 'Not specified'}\n\nMessage: ${formState.message || 'No additional notes yet.'}`
 
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+      const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
 
-    await new Promise((resolve) => setTimeout(resolve, 400))
+      await new Promise((resolve) => setTimeout(resolve, 400))
+      setFormState(initialState)
+    }
 
-    setFormState(initialState)
     setIsSubmitting(false)
   }
 
@@ -50,29 +66,43 @@ export default function ContactForm() {
 
   return (
     <form className="space-y-6" onSubmit={handleSubmit}>
+      <div className="space-y-2">
+        <label htmlFor="fullName" className="text-body-sm text-neutral-500">Full Name *</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          required
+          value={formState.fullName}
+          onChange={handleChange}
+          className={inputStyles}
+        />
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="space-y-2">
-          <label htmlFor="firstName" className="text-body-sm text-neutral-500">First Name *</label>
+          <label htmlFor="numberOfPeople" className="text-body-sm text-neutral-500">Number of People</label>
           <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            required
-            value={formState.firstName}
+            type="number"
+            id="numberOfPeople"
+            name="numberOfPeople"
+            min="1"
+            value={formState.numberOfPeople}
             onChange={handleChange}
             className={inputStyles}
+            placeholder="1"
           />
         </div>
         <div className="space-y-2">
-          <label htmlFor="lastName" className="text-body-sm text-neutral-500">Last Name *</label>
+          <label htmlFor="whatsapp" className="text-body-sm text-neutral-500">WhatsApp Number</label>
           <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            required
-            value={formState.lastName}
+            type="tel"
+            id="whatsapp"
+            name="whatsapp"
+            value={formState.whatsapp}
             onChange={handleChange}
             className={inputStyles}
+            placeholder="+62..."
           />
         </div>
       </div>
@@ -91,11 +121,24 @@ export default function ContactForm() {
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="experience" className="text-body-sm text-neutral-500">Surfing Experience</label>
+        <label htmlFor="preferredDateTime" className="text-body-sm text-neutral-500">Preferred Date/Time</label>
+        <input
+          type="text"
+          id="preferredDateTime"
+          name="preferredDateTime"
+          value={formState.preferredDateTime}
+          onChange={handleChange}
+          className={inputStyles}
+          placeholder="e.g., Tomorrow morning, Dec 15 6AM"
+        />
+      </div>
+
+      <div className="space-y-2">
+        <label htmlFor="surfLevel" className="text-body-sm text-neutral-500">Surf Level</label>
         <select
-          id="experience"
-          name="experience"
-          value={formState.experience}
+          id="surfLevel"
+          name="surfLevel"
+          value={formState.surfLevel}
           onChange={handleChange}
           className={inputStyles}
         >
@@ -103,22 +146,6 @@ export default function ContactForm() {
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
-        </select>
-      </div>
-
-      <div className="space-y-2">
-        <label htmlFor="lessonType" className="text-body-sm text-neutral-500">Lesson Interest</label>
-        <select
-          id="lessonType"
-          name="lessonType"
-          value={formState.lessonType}
-          onChange={handleChange}
-          className={inputStyles}
-        >
-          <option value="">Select lesson type</option>
-          <option value="group">Group Session</option>
-          <option value="semi-private">Semi-Private</option>
-          <option value="private">Private + Video Analysis</option>
         </select>
       </div>
 

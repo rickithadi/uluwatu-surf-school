@@ -6,11 +6,11 @@ import { MapPin, Instagram, Star, Phone, Clock, Car } from 'lucide-react'
 import { StaggerChildren } from './animations/StaggerChildren'
 import InstagramFeed from './InstagramFeed'
 
-const WHATSAPP_NUMBER = '6281234567890'
+const WHATSAPP_NUMBER = '6281999885826'
 const WHATSAPP_DISPLAY = '+62 812 3456 7890'
 
 const schoolInfo = {
-  bio: 'Operating out of the Bukit Peninsula with daily read on Temple, Padang Padang, Bingin and surrounding breaks. Transport, equipment, and detailed spot briefings included in every booking.',
+  bio: 'Welcome to Uluwatu Surf School Bali. Owned locally, born and raised in the heart of Uluwatu, and with 30 years of surfing experience and 8 years of teaching and coaching experience- we specialize in offering the most personalized experience for every individual surfer in the Bukit area. Our experience is reflected in the water with each and every client\'s surf experience and skill progression. We are available for surf lessons for all levels, surf guiding, and surfing packages including video/ photos and review. Our goal is to provide a positive and safe experience for our guests while improving their skills with passionate and technical guidance to help you become the surfer you want to be.',
   location: {
     name: 'Uluwatu Beach',
     address: 'Jl. Labuan Sait, Uluwatu, Pecatu, Badung Regency, Bali 80361'
@@ -26,7 +26,7 @@ const reviews = [
   {
     name: 'Sarah Johnson',
     rating: 5,
-    comment: 'Scoot guided me from whitewater to reef confidence in two sessions. Calm, direct, and focused on safety.',
+    comment: 'Scotty Dex guided me from whitewater to reef confidence in two sessions. Calm, direct, and focused on safety.',
     location: 'Australia'
   },
   {
@@ -38,7 +38,7 @@ const reviews = [
   {
     name: 'Yuki Tanaka',
     rating: 5,
-    comment: 'Scoot knows the reef intimately and kept the session efficient. Strongly recommended for serious surfers.',
+    comment: 'Scotty Dex knows the reef intimately and kept the session efficient. Strongly recommended for serious surfers.',
     location: 'Japan'
   }
 ]
@@ -142,7 +142,7 @@ export default function FindUsSection() {
                     WhatsApp Us
                   </Link>
                   <Link
-                    href="https://maps.google.com/?q=Jl.+Labuan+Sait,+Uluwatu"
+                    href="https://maps.app.goo.gl/hb1GTmGar8rwiRvG9"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex flex-1 items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.2em] text-white hover:bg-white hover:text-black transition"
@@ -156,10 +156,10 @@ export default function FindUsSection() {
             <div className="space-y-8">
               <div className="relative h-80 rounded-[32px] overflow-hidden border border-white/10">
                 <Image
-                  src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1100&q=80"
-                  alt="Uluwatu surf break aerial view"
+                  src="/images/surf/0U4A8558.JPG"
+                  alt="Uluwatu Temple Reef surf break"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-6 py-5 text-body text-neutral-300 uppercase tracking-[0.2em]">
@@ -180,7 +180,7 @@ export default function FindUsSection() {
                   </div>
                 </div>
                 <Link
-                  href="https://maps.google.com/?q=Jl.+Labuan+Sait,+Uluwatu"
+                  href="https://maps.app.goo.gl/hb1GTmGar8rwiRvG9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.2em] text-white hover:bg-white hover:text-black transition"
@@ -218,7 +218,7 @@ export default function FindUsSection() {
 
             <div className="text-center">
               <Link
-                href="https://maps.app.goo.gl/uluwatusurfschool"
+                href="https://maps.app.goo.gl/hb1GTmGar8rwiRvG9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.2em] text-white hover:bg-white hover:text-black transition"

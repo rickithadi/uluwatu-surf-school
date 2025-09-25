@@ -15,6 +15,7 @@
     "perf-test": "npm run build && npm run test -- tests/performance.spec.ts"
   },
   "dependencies": {
+    "@formspree/core": "^4.0.0",
     "@hookform/resolvers": "^3.3.0",
     "autoprefixer": "^10.4.21",
     "clsx": "^2.1.1",

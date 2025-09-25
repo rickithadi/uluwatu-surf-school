@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                 src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=-100&con=30"
                 alt="Professional surf instruction at Uluwatu"
                 fill
-                className="object-cover grayscale contrast-150"
+                className="object-cover contrast-150"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/30 to-transparent" />

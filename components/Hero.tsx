@@ -1,12 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
+import { useEffect, useState } from 'react'
+
 import { Button } from './ui/Button'
+import Image from 'next/image'
 import { StaggerChildren } from './animations/StaggerChildren'
 
 const stats = [
-  { label: 'Years Coaching', value: '15+' },
+  { label: 'Years Coaching', value: '8+' },
   { label: 'Surfers Guided', value: '2000+' },
   { label: 'Google Rating', value: '5.0' }
 ]
@@ -40,25 +41,25 @@ export default function Hero() {
         muted
         loop
         playsInline
-        preload={isMobile ? "none" : "metadata"}
-        poster="/images/scootAssets/IMG_4743.JPG"
-        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-          mediaReady && !mediaError ? 'opacity-100' : 'opacity-0'
-        }`}
+        preload="auto"
+        poster="/images/surf/MVI_7236-poster.jpg"
+        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${mediaReady && !mediaError ? 'opacity-100' : 'opacity-0'
+          }`}
         onLoadedData={() => setMediaReady(true)}
+        onCanPlay={() => setMediaReady(true)}
         onError={() => setMediaError(true)}
       >
-        <source src="/images/surf/hero-optimized.mp4" type="video/mp4" />
-        <source src="/videos/hero-1080.webm" type="video/webm" media="(min-width: 1024px)" />
+        <source src="/images/surf/MVI_7236-optimized.mp4" type="video/mp4" />
+        {/* <source src="/videos/hero-1080.webm" type="video/webm" media="(min-width: 1024px)" />
         <source src="/videos/hero-720.mp4" type="video/mp4" media="(min-width: 768px)" />
         <source src="/videos/hero-480.mp4" type="video/mp4" />
-        <source src="/images/scootAssets/hero.mp4" type="video/mp4" />
+        <source src="/images/scootAssets/hero.mp4" type="video/mp4" /> */}
       </video>
 
       {(!mediaReady || mediaError) && (
         <Image
-          src="/images/scootAssets/IMG_4746.JPG"
-          alt="Scoot coaching at Uluwatu"
+          src="/images/surf/MVI_7236-poster.jpg"
+          alt="Scotty Dex coaching at Uluwatu"
           fill
           priority
           className="absolute inset-0 h-full w-full object-cover"
@@ -66,7 +67,7 @@ export default function Hero() {
       )}
 
       {/* Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/20" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08)_0,rgba(0,0,0,0)_45%)]" />
 
       <div className="relative z-10">

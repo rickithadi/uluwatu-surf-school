@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 
 const navItems = [
   { name: 'Pricing', href: '#pricing' },
-  { name: 'Scoot', href: '#scoot' },
+  { name: 'Gallery', href: '#gallery' },
   { name: 'Book', href: '#book' },
   { name: 'Find Us', href: '#find-us' }
 ]
@@ -28,7 +28,8 @@ export default function Header() {
   }, [])
 
   const handlePrimaryCta = () => {
-    router.push('/book')
+    const whatsappUrl = `https://wa.me/6281999885826?text=${encodeURIComponent('Hi Scotty Dex! I\'d like to book a surf lesson. Can you help me with availability and pricing?')}`
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
     setIsMobileMenuOpen(false)
   }
 

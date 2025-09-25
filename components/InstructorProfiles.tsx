@@ -77,7 +77,7 @@ export default function InstructorProfiles() {
                     alt={instructor.name}
                     width={64}
                     height={64}
-                    className="rounded-full object-cover grayscale"
+                    className="rounded-full object-cover "
                   />
                   <div>
                     <h3 className="text-heading-3 text-white">{instructor.name}</h3>
@@ -112,7 +112,7 @@ export default function InstructorProfiles() {
                     alt={instructor.name}
                     width={80}
                     height={80}
-                    className="rounded-full object-cover grayscale"
+                    className="rounded-full object-cover "
                   />
                   <span className="text-body text-white">{instructor.name.split(' ')[0]}</span>
                   <span className="text-body-sm text-neutral-500">{instructor.experience}</span>
@@ -127,7 +127,7 @@ export default function InstructorProfiles() {
                   alt={instructors[activeInstructor].name}
                   width={120}
                   height={120}
-                  className="rounded-full object-cover grayscale mx-auto md:mx-0"
+                  className="rounded-full object-cover  mx-auto md:mx-0"
                 />
                 <div>
                   <h3 className="text-heading-2 text-white">{instructors[activeInstructor].name}</h3>

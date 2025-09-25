@@ -8,9 +8,13 @@ export default function WelcomeInfo() {
           </h2>
           <div className="text-lg text-storm-gray leading-relaxed space-y-6 max-w-3xl mx-auto">
             <p>
-              We are based in Uluwatu/Bukit Area.
+              Born and raised in Uluwatu with 30 years of surfing and 8 years of coaching experience, we deliver the most personalized surf instruction in the Bukit Peninsula. Our local expertise and proven progression methods are reflected in every client's water experience and skill development.
             </p>
             
+            <p>
+              From beginner lessons to advanced guiding, we offer comprehensive surf packages including professional video analysis and photography. Our mission is simple: provide safe, passionate, and technical guidance that transforms you into the surfer you aspire to be.
+            </p>
+
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-xl font-medium text-charcoal mb-4">Session Details</h3>
               <div className="text-left space-y-3">

@@ -29,7 +29,7 @@ const initialState: FormState = {
   notes: ''
 }
 
-const WHATSAPP_NUMBER = '6281234567890'
+const WHATSAPP_NUMBER = '6281999885826'
 
 const lessonOptions = [
   { value: 'group', title: 'Group Session', description: 'Max 4 surfers', price: 'IDR 400K' },
@@ -50,7 +50,7 @@ export default function BookLessonForm() {
     event.preventDefault()
     setIsSubmitting(true)
 
-    const message = `Hi Scoot! I'd like to reserve a lesson.\n\nLesson Type: ${formState.lessonType}\nParticipants: ${formState.participants}\nExperience: ${formState.experience || 'Not specified'}\nPreferred Date: ${formState.date || 'Not selected'}\nPreferred Time: ${formState.time || 'No preference'}\n\nName: ${formState.firstName} ${formState.lastName}\nEmail: ${formState.email}\nWhatsApp #: ${formState.phone}\nNotes: ${formState.notes || 'None'}\n\nI understand payment is cash on the day.`
+    const message = `Hi Scotty Dex! I'd like to reserve a lesson.\n\nLesson Type: ${formState.lessonType}\nParticipants: ${formState.participants}\nExperience: ${formState.experience || 'Not specified'}\nPreferred Date: ${formState.date || 'Not selected'}\nPreferred Time: ${formState.time || 'No preference'}\n\nName: ${formState.firstName} ${formState.lastName}\nEmail: ${formState.email}\nWhatsApp #: ${formState.phone}\nNotes: ${formState.notes || 'None'}\n\nI understand payment is cash on the day.`
 
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer')

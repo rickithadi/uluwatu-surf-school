@@ -1,0 +1,32 @@
+{
+  "forms": {
+    "contact": {
+      "name": "Contact Form",
+      "fields": {
+        "fullName": {
+          "type": "text",
+          "required": true
+        },
+        "numberOfPeople": {
+          "type": "numeric"
+        },
+        "whatsapp": {
+          "type": "text"
+        },
+        "email": {
+          "type": "email",
+          "required": true
+        },
+        "preferredDateTime": {
+          "type": "text"
+        },
+        "surfLevel": {
+          "type": "text"
+        },
+        "message": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}

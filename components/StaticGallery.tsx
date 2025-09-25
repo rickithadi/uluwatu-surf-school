@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const assets = [
   { id: 'vid', type: 'video', src: '/images/scootAssets/hero.mp4', thumb: '/images/scootAssets/IMG_4746.JPG', alt: 'Session highlight reel', span: 'md:col-span-2 lg:col-span-3 aspect-[16/9]' },
-  { id: 's1', type: 'photo', src: '/images/scootAssets/IMG_4743.JPG', alt: 'Scoot coaching stance', span: 'aspect-[3/4]' },
+  { id: 's1', type: 'photo', src: '/images/scootAssets/IMG_4743.JPG', alt: 'Scotty Dex coaching stance', span: 'aspect-[3/4]' },
   { id: 's2', type: 'photo', src: '/images/scootAssets/IMG_4755.JPG', alt: 'In-water feedback', span: 'aspect-square md:row-span-2' },
   { id: 's3', type: 'photo', src: '/images/scootAssets/IMG_4768.JPG', alt: 'Student progression', span: 'aspect-[4/5]' },
   { id: 's4', type: 'photo', src: '/images/scootAssets/IMG_3250.JPG', alt: 'Pre-session briefing', span: 'aspect-[16/10] md:col-span-2' },
@@ -39,33 +39,30 @@ export default function StaticGallery() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
           {assets.map((asset) => (
-            <div key={asset.id} className={`surface-panel border border-white/12 overflow-hidden group ${asset.span}`}>
+            <div key={asset.id} className={`surface-panel border border-white/12 overflow-hidden ${asset.span}`}>
               {asset.type === 'video' ? (
-                <a
-                  href={asset.src}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative block h-full w-full"
-                >
+                <div className="relative h-full w-full">
                   <Image
                     src={asset.thumb ?? asset.src}
                     alt={asset.alt}
                     fill
-                    className="object-cover grayscale transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <span className="absolute inset-0 flex items-center justify-center">
-                    <span className="inline-flex h-16 w-16 items-center justify-center rounded-full border border-white/40 bg-black/60 text-white/90 transition group-hover:bg-white group-hover:text-black">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="inline-flex h-16 w-16 items-center justify-center rounded-full border border-white/40 bg-black/60 text-white/90">
                       ▶
-                    </span>
-                  </span>
-                </a>
+                    </div>
+                  </div>
+                </div>
               ) : (
                 <div className="relative h-full w-full">
                   <Image
                     src={asset.src}
                     alt={asset.alt}
                     fill
-                    className="object-cover grayscale transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               )}
