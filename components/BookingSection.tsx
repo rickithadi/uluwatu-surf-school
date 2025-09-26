@@ -228,8 +228,8 @@ export default function BookingSection() {
                     </div>
                     <div>
                       <p className="text-body-sm text-white">Email</p>
-                      <Link href="mailto:info@uluwatusurfschool.com" className="hover:text-white">
-                        info@uluwatusurfschool.com
+                      <Link href="mailto:dexscott04@gmail.com" className="hover:text-white">
+                        dexscott04@gmail.com
                       </Link>
                     </div>
                   </div>
