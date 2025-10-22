@@ -29,6 +29,7 @@ export default function ContactForm() {
   const [formState, setFormState] = useState<FormState>(initialState)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitMethod, setSubmitMethod] = useState<'formspree' | 'whatsapp'>('formspree')
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
   
   // Initialize Formspree form
   const [formspreeState, handleFormspreeSubmit] = useFormspreeForm(FORMSPREE_FORMS.contact)
@@ -44,13 +45,11 @@ export default function ContactForm() {
 
     if (submitMethod === 'formspree') {
       // Submit via Formspree
-      const formData = new FormData()
-      Object.entries(formState).forEach(([key, value]) => {
-        formData.append(key, value)
-      })
-      await handleFormspreeSubmit(formData)
+      await handleFormspreeSubmit(formState)
       if (formspreeState.succeeded) {
         setFormState(initialState)
+        setShowSuccessMessage(true)
+        setTimeout(() => setShowSuccessMessage(false), 5000)
       }
     } else {
       // Submit via WhatsApp (fallback)
@@ -166,13 +165,40 @@ export default function ContactForm() {
         ></textarea>
       </div>
 
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.24em] text-white hover:bg-white hover:text-black transition disabled:opacity-60"
-      >
-        {isSubmitting ? 'Opening WhatsApp…' : 'Send Via WhatsApp'}
-      </button>
+      {showSuccessMessage && (
+        <div className="p-4 bg-green-500/20 border border-green-500/30 rounded-xl text-green-400 text-center">
+          ✓ Message sent successfully! We'll get back to you soon.
+        </div>
+      )}
+
+      {formspreeState.errors && formspreeState.errors.length > 0 && (
+        <div className="p-4 bg-red-500/20 border border-red-500/30 rounded-xl text-red-400 text-center">
+          Error sending message. Please try again or contact us directly.
+        </div>
+      )}
+
+      <div className="flex gap-3">
+        <button
+          type="submit"
+          disabled={isSubmitting || formspreeState.submitting}
+          onClick={() => setSubmitMethod('formspree')}
+          className="flex-1 inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.24em] text-white hover:bg-white hover:text-black transition disabled:opacity-60"
+        >
+          {formspreeState.submitting ? 'Sending…' : 'Send Email'}
+        </button>
+        
+        <button
+          type="button"
+          disabled={isSubmitting}
+          onClick={() => {
+            setSubmitMethod('whatsapp')
+            handleSubmit(new Event('submit') as any)
+          }}
+          className="flex-1 inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.24em] text-white hover:bg-white hover:text-black transition disabled:opacity-60"
+        >
+          Send WhatsApp
+        </button>
+      </div>
     </form>
   )
 }

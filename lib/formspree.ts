@@ -5,5 +5,5 @@ export const useFormspreeForm = (formId: string) => {
 }
 
 export const FORMSPREE_FORMS = {
-  contact: 'contact' // Using form key directly from formspree.json - only one form needed
+  contact: '2833978329348964282' // Formspree form ID extracted from provided URL
 } as const

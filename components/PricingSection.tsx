@@ -20,48 +20,47 @@ interface Package {
 
 const packages: Package[] = [
   {
-    id: 'lesson-only',
-    title: 'Surf Lessons',
-    level: 'FOUNDATION',
+    id: 'group-lesson',
+    title: 'Group Lesson',
+    level: 'OPTION 1',
     duration: '1.5hr water + 30min land',
-    price: { semiPrivate: '500K', private: '700K' },
-
+    price: '450K',
+    image: '/images/courses/advanced.jpg',
+    features: [
+      'For groups of 3+ people',
+      'Equipment included',
+      'Group instruction',
+      'Safety briefing',
+      'Best spot selection'
+    ]
+  },
+  {
+    id: 'lesson',
+    title: 'Surf Lessons',
+    level: 'OPTION 2',
+    duration: '1.5hr water + 30min land',
+    price: { semiPrivate: '550K', private: '700K' },
     image: '/images/courses/intermediate.jpg',
     features: [
       'Equipment included',
       'Safety briefing',
       'Skill progression',
-      'Best spot selection'
-    ]
-  },
-  {
-    id: 'lesson-video',
-    title: 'Lesson + Video Analysis',
-    level: 'PERFORMANCE',
-    duration: '1.5hr water + 30min land + video analysis',
-    price: { semiPrivate: '600K', private: '900K' },
-
-    image: '/images/courses/advanced.jpg',
-    features: [
-      'HD video capture & analysis',
-      'Technical video feedback',
-      'Keep all videos & images',
-      'Equipment included'
+      'Best spot selection',
+      'Semi-private: groups of 2 only'
     ],
     popular: true
   },
   {
     id: 'guiding',
     title: 'Surf Guiding',
-    level: 'EXPLORATION',
+    level: 'OPTION 3',
     duration: 'Custom session length',
     price: '500K',
-
     image: '/images/courses/beginner.jpg',
     features: [
       'Reef knowledge',
       'Spot selection',
-      'Video option (+200K)',
+      'Local insights',
       'Equipment NOT included'
     ]
   }
@@ -146,7 +145,7 @@ export default function PricingSection() {
                       ) : (
                         <div>
                           <p className="text-2xl font-bold text-white tracking-tight">{pkg.price}</p>
-                          <p className="text-xs text-neutral-500">IDR per person</p>
+                          <p className="text-xs text-neutral-500">IDR per person/session</p>
                         </div>
                       )}
                     </div>
@@ -172,13 +171,24 @@ export default function PricingSection() {
           <div className="surface-panel px-8 py-10 text-center space-y-6">
             <h3 className="text-heading-2">Every Package Includes</h3>
             <div className="grid gap-4 md:grid-cols-2 text-body text-neutral-300">
-              {["Personal coaching with Scotty Dex", "All surf equipment provided", "Location based on conditions & skill level", "Break explanation at start of each session"].map((item) => (
+              {["Personal coaching with Scotty Dex", "All surf equipment provided (except guiding)", "Location based on conditions & skill level", "Break explanation at start of each session"].map((item) => (
                 <div key={item} className="flex items-center justify-center gap-3">
                   <Check className="h-5 w-5 text-white/70" />
                   <span>{item}</span>
                 </div>
               ))}
             </div>
+
+            <div className="bg-black/20 border border-white/10 rounded-lg p-6 space-y-4">
+              <h4 className="text-lg font-semibold text-white">Optional Add-On</h4>
+              <div className="flex items-center justify-center gap-3 text-neutral-300">
+                <Check className="h-5 w-5 text-white/70" />
+                <span>Video/Photo + Analysis</span>
+                <span className="ml-auto text-lg font-bold text-white">+300K IDR</span>
+              </div>
+              <p className="text-sm text-neutral-500">Available for any session type</p>
+            </div>
+
             <div className="space-y-3 text-body-sm text-neutral-500">
               <p>Payment on the day · Cash only · No deposit or cancellation fee</p>
               <p>Cancellations or rescheduling: 2 hours notice required</p>
