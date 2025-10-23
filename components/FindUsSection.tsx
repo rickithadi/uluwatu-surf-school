@@ -1,10 +1,11 @@
 'use client'
 
+import { Car, Clock, Instagram, MapPin, Phone, Star } from 'lucide-react'
+
 import Image from 'next/image'
-import Link from 'next/link'
-import { MapPin, Instagram, Star, Phone, Clock, Car } from 'lucide-react'
-import { StaggerChildren } from './animations/StaggerChildren'
 import InstagramFeed from './InstagramFeed'
+import Link from 'next/link'
+import { StaggerChildren } from './animations/StaggerChildren'
 
 const WHATSAPP_NUMBER = '6281999885826'
 const WHATSAPP_DISPLAY = '+62 812 3456 7890'
@@ -88,7 +89,7 @@ export default function FindUsSection() {
                 <div className="surface-panel border border-white/12 p-5">
                   <p className="text-body-sm text-neutral-500">Best Surf Times</p>
                   <p className="text-body text-neutral-300">{schoolInfo.schedule.bestTimes}</p>
-                <p className="text-body-sm text-neutral-500 mt-2">{schoolInfo.schedule.beginnerNote}</p>
+                  <p className="text-body-sm text-neutral-500 mt-2">{schoolInfo.schedule.beginnerNote}</p>
                 </div>
               </div>
 
@@ -191,42 +192,7 @@ export default function FindUsSection() {
             </div>
           </div>
 
-          <div className="space-y-10">
-            <div className="text-center space-y-4">
-              <h3 className="text-heading-2">What Surfers Say</h3>
-              <div className="flex items-center justify-center gap-2 text-neutral-400">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-white" fill="currentColor" />
-                  ))}
-                </div>
-                <span className="text-body-sm">5.0 rating • 500+ reviews</span>
-              </div>
-            </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
-              {reviews.map((review) => (
-                <div key={review.name} className="surface-panel border border-white/10 p-6 space-y-3">
-                  <div>
-                    <p className="text-body-sm text-white">{review.name}</p>
-                    <p className="text-body-sm text-neutral-500">{review.location}</p>
-                  </div>
-                  <p className="text-body text-neutral-300">“{review.comment}”</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center">
-              <Link
-                href="https://maps.app.goo.gl/hb1GTmGar8rwiRvG9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.2em] text-white hover:bg-white hover:text-black transition"
-              >
-                Read Google Reviews
-              </Link>
-            </div>
-          </div>
 
         </StaggerChildren>
       </div>

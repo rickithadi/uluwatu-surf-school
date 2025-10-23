@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { Star } from 'lucide-react'
+import { useEffect, useState } from 'react'
+
 import { StaggerChildren } from './animations/StaggerChildren'
+import { Star } from 'lucide-react'
 
 interface Testimonial {
   id: string
@@ -84,7 +85,7 @@ export default function Testimonials() {
 
   // Handle swipe gestures
   const handleSwipe = (direction: 'left' | 'right') => {
-    const newIndex = direction === 'left' 
+    const newIndex = direction === 'left'
       ? (currentIndex + 1) % testimonials.length
       : (currentIndex - 1 + testimonials.length) % testimonials.length
     setCurrentIndex(newIndex)
@@ -102,7 +103,7 @@ export default function Testimonials() {
 
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd) return
-    
+
     const distance = touchStart - touchEnd
     const isLeftSwipe = distance > 50
     const isRightSwipe = distance < -50
@@ -168,7 +169,7 @@ export default function Testimonials() {
           </div>
 
           <div className="md:hidden space-y-8">
-            <article 
+            <article
               className="space-y-6"
               onTouchStart={onTouchStart}
               onTouchMove={onTouchMove}

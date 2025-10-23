@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { Button } from './ui/Button'
 import { StaggerChildren } from './animations/StaggerChildren'
-// Removed Formspree hook - using direct fetch instead
+// WhatsApp-based booking form
 
 interface FormData {
   fullName: string
@@ -31,11 +31,51 @@ const initialFormState: FormData = {
 const WHATSAPP_NUMBER = '6281999885826'
 const WHATSAPP_DISPLAY = '+62 812 3456 7890'
 
+// Utility function to format datetime-local input to readable format
+const formatDateTime = (datetimeString: string): string => {
+  if (!datetimeString) return 'Not specified'
+  
+  try {
+    const date = new Date(datetimeString)
+    const options: Intl.DateTimeFormatOptions = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    }
+    return date.toLocaleDateString('en-US', options)
+  } catch (error) {
+    return datetimeString
+  }
+}
+
+// Enhanced WhatsApp message formatting
+const formatWhatsAppMessage = (data: FormData): string => {
+  const formattedDateTime = formatDateTime(data.preferredDateTime)
+  const surfLevel = data.surfLevel || 'Not specified'
+  const notes = data.message.trim() || 'No additional notes'
+  
+  return `🏄‍♂️ SURF LESSON BOOKING REQUEST
+
+👤 Name: ${data.fullName}
+👥 Group Size: ${data.numberOfPeople} surfer${data.numberOfPeople === '1' ? '' : 's'}
+📞 WhatsApp: ${data.whatsappNumber || 'Not provided'}
+📧 Email: ${data.email}
+📅 Preferred Date/Time: ${formattedDateTime}
+🌊 Surf Level: ${surfLevel}
+
+💬 Additional Notes:
+${notes}
+
+📍 Ready to book! Please confirm availability and pricing.`
+}
+
 export default function BookingSection() {
   const [formData, setFormData] = useState<FormData>(initialFormState)
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
-  const [submitError, setSubmitError] = useState<string>('')
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -47,59 +87,30 @@ export default function BookingSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    setSubmitError('')
 
     try {
-      // Map form data to Formspree expected field names
-      const formspreeData = {
-        firstName: formData.fullName.split(' ')[0] || formData.fullName,
-        lastName: formData.fullName.split(' ').slice(1).join(' ') || '',
-        phone: formData.whatsappNumber,
-        email: formData.email,
-        lessonType: 'booking', // Default lesson type
-        participants: formData.numberOfPeople,
-        preferredDateTime: formData.preferredDateTime,
-        surfLevel: formData.surfLevel,
-        message: formData.message
-      }
-
-      console.log('Submitting mapped data:', formspreeData)
-
-      // Direct submission to Formspree endpoint
-      const response = await fetch('https://formspree.io/p/2833978329348964282/f/booking', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formspreeData)
-      })
+      // Generate enhanced WhatsApp message
+      const message = formatWhatsAppMessage(formData)
       
-      console.log('Response status:', response.status)
-      const result = await response.json()
-      console.log('Response:', result)
+      // Create WhatsApp URL with encoded message
+      const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
       
-      if (response.ok) {
-        setFormData(initialFormState)
-        setShowSuccessMessage(true)
-        setTimeout(() => setShowSuccessMessage(false), 5000)
-      } else {
-        setSubmitError(`Submission failed: ${result.message || 'Unknown error'}`)
-      }
+      console.log('Opening WhatsApp with message:', message)
+      
+      // Open WhatsApp with pre-populated message
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+      
+      // Brief delay for better UX, then reset form
+      await new Promise((resolve) => setTimeout(resolve, 400))
+      setFormData(initialFormState)
+      
     } catch (error) {
-      console.error('Error submitting form:', error)
-      setSubmitError(`Network error: ${error}`)
+      console.error('Error generating WhatsApp URL:', error)
     }
 
     setIsSubmitting(false)
   }
 
-  // WhatsApp submission commented out - only using Formspree
-  // const handleWhatsAppSubmit = () => {
-  //   const message = `Hi Scotty Dex! I'd like to book a surf session.\n\nName: ${formData.fullName}\nNumber of people: ${formData.numberOfPeople}\nWhatsApp #: ${formData.whatsappNumber}\nEmail: ${formData.email}\nPreferred Date/Time: ${formData.preferredDateTime}\nSurf Level: ${formData.surfLevel || 'Not specified'}\nNotes: ${formData.message || 'None'}\n\nI understand payment is cash on the day.`
-  //   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
-  //   window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
-  //   setFormData(initialFormState)
-  // }
 
   return (
     <section id="book" className="section-spacing bg-carbon">
@@ -109,7 +120,7 @@ export default function BookingSection() {
             <span className="chip">Bookings</span>
             <h2 className="text-heading-1">Reserve Your Session</h2>
             <p className="text-body-lg text-neutral-300 max-w-2xl mx-auto">
-              Submit the form and we&apos;ll respond on WhatsApp within the day to confirm conditions and timing.
+              Fill out your details below and we&apos;ll open WhatsApp with your booking request pre-filled. Direct communication for instant confirmation!
             </p>
           </div>
 
@@ -222,38 +233,14 @@ export default function BookingSection() {
                   />
                 </div>
 
-                {showSuccessMessage && (
-                  <div className="p-4 bg-green-500/20 border border-green-500/30 rounded-xl text-green-400 text-center">
-                    ✓ Booking request sent successfully! We'll get back to you soon.
-                  </div>
-                )}
-
-                {submitError && (
-                  <div className="p-4 bg-red-500/20 border border-red-500/30 rounded-xl text-red-400 text-center">
-                    {submitError}
-                  </div>
-                )}
-
                 <Button
                   type="submit"
                   size="lg"
                   className="w-full"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Sending…' : 'Send Booking Request'}
+                  {isSubmitting ? 'Opening WhatsApp…' : '🏄‍♂️ Book via WhatsApp'}
                 </Button>
-                
-                {/* WhatsApp button commented out - only using Formspree */}
-                {/* <Button
-                  type="button"
-                  variant="outline"
-                  size="lg"
-                  className="flex-1"
-                  disabled={isSubmitting}
-                  onClick={handleWhatsAppSubmit}
-                >
-                  Send WhatsApp
-                </Button> */}
 
                 <p className="text-body-sm text-neutral-500 text-center">
                   Payment is cash on the day. Please give two hours notice for reschedules.
