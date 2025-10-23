@@ -51,18 +51,18 @@ export default function ContactForm() {
         setShowSuccessMessage(true)
         setTimeout(() => setShowSuccessMessage(false), 5000)
       }
-    } else {
-      // Submit via WhatsApp (fallback)
-      const message = `Hi Scotty Dex! I'd love more detail on lessons.\n\nFull Name: ${formState.fullName}\nNumber of people: ${formState.numberOfPeople || 'Not specified'}\nWhatsApp #: ${formState.whatsapp || 'Not provided'}\nEmail: ${formState.email}\nPreferred date/time: ${formState.preferredDateTime || 'Not specified'}\nSurf level: ${formState.surfLevel || 'Not specified'}\n\nMessage: ${formState.message || 'No additional notes yet.'}`
-
-      const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
-      window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
-
-      await new Promise((resolve) => setTimeout(resolve, 400))
-      setFormState(initialState)
     }
 
     setIsSubmitting(false)
+  }
+
+  const handleWhatsAppSubmit = () => {
+    const message = `Hi Scotty Dex! I'd love more detail on lessons.\n\nFull Name: ${formState.fullName}\nNumber of people: ${formState.numberOfPeople || 'Not specified'}\nWhatsApp #: ${formState.whatsapp || 'Not provided'}\nEmail: ${formState.email}\nPreferred date/time: ${formState.preferredDateTime || 'Not specified'}\nSurf level: ${formState.surfLevel || 'Not specified'}\n\nMessage: ${formState.message || 'No additional notes yet.'}`
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+    
+    setFormState(initialState)
   }
 
   const inputStyles = 'w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-white/30'
@@ -190,10 +190,7 @@ export default function ContactForm() {
         <button
           type="button"
           disabled={isSubmitting}
-          onClick={() => {
-            setSubmitMethod('whatsapp')
-            handleSubmit(new Event('submit') as any)
-          }}
+          onClick={handleWhatsAppSubmit}
           className="flex-1 inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.24em] text-white hover:bg-white hover:text-black transition disabled:opacity-60"
         >
           Send WhatsApp

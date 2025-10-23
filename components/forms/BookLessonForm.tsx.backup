@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Button } from '../ui/Button'
+import { useFormspreeForm, FORMSPREE_FORMS } from '@/lib/formspree'
 
 interface FormState {
   lessonType: string
@@ -40,6 +41,11 @@ const lessonOptions = [
 export default function BookLessonForm() {
   const [formState, setFormState] = useState<FormState>(initialState)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMethod, setSubmitMethod] = useState<'formspree' | 'whatsapp'>('formspree')
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
+  
+  // Initialize Formspree form
+  const [formspreeState, handleFormspreeSubmit] = useFormspreeForm(FORMSPREE_FORMS.contact)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = event.target
@@ -50,15 +56,26 @@ export default function BookLessonForm() {
     event.preventDefault()
     setIsSubmitting(true)
 
+    if (submitMethod === 'formspree') {
+      // Submit via Formspree
+      await handleFormspreeSubmit(formState)
+      if (formspreeState.succeeded) {
+        setFormState(initialState)
+        setShowSuccessMessage(true)
+        setTimeout(() => setShowSuccessMessage(false), 5000)
+      }
+    }
+
+    setIsSubmitting(false)
+  }
+
+  const handleWhatsAppSubmit = () => {
     const message = `Hi Scotty Dex! I'd like to reserve a lesson.\n\nLesson Type: ${formState.lessonType}\nParticipants: ${formState.participants}\nExperience: ${formState.experience || 'Not specified'}\nPreferred Date: ${formState.date || 'Not selected'}\nPreferred Time: ${formState.time || 'No preference'}\n\nName: ${formState.firstName} ${formState.lastName}\nEmail: ${formState.email}\nWhatsApp #: ${formState.phone}\nNotes: ${formState.notes || 'None'}\n\nI understand payment is cash on the day.`
 
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
-
-    await new Promise((resolve) => setTimeout(resolve, 400))
-
+    
     setFormState(initialState)
-    setIsSubmitting(false)
   }
 
   const inputStyles = 'w-full bg-black/40 border border-white/10 px-4 py-3 rounded-xl text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-white/30'
@@ -227,16 +244,42 @@ export default function BookLessonForm() {
         ></textarea>
       </div>
 
-      <div className="surface-divider pt-6">
-        <Button
-          type="submit"
-          className="w-full"
-          size="lg"
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? 'Opening WhatsApp…' : 'Submit & Confirm'}
-        </Button>
-        <p className="text-body-sm text-neutral-500 text-center mt-4">
+      {showSuccessMessage && (
+        <div className="p-4 bg-green-500/20 border border-green-500/30 rounded-xl text-green-400 text-center">
+          ✓ Booking request sent successfully! We'll get back to you soon.
+        </div>
+      )}
+
+      {formspreeState.errors && formspreeState.errors.length > 0 && (
+        <div className="p-4 bg-red-500/20 border border-red-500/30 rounded-xl text-red-400 text-center">
+          Error sending booking request. Please try again or contact us directly.
+        </div>
+      )}
+
+      <div className="surface-divider pt-6 space-y-4">
+        <div className="flex gap-3">
+          <Button
+            type="submit"
+            className="flex-1"
+            size="lg"
+            disabled={isSubmitting || formspreeState.submitting}
+            onClick={() => setSubmitMethod('formspree')}
+          >
+            {formspreeState.submitting ? 'Sending…' : 'Send Email'}
+          </Button>
+          
+          <Button
+            type="button"
+            variant="outline"
+            className="flex-1"
+            size="lg"
+            disabled={isSubmitting}
+            onClick={handleWhatsAppSubmit}
+          >
+            Send WhatsApp
+          </Button>
+        </div>
+        <p className="text-body-sm text-neutral-500 text-center">
           We confirm via WhatsApp and include tide suggestions. Payment is cash on the day.
         </p>
       </div>
