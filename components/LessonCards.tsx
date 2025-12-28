@@ -1,6 +1,6 @@
 'use client'
 
-import { Users, Camera, Map } from 'lucide-react'
+import { Camera, Map, Users } from 'lucide-react'
 import { FadeIn, ScaleIn, StaggerChildren } from './animations'
 
 const lessons = [
@@ -31,7 +31,7 @@ const lessons = [
     ],
     prices: {
       private: 'IDR 800K',
-      semiPrivate: 'IDR 600K'
+      semiPrivate: 'IDR 650K'
     }
   },
   {
