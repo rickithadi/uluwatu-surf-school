@@ -80,6 +80,15 @@ export default function Footer() {
               <span>Made with</span>
               <span className="text-white" aria-hidden="true">❤️</span>
               <span>in Bali</span>
+              <span className="text-gray-600">·</span>
+              <Link
+                href="https://9line.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-400 transition-colors"
+              >
+                9line.dev
+              </Link>
             </div>
           </div>
         </div>
